@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  background-color: lightblue; }
+
+h1 {
+  font-size: 97px; }
+
+.footer {
+  display: flex;
+  background-color: black;
+  justify-content: space-between;
+  align-items: center; }
+
+.logo {
+  display: flex;
+  height: 5rem;
+  width: 6rem;
+  padding: 2rem;
+  color: whitesmoke; }
+
+.text {
+  display: flex;
+  color: whitesmoke;
+  font-size: 1rem;
+  flex-direction: column;
+  text-align: center;
+  font-family: 'Ruluko'; }
+
+.p {
+  display: flex; }
+
+.logos-sociaux {
+  display: flex; }
+
+.logos-sociaux img {
+  padding: 1rem;
+  padding-top: 7rem; }
+
+.shifumi-Inc {
+  color: rgba(88, 218, 235, 0.938);
+  text-decoration: underline;
+  font-size: 1.3rem; }
+
+nav {
+  padding: 16px;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 140px 1fr;
+  position: fixed;
+  border: 2px solid black;
+  /*temporaire*/
+  background-color: rgba(255, 255, 255, 0); }
+
+.nav_scroll {
+  background-color: black; }
+
+nav img {
+  width: 140px; }
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 24px 0px 24px; }
+
+nav ul li {
+  list-style: none;
+  font-size: 1.8rem;
+  font-family: 'Ruluko';
+  text-align: center; }
+
+nav ul li a {
+  text-decoration: none;
+  color: white; }
+
+nav ul li a:hover {
+  color: black; }
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Syne Mono", Verdana, Geneva, Tahoma, sans-serif; }
+
+.bloc {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden; }
+
+.bloc video {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -100; }
+
+img {
+  padding: 1rem;
+  width: 8.75rem; }
+
+.title_index {
+  color: whitesmoke;
+  display: flex;
+  align-items: justify;
+  justify-content: center;
+  text-align: center;
+  font-size: 7rem; }
+
+.div_button {
+  display: flex;
+  justify-content: center;
+  margin: 5rem; }
+
+button {
+  background: whitesmoke;
+  border-radius: 80px;
+  border: 0.2rem solid purple;
+  font-size: 2rem;
+  padding: 1rem 2rem 1rem 2rem; }
+
+a.buttons {
+  text-decoration: none;
+  color: purple; }
