@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Syne Mono", Verdana, Geneva, Tahoma, sans-serif;
+}
+.bloc{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.bloc video{
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -100;
+}
+
+img{
+    padding : 1rem;
+    width : 8.75rem;
+}
+
+.title_index {
+    color:whitesmoke;
+    display: flex;
+    align-items: justify;
+    justify-content: center;
+    text-align: center;
+    font-size: 7rem;
+}
+
+.div_button {
+    display: flex;
+    justify-content: center;
+    margin : 5rem;
+}
+
+button{
+    background: whitesmoke;
+    border-radius: 80px;
+    border: 0.2rem solid purple;
+    font-size: 2rem;
+    padding:1rem 2rem 1rem 2rem;
+}
+
+a.buttons{
+    text-decoration: none;
+    color: purple;
+}
