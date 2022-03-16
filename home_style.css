@@ -1,0 +1,45 @@
+.footer{
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    height: 5rem;
+    width: 6rem;
+    padding: 2rem;
+    color: whitesmoke;
+}
+
+.text{
+    display: flex;
+    color: whitesmoke;
+    font-size: 1rem;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Ruluko';
+
+}
+
+.p{
+    display: flex;
+}
+
+.logos-sociaux{
+    display: flex;
+
+}
+
+.logos-sociaux img{
+    padding: 1rem;
+    padding-top: 7rem;
+
+}
+
+.shifumi-Inc{
+    color: rgba(88, 218, 235, 0.938);
+    text-decoration: underline;
+    font-size: 1.3rem;
+}
