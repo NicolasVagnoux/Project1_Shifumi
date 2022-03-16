@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: lightblue;
+}
+
+/* Barre de navigation */
+
+nav {
+    padding: 16px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 140px 1fr;
+    position: fixed;
+    border: 2px solid black; /*temporaire*/
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.nav_scroll {
+    background-color: black;
+}
+
+nav img {
+    width: 140px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 24px 0px 24px;
+}
+
+nav ul li {
+    list-style: none;
+    font-size: 1.8rem;
+    font-family: 'Ruluko';
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: black;
+}
