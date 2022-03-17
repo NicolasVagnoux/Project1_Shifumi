@@ -1,0 +1,135 @@
+header{
+    background-image: url("../assets/rules_img.jpeg");
+    height: 100vh;
+    background-size: cover;
+}
+
+header h1{
+    color:#F4F3F3;
+    text-align: center;
+    padding-top: 20rem;
+    font-size: 8rem;
+}
+
+body{
+    background-color: #F4F3F3;
+}
+
+.rulesContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    text-align: center;
+}
+
+.rulesTitle{
+    display: flex 1;
+    font-size: 3rem;
+    color: rgb(221, 84, 5);
+    margin: 3rem 0 2rem 0;
+}
+
+.rulesParagraph1{
+    display: flex 2;
+    font-size: 2rem;
+    margin: 2rem 10rem 2rem 10rem;
+}
+
+.rulesParagraph2{
+    display: flex 3;
+    font-size: 2rem;
+    margin: 2rem 10rem 2rem 10rem;
+}
+
+.spinOffTitle{
+    display: flex 4;
+    font-size: 3rem;
+    color: rgb(221, 84, 5);
+    margin: 5rem 0 2rem 0;
+    text-align: center;
+}
+
+.gridContainer{
+    display: grid;
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+    grid-template-columns: 20vw 20vw 20vw;
+    grid-template-rows: 30vh 30vh;
+    gap: 4rem;
+    margin: 5rem;
+    
+}
+
+.containerPFCLS{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.containerFEF{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 1rem;
+    margin: 2.5rem 0 2.5rem ;
+}
+
+.containerPFCP{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 1rem;
+    margin: 1.5rem;
+}
+
+ul li{
+    color: rgb(41, 39, 39);
+    padding: .3rem;
+}
+
+
+
+.grid1, .grid2, .grid3, .grid4, .grid5, .grid6{
+    text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87;
+    border-radius: 11px;
+    background: linear-gradient(145deg, #b3b2b2, #d5d4d4);
+    box-shadow:  12px 12px 24px #a9a8a8,
+                -12px -12px 24px #e5e4e4;
+                
+    min-height: 12rem;
+}
+    
+
+.grid1{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.grid2{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.grid3{
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.grid4{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.grid5{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.grid6{
+    grid-column: 3;
+    grid-row: 2;
+}
