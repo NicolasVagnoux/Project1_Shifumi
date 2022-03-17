@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruluko&display=swap');
+
+.bodyHistory{    
+    box-sizing: border-box;
+    font-family: $font-text;
+}
+
+.titleHistory{
+    height: 100vh;
+    background-image: url('../assets/history_img_background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainHistory{    
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: whitesmoke;
+}
+
+.slideHistoryAll{
+    position: relative;
+    background: whitesmoke;
+    width: 80%;
+    min-height: 80%;
+    margin: auto;
+    overflow: hidden;
+
+    .slideHistory{
+        display: flex;
+        width: 100%;
+        height: 100%;
+
+        .imgSlide{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .infoHistory{
+            position: absolute;
+            color: black;
+            background: rgba(255,255,255,0.3);
+            width: 75%;
+            margin-top: 50px;
+            margin-left: 50px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 5px 25px rgba(1, 1, 1, 0.05);
+
+            .h3History{
+                font-size: 2em;
+                font-weight: 800;                
+            }
+
+            .pHistory{
+                font-size: 1em;
+                font-weight: 400;                
+            }
+        }   
+    }
+}
