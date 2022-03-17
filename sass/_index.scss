@@ -64,6 +64,13 @@ a.buttons {
   text-decoration: none;
   color: purple;
 }
+
+button:hover {
+  background-color: purple;
+}
+a.buttons:hover {
+  color: whitesmoke;
+}
 /*----------------------------------*/
 /*responsive design tablet*/
 /*----------------------------------*/
