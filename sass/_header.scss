@@ -1,38 +1,31 @@
 /* Barre de navigation */
 
-nav {
+.navbar {
     padding: 16px;
     display: grid;
     width: 100%;
     grid-template-columns: 140px 1fr;
     position: fixed;
     background-color: rgba(255, 255, 255, 0);
-}
-
-nav img {
-    width: 100px;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0px 24px 0px 24px;
-}
-
-nav ul li {
-    list-style: none;
-    font-size: 2rem;
-    font-family: 'Ruluko';
-    text-align: center;
-    text-shadow: 2px 2px 2px rgb(0, 0, 0);
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
+    img {
+        width: 100px;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0px 24px 0px 24px;
+        list-style: none;
+        font-size: 2rem;
+        text-align: center;
+        text-shadow: 2px 2px 2px rgb(0, 0, 0);
+        &__link {
+                font-family: $font-text;
+                text-decoration: none;
+                color: white;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+    }
 }

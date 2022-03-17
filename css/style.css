@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Ruluko&display=swap");
 * {
   padding: 0;
   margin: 0; }
@@ -41,36 +42,30 @@
   font-size: 1.3rem; }
 
 /* Barre de navigation */
-nav {
+.navbar {
   padding: 16px;
   display: grid;
   width: 100%;
   grid-template-columns: 140px 1fr;
   position: fixed;
   background-color: rgba(255, 255, 255, 0); }
-
-nav img {
-  width: 100px; }
-
-nav ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0px 24px 0px 24px; }
-
-nav ul li {
-  list-style: none;
-  font-size: 2rem;
-  font-family: 'Ruluko';
-  text-align: center;
-  text-shadow: 2px 2px 2px black; }
-
-nav ul li a {
-  text-decoration: none;
-  color: white; }
-
-nav ul li a:hover {
-  text-decoration: underline; }
+  .navbar img {
+    width: 100px; }
+  .navbar__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 24px 0px 24px;
+    list-style: none;
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 2px 2px 2px black; }
+    .navbar__list__link {
+      font-family: "Ruluko";
+      text-decoration: none;
+      color: white; }
+      .navbar__list__link:hover {
+        text-decoration: underline; }
 
 .home-img {
   height: 100vh;
@@ -94,7 +89,7 @@ nav ul li a:hover {
 .home-img p {
   width: 90%;
   text-align: center;
-  font-family: 'Ruluko';
+  font-family: "Ruluko";
   font-size: 2vw;
   color: white;
   text-shadow: 2px 2px 2px black; }
@@ -147,7 +142,7 @@ a.buttons {
   text-decoration: none;
   color: purple; }
 
-header {
+.headerRules {
   background-image: url("../assets/rules_img.jpeg");
   height: 100vh;
   background-size: cover; }
