@@ -3,6 +3,159 @@
   padding: 0;
   margin: 0; }
 
+/* ------------------- */
+/* Barre de navigation */
+/* ------------------- */
+.navbar {
+  padding: 16px;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 140px 1fr;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0); }
+  .navbar img {
+    width: 100px; }
+  .navbar__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 24px 0px 24px;
+    list-style: none;
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 2px 2px 2px black; }
+    .navbar__list__link {
+      font-family: "Ruluko";
+      text-decoration: none;
+      color: white; }
+      .navbar__list__link:hover {
+        text-decoration: underline; }
+
+/* ------------------- */
+/*----image de fond----*/
+/* ------------------- */
+.contact-img {
+  height: 100vh;
+  background-image: url("../assets/contact_img_background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.contact-img h1 {
+  font-size: 10vw;
+  font-family: "Proza Libre";
+  font-weight: lighter;
+  letter-spacing: 8px;
+  color: white;
+  text-shadow: 4px 4px 2px black; }
+
+h2 {
+  color: #dd5405;
+  text-decoration: underline;
+  font-size: 1.5em;
+  text-align: center; }
+
+/* -------------------- */
+/* ---form d'avis------ */
+/* -------------------- */
+/* -------------------- */
+/* -formulaire contact- */
+/* -------------------- */
+.contact_container {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  text-align: center;
+  flex-wrap: wrap; }
+
+form.contact {
+  padding: 1rem;
+  width: 100%;
+  margin: auto; }
+
+.contact__firstname,
+.contact__lastname,
+.contact__email,
+.contact__textarea {
+  border: 0.1rem solid gainsboro;
+  background-color: whitesmoke;
+  margin: 0.3rem;
+  padding: 10px;
+  text-align: start; }
+
+.contact__firstname,
+.contact__lastname {
+  width: 40%; }
+
+.contact__email,
+.contact__textarea {
+  width: 85%; }
+
+.contact__textarea {
+  height: 4rem; }
+
+/* ------bouton------- */
+.contact__input[type="submit"] {
+  color: whitesmoke;
+  background-color: #dd5405;
+  border: none;
+  font-size: 1rem;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 2rem;
+  margin: 1rem;
+  text-align: center; }
+
+.contact__input[type="submit"]:hover {
+  color: #dd5405;
+  background-color: whitesmoke;
+  border: 1px solid #dd5405; }
+
+/* ------------------- */
+/* ------footer------- */
+/* ------------------- */
+.footer {
+  display: flex;
+  background-color: black;
+  justify-content: space-between;
+  align-items: center; }
+
+.logo {
+  display: flex;
+  height: 8rem;
+  width: 9rem;
+  padding: 1rem;
+  color: whitesmoke; }
+
+.text {
+  display: flex;
+  color: whitesmoke;
+  font-size: 1rem;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Ruluko"; }
+
+.p {
+  display: flex; }
+
+.socialMedias {
+  display: flex; }
+
+.socialMedias img {
+  padding: 1rem;
+  height: 2rem;
+  width: 2rem;
+  padding-top: 7rem; }
+
+.shifumi-Inc {
+  color: rgba(88, 218, 235, 0.938);
+  text-decoration: underline;
+  font-size: 1.3rem; }
+
 .footer {
   display: flex;
   background-color: black;
@@ -99,12 +252,19 @@
   padding: 0;
   font-family: "Syne Mono", Verdana, Geneva, Tahoma, sans-serif; }
 
+/*global*/
 .bloc {
   position: relative;
   height: 100vh;
   width: 100%;
   overflow: hidden; }
+  @media screen and (max-width: 1024px) {
+    .bloc {
+      display: flex;
+      flex-direction: column;
+      overflow: auto; } }
 
+/*video*/
 .bloc video {
   position: absolute;
   min-width: 100%;
@@ -114,10 +274,18 @@
   transform: translate(-50%, -50%);
   z-index: -100; }
 
+/*logo*/
 img {
   padding: 1rem;
   width: 8.75rem; }
+  @media screen and (max-width: 1024px) {
+    img {
+      width: 8rem; } }
+  @media screen and (max-width: 480px) {
+    img {
+      width: 20vw; } }
 
+/*title*/
 .title_index {
   color: whitesmoke;
   display: flex;
@@ -125,19 +293,45 @@ img {
   justify-content: center;
   text-align: center;
   font-size: 7rem; }
+  @media screen and (max-width: 1024px) {
+    .title_index {
+      font-size: 5.8rem;
+      margin: auto;
+      align-items: center; } }
+  @media screen and (max-width: 480px) {
+    .title_index {
+      font-size: 17vw; } }
 
+/*section button*/
 .div_button {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 5rem; }
+  @media screen and (max-width: 1024px) {
+    .div_button {
+      font-size: 5rem;
+      margin: auto; } }
+  @media screen and (max-width: 480px) {
+    .div_button {
+      font-size: 10vw; } }
 
+/*style button*/
 button {
   background: whitesmoke;
   border-radius: 80px;
   border: 0.2rem solid purple;
   font-size: 2rem;
-  padding: 1rem 2rem 1rem 2rem; }
+  padding: 1rem 2rem; }
+  @media screen and (max-width: 1024px) {
+    button {
+      font-size: 1.5rem;
+      margin: auto; } }
+  @media screen and (max-width: 480px) {
+    button {
+      font-size: 5vw; } }
 
+/*text button*/
 a.buttons {
   text-decoration: none;
   color: purple; }

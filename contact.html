@@ -11,9 +11,9 @@
 </head>
 <body>
 
-    <header>
-        <nav class="navbar"> <!-- Barre de navigation! -->
-            <img src="assets/logo.png" id="navlogo"></img>
+    <header>        
+        <nav class="navbar"> 
+            <a href="index.html"><img src="assets/logo.png" id="navlogo"></img></a>
             <ul class="navbar__list">
                 <li><a href="home.html" class="navbar__list__link">Accueil</a></li>
                 <li><a href="history.html" class="navbar__list__link">L'histoire</a></li>
@@ -22,23 +22,127 @@
                 <li><a href="contact.html" class="navbar__list__link">Contact</a></li>
             </ul>
         </nav>
-        <img src="" alt="">
-        <h1></h1>
     </header>
 
+<!-- ------------------------- !-->
+<!--& background image & title !-->
+<!-- ------------------------- !-->
     <main>
-        <section>
-            <div1>
-                <h2></h2>
-                <p></p>
-            </div1>
-            <div2>
-                <h2></h2>
-                <p></p>
-            </div2>
+        <section class="contact-img">
+            <h1> CONTACT </h1>
+        </section>
+
+<!-- ------------------------- !-->
+<!-- avis des joueurs + photos !-->
+<!-- ------------------------- !-->
+    
+        <h2> Avis des joueurs </h2>
+
+
+        <section class="opinion_container">
+            <img src="assets/user_img.png" alt="user image" class ="user_img">
+            <a href="playeropinion.html" class="writeForm"> Écrire un avis </a>
+            <img src="assets/stars_img.png" alt="stars image" class="stars_img">
+        </section>
+
+        <section class="opinionPlayer">
+            <div class="opinionPlayer__first">
+                <img
+                    src="assets/nico_avis_img.png"
+                    alt="Nicolas"
+                    class="nico_img"
+                />  
+                <p>
+                    Joli site pour un jeu bien sympathique ! Les développeurs derrière cela sont vraiment des cracks !
+                    <span> Nicolas alias le CRACK </span>
+                </p>
+            </div>
+
+            <div class="opinionPlayer__second">
+                <img
+                    src="assets/lucas_avis_img.png"
+                    alt="Lucas"
+                    class="lucas_img"
+                /> 
+                <p>
+                    L'ordinateur est rusé mais j'ai décrypté son algorithme ... comme au loup garou d'ailleurs ! Donc je ne fais que gagner maintenant !
+                    <span> Lucas alias Pimousse </span>
+                </p>
+            </div>
+
+            <div class="opinionPlayer__third">
+                <img
+                    src="assets/remi_avis_img.png"
+                    alt="Rémi"
+                    class="remi_img"
+                /> 
+                <p>
+                    J'adore ce jeu et encore plus quand je gagne ! Mon secret : toujours jouer ciseaux !
+                    <span> Rémi alias Reminator </span>
+                </p>
+            </div>
+
+            <div class="opinionPlayer__fourth">
+                <img
+                    src="assets/geo_avis_img.png"
+                    alt="Geoffrey"
+                    class="geo_img"
+                /> 
+                <p>
+                    Ce jeu est vraiment indémodable ! Et ce site le met vraiment en valeur donc BRAVO !
+                    <span> Geoffrey alias Cho Frais </span>
+                </p>
+            </div>
+        </section>
+
+
+<!-- --------------------- !-->
+<!-- formulaire de contact !-->
+<!-- --------------------- !-->
+        <section class = "contact_container">
+
+            <h2> Formulaire de contact </h2>
+
+            <form class="contact">
+                
+                <input class="contact__firstname"
+                    type="text" 
+                    id="firstName" 
+                    name="fname" 
+                    placeholder="Votre nom" 
+                />
+
+                <input class="contact__lastname"
+                    type="text" 
+                    id="lastName" 
+                    name="lname" 
+                    placeholder="Votre prénom"
+                /> 
+
+                <input class="contact__email"
+                    type="email"
+                    id="email"
+                    name="Votre email"
+                    placeholder="name@shifumi.fr"
+                />
+            
+                <textarea class="contact__textarea"
+                    id="message" 
+                    name="message" 
+                    placeholder="Votre message"
+                ></textarea>
+
+                <input class="contact__input"
+                    type="submit" 
+                    value="Envoyer" 
+                />
+            </form>
         </section>
     </main>
 
+<!-- ----------------- !-->
+<!-- -----footer------ !-->
+<!-- ----------------- !-->
     <footer class="footer">
         <div class="logo"><img src="assets/logo.png" alt="logo"></img></div>
         <div class="text">
@@ -58,6 +162,5 @@
             <img src="assets/svgexport-25.svg"></img>
         </div>     
     </footer> 
-    
 </body>
 </html>

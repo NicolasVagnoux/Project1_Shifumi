@@ -7,11 +7,15 @@
 /*global*/
 .bloc {
   position: relative;
-  display: flex;
-  flex-direction: column;
   height: 100vh;
   width: 100%;
   overflow: hidden;
+
+  @media screen and (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+  }
 }
 
 /*video*/
@@ -29,6 +33,14 @@
 img {
   padding: 1rem;
   width: 8.75rem;
+
+  @media screen and (max-width: 1024px) {
+    width: 8rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 20vw;
+  }
 }
 
 /*title*/
@@ -39,7 +51,16 @@ img {
   justify-content: center;
   text-align: center;
   font-size: 7rem;
-  text-shadow: 3px 3px 3px purple;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 5.8rem;
+    margin: auto;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 17vw;
+  }
 }
 
 /*section button*/
@@ -48,6 +69,15 @@ img {
   justify-content: center;
   align-items: center;
   margin: 5rem;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 5rem;
+    margin: auto;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 10vw;
+  }
 }
 
 /*style button*/
@@ -56,76 +86,20 @@ button {
   border-radius: 80px;
   border: 0.2rem solid purple;
   font-size: 2rem;
-  padding: 1rem 2rem 1rem 2rem;
+  padding: 1rem 2rem;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 1.5rem;
+    margin: auto;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 5vw;
+  }
 }
 
 /*text button*/
 a.buttons {
   text-decoration: none;
   color: purple;
-}
-
-button:hover {
-  background-color: purple;
-}
-a.buttons:hover {
-  color: whitesmoke;
-}
-/*----------------------------------*/
-/*responsive design tablet*/
-/*----------------------------------*/
-@media screen and (max-width: 1024px) {
-  .bloc {
-    display: flex;
-    flex-direction: column;
-    overflow: auto;
-  }
-  .title_index {
-    font-size: 5.8rem;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-  }
-  .div_button {
-    align-items: center;
-    justify-content: center;
-    font-size: 5rem;
-    margin: auto;
-  }
-  button {
-    font-size: 1.5rem;
-    margin: auto;
-  }
-  img {
-    width: 8rem;
-  }
-}
-/*----------------------------------*/
-/*responsive design mobile*/
-/*----------------------------------*/
-@media screen and (max-width: 480px) {
-  .bloc {
-    display: flex;
-    flex-direction: column;
-    overflow: auto;
-  }
-  .title_index {
-    font-size: 17vw;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-  }
-  .div_button {
-    align-items: center;
-    justify-content: center;
-    font-size: 10vw;
-    margin: auto;
-  }
-  button {
-    font-size: 5vw;
-    margin: auto;
-  }
-  img {
-    width: 20vw;
-  }
 }
