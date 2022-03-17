@@ -1,19 +1,16 @@
+/* Barre de navigation */
+
 nav {
     padding: 16px;
     display: grid;
     width: 100%;
     grid-template-columns: 140px 1fr;
     position: fixed;
-    border: 2px solid black; /*temporaire*/
     background-color: rgba(255, 255, 255, 0);
 }
 
-.nav_scroll {
-    background-color: black;
-}
-
 nav img {
-    width: 140px;
+    width: 100px;
 }
 
 nav ul {
@@ -25,9 +22,10 @@ nav ul {
 
 nav ul li {
     list-style: none;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-family: 'Ruluko';
     text-align: center;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
 }
 
 nav ul li a {
@@ -36,5 +34,5 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: black;
+    text-decoration: underline;
 }

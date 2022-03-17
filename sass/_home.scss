@@ -1,0 +1,29 @@
+.home-img {
+    height: 100vh;
+    background-image: url('../assets/zen.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-img h1 {
+    font-size: 10vw;
+    font-family: 'Proza Libre';
+    font-weight: lighter;
+    letter-spacing: 8px;
+    color: white;
+    text-shadow: 4px 4px 2px black;
+}
+
+.home-img p {
+    width: 90%;
+    text-align: center;
+    font-family: 'Ruluko';
+    font-size: 2vw;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
