@@ -147,7 +147,7 @@ a.buttons {
   text-decoration: none;
   color: purple; }
 
-header {
+.headerRules {
   background-image: url("../assets/rules_img.jpeg");
   height: 100vh;
   background-size: cover; }
