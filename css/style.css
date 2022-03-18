@@ -5,6 +5,190 @@
   margin: 0;
   scroll-behavior: smooth; }
 
+/* ------------------- */
+/*----image de fond----*/
+/* ------------------- */
+.contact-img {
+  height: 100vh;
+  background-image: url("../assets/contact_img_background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.contact-img h1 {
+  font-size: 10vw;
+  font-family: "Proza Libre";
+  font-weight: lighter;
+  letter-spacing: 8px;
+  color: white;
+  text-shadow: 4px 4px 2px black; }
+
+h2 {
+  color: #dd5405;
+  text-decoration: underline;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 1rem; }
+
+/* ---form d'avis------ */
+.formOpinion__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .formOpinion__container div {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start; }
+  .formOpinion__container__userImg {
+    display: flex;
+    align-items: center;
+    width: 3rem;
+    height: 3rem; }
+    .formOpinion__container__userImg__write {
+      display: flex;
+      align-items: center; }
+      .formOpinion__container__userImg__write__starsImg {
+        width: 5rem;
+        height: 5rem; }
+
+/* --AVIS DES JOUEURS-- */
+.opinion {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px 10px;
+  grid-template-areas: "opinion__img-1 opinion__art-1 opinion__art-2 opinion__img-2" "opinion__img-3 opinion__art-3 opinion__art-4 opinion__img-4";
+  align-content: stretch;
+  justify-items: stretch;
+  align-items: center;
+  margin-top: 4rem; }
+
+.photo_joueurs {
+  height: 7rem;
+  width: 7rem; }
+
+.opinionSpan {
+  color: #dd5405;
+  display: grid;
+  margin-top: 1rem; }
+
+.opinion__img-1 {
+  grid-area: opinion__img-1;
+  display: grid;
+  align-items: center;
+  justify-content: flex-end; }
+
+.opinion__art-1 {
+  grid-area: opinion__art-1;
+  background-color: gainsboro;
+  display: grid;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: start;
+  padding: 1rem;
+  height: 6rem;
+  width: 30rem; }
+
+.opinion__art-2 {
+  grid-area: opinion__art-2;
+  background-color: gainsboro;
+  display: grid;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: end;
+  padding: 1rem;
+  height: 6rem;
+  width: 30rem; }
+
+.opinion__img-2 {
+  grid-area: opinion__img-2;
+  display: grid;
+  align-items: center;
+  justify-content: flex-start; }
+
+.opinion__img-3 {
+  grid-area: opinion__img-3;
+  display: grid;
+  align-items: flex-end;
+  justify-content: flex-end; }
+
+.opinion__art-3 {
+  grid-area: opinion__art-3;
+  background-color: gainsboro;
+  display: grid;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: start;
+  padding: 1rem;
+  width: 30rem;
+  height: 6rem; }
+
+.opinion__art-4 {
+  grid-area: opinion__art-4;
+  background-color: gainsboro;
+  display: grid;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: end;
+  padding: 1rem;
+  height: 6rem;
+  width: 30rem; }
+
+.opinion__img-4 {
+  grid-area: opinion__img-4;
+  display: grid;
+  align-items: flex-start;
+  justify-content: flex-start; }
+
+/* -formulaire contact- */
+.contact__formContainer {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  margin-top: 4rem;
+  text-align: center;
+  flex-wrap: wrap; }
+  .contact__formContainer__form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 100%;
+    align-items: center; }
+    .contact__formContainer__form div {
+      display: flex;
+      width: 100%;
+      justify-content: center; }
+    .contact__formContainer__form__input {
+      box-sizing: border-box;
+      border: 0.1rem solid gainsboro;
+      background-color: whitesmoke;
+      padding: 0.3rem;
+      text-align: start;
+      width: 45%; }
+      .contact__formContainer__form__input--big {
+        width: 90%; }
+      .contact__formContainer__form__input--bigger {
+        height: 4rem;
+        width: 90%; }
+    .contact__formContainer__form__button {
+      color: whitesmoke;
+      background-color: #dd5405;
+      border: none;
+      font-size: 1rem;
+      width: 10rem;
+      height: 3rem;
+      border-radius: 2rem;
+      margin: 1rem;
+      text-align: center; }
+      .contact__formContainer__form__button:hover {
+        color: #dd5405;
+        background-color: whitesmoke;
+        border: 1px solid #dd5405; }
+
 .footer {
   display: flex;
   background-color: #050505;
@@ -124,7 +308,7 @@
         font-size: 1em;
         font-weight: 400; }
 
-.home-img {
+.homeImg {
   height: 100vh;
   background-image: url("../assets/zen2.jpg");
   background-size: cover;
@@ -150,6 +334,8 @@
     text-shadow: 2px 2px 4px black, -2px -2px 4px black; }
   .homeImg__arrow {
     width: 50px; }
+    .homeImg__arrow:hover {
+      transform: scale(1.1); }
 
 .homeGrid {
   margin: 5rem 10%;
@@ -204,12 +390,19 @@
   padding: 0;
   font-family: "Syne Mono", Verdana, Geneva, Tahoma, sans-serif; }
 
+/*global*/
 .bloc {
   position: relative;
   height: 100vh;
   width: 100%;
   overflow: hidden; }
+  @media screen and (max-width: 1024px) {
+    .bloc {
+      display: flex;
+      flex-direction: column;
+      overflow: auto; } }
 
+/*video*/
 .bloc video {
   position: absolute;
   min-width: 100%;
@@ -219,10 +412,18 @@
   transform: translate(-50%, -50%);
   z-index: -100; }
 
+/*logo*/
 img {
   padding: 1rem;
   width: 8.75rem; }
+  @media screen and (max-width: 1024px) {
+    img {
+      width: 8rem; } }
+  @media screen and (max-width: 480px) {
+    img {
+      width: 20vw; } }
 
+/*title*/
 .title_index {
   color: whitesmoke;
   display: flex;
@@ -230,19 +431,45 @@ img {
   justify-content: center;
   text-align: center;
   font-size: 7rem; }
+  @media screen and (max-width: 1024px) {
+    .title_index {
+      font-size: 5.8rem;
+      margin: auto;
+      align-items: center; } }
+  @media screen and (max-width: 480px) {
+    .title_index {
+      font-size: 17vw; } }
 
+/*section button*/
 .div_button {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 5rem; }
+  @media screen and (max-width: 1024px) {
+    .div_button {
+      font-size: 5rem;
+      margin: auto; } }
+  @media screen and (max-width: 480px) {
+    .div_button {
+      font-size: 10vw; } }
 
+/*style button*/
 button {
   background: whitesmoke;
   border-radius: 80px;
   border: 0.2rem solid purple;
   font-size: 2rem;
-  padding: 1rem 2rem 1rem 2rem; }
+  padding: 1rem 2rem; }
+  @media screen and (max-width: 1024px) {
+    button {
+      font-size: 1.5rem;
+      margin: auto; } }
+  @media screen and (max-width: 480px) {
+    button {
+      font-size: 5vw; } }
 
+/*text button*/
 a.buttons {
   text-decoration: none;
   color: purple; }
