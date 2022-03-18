@@ -1,7 +1,3 @@
-.bodyHistory{    
-    box-sizing: border-box;
-    font-family: $font-text;
-}
 
 .titleHistory{
     height: 100vh;
@@ -9,10 +5,16 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+}
+
+.h1History{
+    color: $white-color;
+    font-family: $font-title;
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 20rem;
+    font-size: 8vw;
+    text-shadow: 5px 5px 5px black;
 }
 
 .mainHistory{    
@@ -21,14 +23,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: whitesmoke;
+    background: $white-color;
 }
 
 .slideHistoryAll{
-    position: relative;
-    background: whitesmoke;
-    width: 80%;
-    min-height: 80%;
+    position:relative;
+    background: $white-color;
+    width:100%;
+    min-height: 60%;
+    display: flex;
     margin: auto;
     overflow: hidden;
 
