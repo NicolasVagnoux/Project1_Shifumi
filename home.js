@@ -11,7 +11,7 @@ function myScroll() {
     navBar.style.backgroundColor = "rgba(0, 0, 0, 0.75)";
     logoImg.style.width = "60px";
     navText.style.fontSize = "1.6rem";
-    navBar.style.padding = "0px";
+    navBar.style.padding = "10px";
   } else {
     navBar.style.backgroundColor = "rgba(255, 255, 255, 0)";
     logoImg.style.width = "100px";
