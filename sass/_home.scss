@@ -26,6 +26,9 @@
     }
     &__arrow {
         width: 50px;
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 }
 
