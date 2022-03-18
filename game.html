@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Game</title>
     <style></style>
     <script src=""></script>
 </head>
 <body>
 
-    <header>
+    <header class="gameHeader">
         <nav class="navbar"> <!-- Barre de navigation! -->
             <img src="assets/logo.png" id="navlogo"></img>
             <ul class="navbar__list">
@@ -22,11 +22,26 @@
                 <li><a href="contact.html" class="navbar__list__link">Contact</a></li>
             </ul>
         </nav>
-        <img src="" alt="">
-        <h1></h1>
+        <h1 class="pageTitle">SHI FU MI</h1> 
     </header>
 
-    <main></main>
+    <section class="game">
+        <div class="game__score">
+            <div class="game__score__player">12</div>
+            <img src="assets/slash.png" class="game__score_slashBar"></img>
+            <div class="game__score__computer">34</div>
+        </div>
+        <div class="game__result">
+            <img class="game__result__player" id="playerArea"></img>
+            <div class="game__result__vs"></div>
+            <img class="game__result__computer" id="computerArea"></img>></div>
+        </div>
+        <div class="game__button">
+            <button class="game__button__1">Pierre</button>
+            <button class="game__button__2">Feuille</button>
+            <button class="game__button__3">Ciseaux</button>
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="footer__logo"><img src="assets/logo.png" alt="logo"></img></div>

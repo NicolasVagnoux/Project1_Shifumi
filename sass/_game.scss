@@ -1,0 +1,73 @@
+.gameHeader{
+    background-image: url("../assets/game.jpeg");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+.game{
+    display: flex;
+        height: 90vh;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 2rem;
+        background-color: gray;
+        margin: 5rem;
+        border: 1px solid black;
+    &__score{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        &__player, &__computer{
+            display: flex;
+            background-image: url("../assets/craie.jpeg");
+            background-size: cover;
+            font-size: 3rem;
+            color: $white-color;
+            text-shadow: $text-shadow;
+            padding: 3rem 4rem 3rem 4rem ;
+            margin: 0 6rem 0 6rem;
+            border-radius: .5rem;
+        }
+        &__slashBar{
+            display: flex ;
+        }
+    }
+    &__result{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        &__player, &__computer{
+            display: flex;
+            background-color: rgba(122, 60, 60, 0.476);
+            padding: 6rem 6rem 6rem 6rem ;
+            margin: 0 8rem 0 8rem;
+            border-radius: 100%;
+        }
+        &__vs{
+            display: flex;
+            background-image: url("../assets/fighting.png");
+            padding: 6rem 6rem 6rem 6rem;
+            background-size: cover;
+        }
+    }
+    &__button{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        &__1, &__2, &__3{
+            margin: 2rem 4rem 2rem 4rem;
+            background-color:rgba(158, 121, 42, 0.942);
+            border-color: black;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+
+    }
+}
