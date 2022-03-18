@@ -388,8 +388,6 @@ h2 {
     grid-area: 3 / 2 / 4 / 4; }
 
 * {
-  margin: 0;
-  padding: 0;
   font-family: "Syne Mono", Verdana, Geneva, Tahoma, sans-serif; }
 
 /*global*/
@@ -403,27 +401,23 @@ h2 {
       display: flex;
       flex-direction: column;
       overflow: auto; } }
-
-/*video*/
-.bloc video {
-  position: absolute;
-  min-width: 100%;
-  min-height: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -100; }
-
-/*logo*/
-img {
-  padding: 1rem;
-  width: 8.75rem; }
-  @media screen and (max-width: 1024px) {
-    img {
-      width: 8rem; } }
-  @media screen and (max-width: 480px) {
-    img {
-      width: 20vw; } }
+  .bloc video {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -100; }
+  .bloc a img {
+    padding: 1rem;
+    width: 8.75rem; }
+    @media screen and (max-width: 1024px) {
+      .bloc a img {
+        width: 8rem; } }
+    @media screen and (max-width: 480px) {
+      .bloc a img {
+        width: 20vw; } }
 
 /*title*/
 .title_index {
@@ -455,26 +449,22 @@ img {
   @media screen and (max-width: 480px) {
     .div_button {
       font-size: 10vw; } }
-
-/*style button*/
-button {
-  background: whitesmoke;
-  border-radius: 80px;
-  border: 0.2rem solid purple;
-  font-size: 2rem;
-  padding: 1rem 2rem; }
-  @media screen and (max-width: 1024px) {
-    button {
-      font-size: 1.5rem;
-      margin: auto; } }
-  @media screen and (max-width: 480px) {
-    button {
-      font-size: 5vw; } }
-
-/*text button*/
-a.buttons {
-  text-decoration: none;
-  color: purple; }
+  .div_button button {
+    background: whitesmoke;
+    border-radius: 80px;
+    border: 0.2rem solid purple;
+    font-size: 2rem;
+    padding: 1rem 2rem; }
+    @media screen and (max-width: 1024px) {
+      .div_button button {
+        font-size: 1.5rem;
+        margin: auto; } }
+    @media screen and (max-width: 480px) {
+      .div_button button {
+        font-size: 5vw; } }
+  .div_button a {
+    text-decoration: none;
+    color: purple; }
 
 .headerRules {
   background-image: url("../assets/rules_img.jpeg");
