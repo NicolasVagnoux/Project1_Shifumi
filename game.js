@@ -6,28 +6,23 @@ function shifumi() {
     // Generating a random number which will be transformed in a sign.
     let randomNumber = 0;
     randomNumber = getRandomInt(3);
-
+    const playerSign = document.getElementBy("playerArea");
+    document.getElementsByClassName("game__result__computer").scr = url("assets/FeuilleDroite.png");
 
     // Transforming number in sign.
-    let sign = "";
-    switch (randomNumber){
-        case 1: 
-            sign = "Pierre";
-            break;  
-        case 2: 
-            sign = "Feuille";
-            break;  
-        case 3: 
-            sign = "Ciseaux";
-            break;
-        default:
-            sign = "Not working"
-            break;
-    }
-
-    const playerSign = document.getElementById("playerArea");
-    const computerSign = document.getElementById("computerArea");
-
+    // switch (randomNumber){
+    //     case 1: 
+    //         computerSign.scr = url("../assets/PierreDroite.png");
+    //         break;  
+    //     case 2: 
+    //         computerSign.scr = url("../assets/CiseauxDroite.png");
+    //         break;  
+    //     case 3: 
+    //         computerSign.scr = url("../assets/FeuilleDroite.png");
+    //         break;
+    //     default:
+    //         computerSign = "Not working"
+    //         break;
+    // }
 }
-
 shifumi();

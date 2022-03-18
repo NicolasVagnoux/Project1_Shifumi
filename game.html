@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Game</title>
     <style></style>
-    <script src=""></script>
+    <script src="game.js"></script>
 </head>
 <body>
 
@@ -32,9 +32,9 @@
             <div class="game__score__computer">34</div>
         </div>
         <div class="game__result">
-            <img class="game__result__player" id="playerArea"></img>
+            <img src="assets/PierreGauche.png"  class="game__result__player" id="playerArea"></img>
             <div class="game__result__vs"></div>
-            <img class="game__result__computer" id="computerArea"></img>></div>
+            <img src="assets/PierreDroite.png" class="game__result__computer" id="computerArea"></img>
         </div>
         <div class="game__button">
             <button class="game__button__1">Pierre</button>
@@ -62,6 +62,32 @@
             <img src="assets/svgexport-25.svg"></img>
         </div>
     </footer> 
-    
+    <script>
+        function getRandomInt(max) {
+             return Math.floor(Math.random() * max);}
+
+        function shifumi() {
+            // Generating a random number which will be transformed in a sign.
+            let randomNumber = 0;
+            randomNumber = getRandomInt(3);
+            document.getElementsById("computerArea").scr = "assets/FeuilleDroite.png";
+            // Transforming number in sign.
+            // switch (randomNumber){
+            //     case 1: 
+            //         computerSign.scr = url("../assets/PierreDroite.png");
+            //         break;  
+            //     case 2: 
+            //         computerSign.scr = url("../assets/CiseauxDroite.png");
+            //         break;  
+            //     case 3: 
+            //         computerSign.scr = url("../assets/FeuilleDroite.png");
+            //         break;
+            //     default:
+            //         computerSign = "Not working"
+            //         break;
+            // }
+        }
+        shifumi(); 
+    </script>
 </body>
 </html>
