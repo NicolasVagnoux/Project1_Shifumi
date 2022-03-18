@@ -98,88 +98,78 @@
   font-family: "Syne Mono", Verdana, Geneva, Tahoma, sans-serif; }
 
 /*global*/
-.bloc {
+.index {
   position: relative;
   height: 100vh;
   width: 100%;
   overflow: hidden; }
   @media screen and (max-width: 1024px) {
-    .bloc {
+    .index {
       display: flex;
       flex-direction: column;
-      overflow: auto; } }
-
-/*video*/
-.bloc video {
-  position: absolute;
-  min-width: 100%;
-  min-height: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -100; }
-
-/*logo*/
-img {
-  padding: 1rem;
-  width: 8.75rem; }
+      overflow: auto; }
+      .index__logo {
+        padding: 1rem;
+        width: 8.75rem; } }
+    @media screen and (max-width: 1024px) and (max-width: 1024px) {
+      .index__logo {
+        width: 8rem; } }
+    @media screen and (max-width: 1024px) and (max-width: 480px) {
+      .index__logo {
+        width: 20vw; } }
   @media screen and (max-width: 1024px) {
-    img {
-      width: 8rem; } }
-  @media screen and (max-width: 480px) {
-    img {
-      width: 20vw; } }
-
-/*title*/
-.title_index {
-  color: whitesmoke;
-  display: flex;
-  align-items: justify;
-  justify-content: center;
-  text-align: center;
-  font-size: 7rem; }
+        .index__logo__video {
+          position: absolute;
+          min-width: 100%;
+          min-height: 100%;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: -100; }
+          .index__logo__video__title {
+            color: whitesmoke;
+            display: flex;
+            align-items: justify;
+            justify-content: center;
+            text-align: center;
+            font-size: 7rem; } }
+        @media screen and (max-width: 1024px) and (max-width: 1024px) {
+          .index__logo__video__title {
+            font-size: 5.8rem;
+            margin: auto;
+            align-items: center; } }
+        @media screen and (max-width: 1024px) and (max-width: 480px) {
+          .index__logo__video__title {
+            font-size: 17vw; } }
   @media screen and (max-width: 1024px) {
-    .title_index {
-      font-size: 5.8rem;
-      margin: auto;
-      align-items: center; } }
-  @media screen and (max-width: 480px) {
-    .title_index {
-      font-size: 17vw; } }
-
-/*section button*/
-.div_button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 5rem; }
+            .index__logo__video__title__buttonContainer {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin: 5rem; } }
+          @media screen and (max-width: 1024px) and (max-width: 1024px) {
+            .index__logo__video__title__buttonContainer {
+              font-size: 5rem;
+              margin: auto; } }
+          @media screen and (max-width: 1024px) and (max-width: 480px) {
+            .index__logo__video__title__buttonContainer {
+              font-size: 10vw; } }
   @media screen and (max-width: 1024px) {
-    .div_button {
-      font-size: 5rem;
-      margin: auto; } }
-  @media screen and (max-width: 480px) {
-    .div_button {
-      font-size: 10vw; } }
-
-/*style button*/
-button {
-  background: whitesmoke;
-  border-radius: 80px;
-  border: 0.2rem solid purple;
-  font-size: 2rem;
-  padding: 1rem 2rem; }
-  @media screen and (max-width: 1024px) {
-    button {
-      font-size: 1.5rem;
-      margin: auto; } }
-  @media screen and (max-width: 480px) {
-    button {
-      font-size: 5vw; } }
-
-/*text button*/
-a.buttons {
-  text-decoration: none;
-  color: purple; }
+              .index__logo__video__title__buttonContainer__button {
+                background: whitesmoke;
+                border-radius: 80px;
+                border: 0.2rem solid purple;
+                font-size: 2rem;
+                padding: 1rem 2rem;
+                text-decoration: none;
+                color: purple; } }
+            @media screen and (max-width: 1024px) and (max-width: 1024px) {
+              .index__logo__video__title__buttonContainer__button {
+                font-size: 1.5rem;
+                margin: auto; } }
+            @media screen and (max-width: 1024px) and (max-width: 480px) {
+              .index__logo__video__title__buttonContainer__button {
+                font-size: 5vw; } }
 
 .headerRules {
   background-image: url("../assets/rules_img.jpeg");
