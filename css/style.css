@@ -308,7 +308,7 @@ h2 {
         font-size: 1em;
         font-weight: 400; }
 
-.home-img {
+.homeImg {
   height: 100vh;
   background-image: url("../assets/zen2.jpg");
   background-size: cover;
@@ -334,6 +334,8 @@ h2 {
     text-shadow: 2px 2px 4px black, -2px -2px 4px black; }
   .homeImg__arrow {
     width: 50px; }
+    .homeImg__arrow:hover {
+      transform: scale(1.1); }
 
 .homeGrid {
   margin: 5rem 10%;
