@@ -61,7 +61,7 @@ h2 {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 10px 10px;
-  grid-template-areas: "opinion__img-1 opinion__art-1 opinion__art-2 opinion__img-2" "opinion__img-3 opinion__art-3 opinion__art-4 opinion__img-4";
+  grid-template-areas: "opinion__img-1 opinion__art-1 opinion__art-2 opinion__img-2" "opinion__img-3 opinion__art-3 opinion__art-4 opinion__img-4";
   align-content: stretch;
   justify-items: stretch;
   align-items: center;
@@ -252,20 +252,21 @@ h2 {
       .navbar__list__link:hover {
         text-decoration: underline; }
 
-.bodyHistory {
-  box-sizing: border-box;
-  font-family: "Ruluko"; }
-
 .titleHistory {
   height: 100vh;
   background-image: url("../assets/history_img_background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  background-position: center; }
+
+.h1History {
+  color: whitesmoke;
+  font-family: "Proza Libre";
+  font-weight: lighter;
+  text-align: center;
+  padding-top: 20rem;
+  font-size: 8vw;
+  text-shadow: 5px 5px 5px black; }
 
 .mainHistory {
   height: 100vh;
@@ -278,8 +279,9 @@ h2 {
 .slideHistoryAll {
   position: relative;
   background: whitesmoke;
-  width: 80%;
-  min-height: 80%;
+  width: 100%;
+  min-height: 60%;
+  display: flex;
   margin: auto;
   overflow: hidden; }
   .slideHistoryAll .slideHistory {
@@ -527,7 +529,7 @@ body {
     text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87;
     border-radius: 11px;
     background: linear-gradient(145deg, #b3b2b2, #d5d4d4);
-    box-shadow: 12px 12px 24px #a9a8a8, -12px -12px 24px #e5e4e4;
+    box-shadow: 12px 12px 24px #a9a8a8, -12px -12px 24px #e5e4e4;
     min-height: 12rem; }
   .spinOff__grid__1 {
     grid-column: 1;
