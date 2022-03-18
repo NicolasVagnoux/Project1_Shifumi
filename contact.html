@@ -32,107 +32,131 @@
             <h1> CONTACT </h1>
         </section>
 
-<!-- ------------------------- !-->
-<!-- avis des joueurs + photos !-->
-<!-- ------------------------- !-->
-    
+<!-- ----formulaire avis------ !-->
+<section class="formOpinion__container">
+    <div>
+        <img src="assets/user_img.png" alt="user image" class ="formOpinion__container__userImg">
+        <a href="playeropinion.html" class="formOpinion__container__userImg__write"> Écrire un avis </a>
+    </div>
+<!-- <img src="assets/stars_img.png" alt="stars image" class="formOpinion__container__userImg__write__starsImg"> -->
+</section>
+
+
+
         <h2> Avis des joueurs </h2>
+<!-- avis des joueurs + photos !-->
 
+<section class="opinion">
+<div class="opinion__img-1">
+    <img
+            src="assets/nico_avis_img.png"
+            alt="Nicolas"
+            class="photo_joueurs"
+    />     
+</div>
 
-        <section class="opinion_container">
-            <img src="assets/user_img.png" alt="user image" class ="user_img">
-            <a href="playeropinion.html" class="writeForm"> Écrire un avis </a>
-            <img src="assets/stars_img.png" alt="stars image" class="stars_img">
-        </section>
+<div class="opinion__img-2">
+    <img
+            src="assets/lucas_avis_img.png"
+            alt="Lucas"
+            class="photo_joueurs"
+     /> 
+</div>
 
-        <section class="opinionPlayer">
-            <div class="opinionPlayer__first">
-                <img
-                    src="assets/nico_avis_img.png"
-                    alt="Nicolas"
-                    class="nico_img"
-                />  
-                <p>
-                    Joli site pour un jeu bien sympathique ! Les développeurs derrière cela sont vraiment des cracks !
-                    <span> Nicolas alias le CRACK </span>
-                </p>
-            </div>
+<div class="opinion__img-3">
+    <img
+            src="assets/remi_avis_img.png"
+            alt="Rémi"
+            class="photo_joueurs"
+    /> 
+</div>
 
-            <div class="opinionPlayer__second">
-                <img
-                    src="assets/lucas_avis_img.png"
-                    alt="Lucas"
-                    class="lucas_img"
-                /> 
-                <p>
-                    L'ordinateur est rusé mais j'ai décrypté son algorithme ... comme au loup garou d'ailleurs ! Donc je ne fais que gagner maintenant !
-                    <span> Lucas alias Pimousse </span>
-                </p>
-            </div>
+</div class="opinion__img-4">
+    <img
+            src="assets/geo_avis_img.png"
+            alt="Geoffrey"
+            class="photo_joueurs"
+    />
+</div>
 
-            <div class="opinionPlayer__third">
-                <img
-                    src="assets/remi_avis_img.png"
-                    alt="Rémi"
-                    class="remi_img"
-                /> 
-                <p>
-                    J'adore ce jeu et encore plus quand je gagne ! Mon secret : toujours jouer ciseaux !
-                    <span> Rémi alias Reminator </span>
-                </p>
-            </div>
+<div class="opinion__art-1">
+        <p>
+            Joli site pour un jeu bien sympathique ! <br>
+            Les développeurs derrière cela sont vraiment des cracks !
+            <span class="opinionSpan"> Nicolas alias le CRACK </span>
+        </p>
+</div>
 
-            <div class="opinionPlayer__fourth">
-                <img
-                    src="assets/geo_avis_img.png"
-                    alt="Geoffrey"
-                    class="geo_img"
-                /> 
-                <p>
-                    Ce jeu est vraiment indémodable ! Et ce site le met vraiment en valeur donc BRAVO !
-                    <span> Geoffrey alias Cho Frais </span>
-                </p>
-            </div>
-        </section>
+<div class="opinion__art-2">
+        <p>
+            L'ordinateur est rusé mais j'ai décrypté son algorithme ... 
+            Comme au loup garou d'ailleurs ! <br>
+            Donc je ne fais que gagner maintenant !
+            <span class="opinionSpan"> Lucas alias Pimousse </span>
+        </p>
+    </div>
+    
+    
+    
+<div class="opinion__art-3">
+    <p>
+        J'adore ce jeu et encore plus quand je gagne ! <br>
+        Mon secret : toujours jouer ciseaux !
+        <span class="opinionSpan"> Rémi alias Reminator </span>
+    </p>
+
+</div>
+    
+<div class="opinion__art-4">
+    <p>
+        Ce jeu est vraiment indémodable ! <br>
+        Et ce site le met vraiment en valeur donc BRAVO !
+    
+        <span class="opinionSpan" > Geoffrey alias Cho Frais </span>
+    </p>
+</div>
+</section>
 
 
 <!-- --------------------- !-->
 <!-- formulaire de contact !-->
 <!-- --------------------- !-->
-        <section class = "contact_container">
+        <section class = "contact__formContainer">
 
             <h2> Formulaire de contact </h2>
 
-            <form class="contact">
+            <form class="contact__formContainer__form">
                 
-                <input class="contact__firstname"
+            <div>
+                <input class="contact__formContainer__form__input"
                     type="text" 
                     id="firstName" 
                     name="fname" 
                     placeholder="Votre nom" 
                 />
 
-                <input class="contact__lastname"
+                <input class="contact__formContainer__form__input"
                     type="text" 
                     id="lastName" 
                     name="lname" 
                     placeholder="Votre prénom"
                 /> 
+            </div>
 
-                <input class="contact__email"
+                <input class="contact__formContainer__form__input contact__formContainer__form__input--big"
                     type="email"
                     id="email"
                     name="Votre email"
                     placeholder="name@shifumi.fr"
                 />
             
-                <textarea class="contact__textarea"
+                <textarea class="contact__formContainer__form__input contact__formContainer__form__input--bigger"
                     id="message" 
                     name="message" 
                     placeholder="Votre message"
                 ></textarea>
 
-                <input class="contact__input"
+                <input class="contact__formContainer__form__button"
                     type="submit" 
                     value="Envoyer" 
                 />

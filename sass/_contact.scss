@@ -1,36 +1,4 @@
 /* ------------------- */
-/* Barre de navigation */
-/* ------------------- */
-.navbar {
-  padding: 16px;
-  display: grid;
-  width: 100%;
-  grid-template-columns: 140px 1fr;
-  position: fixed;
-  background-color: rgba(255, 255, 255, 0);
-  img {
-    width: 100px;
-  }
-  &__list {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0px 24px 0px 24px;
-    list-style: none;
-    font-size: 2rem;
-    text-align: center;
-    text-shadow: 2px 2px 2px rgb(0, 0, 0);
-    &__link {
-      font-family: $font-text;
-      text-decoration: none;
-      color: white;
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
-}
-/* ------------------- */
 /*----image de fond----*/
 /* ------------------- */
 .contact-img {
@@ -59,135 +27,180 @@ h2 {
   text-decoration: underline;
   font-size: 1.5em;
   text-align: center;
+  margin: 1rem;
 }
 
-/* -------------------- */
 /* ---form d'avis------ */
-/* -------------------- */
-.opinion_container {
+.formOpinion__container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: red;
-  justify-content: center;
+  div {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  &__userImg {
+    display: flex;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    &__write {
+      display: flex;
+      align-items: center;
+      &__starsImg {
+        width: 5rem;
+        height: 5rem;
+      }
+    }
+  }
+}
+
+/* --AVIS DES JOUEURS-- */
+.opinion {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px 10px;
+  grid-template-areas:
+    "opinion__img-1 opinion__art-1 opinion__art-2 opinion__img-2"
+    "opinion__img-3 opinion__art-3 opinion__art-4 opinion__img-4";
+  align-content: stretch;
+  justify-items: stretch;
   align-items: center;
+  margin-top: 4rem;
 }
 
-.user_img {
-  width: 30px;
-  height: 30px;
-  justify-content: center;
+.photo_joueurs {
+  height: 7rem;
+  width: 7rem;
+}
+
+.opinionSpan {
+  color: #dd5405;
+  display: grid;
+  margin-top: 1rem;
+}
+
+.opinion__img-1 {
+  grid-area: opinion__img-1;
+  display: grid;
   align-items: center;
+  justify-content: flex-end;
+}
+.opinion__art-1 {
+  grid-area: opinion__art-1;
+  background-color: gainsboro;
+  display: grid;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: start;
+  padding: 1rem;
+  height: 6rem;
+  width: 30rem;
+}
+.opinion__art-2 {
+  grid-area: opinion__art-2;
+  background-color: gainsboro;
+  display: grid;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: end;
+  padding: 1rem;
+  height: 6rem;
+  width: 30rem;
+}
+.opinion__img-2 {
+  grid-area: opinion__img-2;
+  display: grid;
+  align-items: center;
+  justify-content: flex-start;
+}
+.opinion__img-3 {
+  grid-area: opinion__img-3;
+  display: grid;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.opinion__art-3 {
+  grid-area: opinion__art-3;
+  background-color: gainsboro;
+  display: grid;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: start;
+  padding: 1rem;
+  width: 30rem;
+  height: 6rem;
+}
+.opinion__art-4 {
+  grid-area: opinion__art-4;
+  background-color: gainsboro;
+  display: grid;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: end;
+  padding: 1rem;
+  height: 6rem;
+  width: 30rem;
+}
+.opinion__img-4 {
+  grid-area: opinion__img-4;
+  display: grid;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
-.stars_img {
-}
-
-/* -------------------- */
 /* -formulaire contact- */
-/* -------------------- */
 
-.contact_container {
+.contact__formContainer {
   display: flex;
   flex-direction: column;
   font-size: 1.2rem;
+  margin-top: 4rem;
   text-align: center;
   flex-wrap: wrap;
-}
-
-form.contact {
-  padding: 1rem;
-  width: 100%;
-  margin: auto;
-}
-
-.contact__firstname,
-.contact__lastname,
-.contact__email,
-.contact__textarea {
-  border: 0.1rem solid gainsboro;
-  background-color: whitesmoke;
-  text-align: start;
-}
-
-.contact__firstname,
-.contact__lastname {
-  width: 45%;
-}
-
-.contact__email,
-.contact__textarea {
-  width: 90%;
-}
-
-.contact__textarea {
-  height: 4rem;
-}
-
-/* ------bouton------- */
-.contact__input[type="submit"] {
-  color: whitesmoke;
-  background-color: #dd5405;
-  border: none;
-  font-size: 1rem;
-  width: 10rem;
-  height: 3rem;
-  border-radius: 2rem;
-  margin: 1rem;
-  text-align: center;
-}
-
-.contact__input[type="submit"]:hover {
-  color: #dd5405;
-  background-color: whitesmoke;
-  border: 1px solid #dd5405;
-}
-
-/* ------------------- */
-/* ------footer------- */
-/* ------------------- */
-
-.footer {
-  display: flex;
-  background-color: black;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  display: flex;
-  height: 8rem;
-  width: 9rem;
-  padding: 1rem;
-  color: whitesmoke;
-}
-
-.text {
-  display: flex;
-  color: hsl(0, 0%, 96%);
-  font-size: 1rem;
-  flex-direction: column;
-  text-align: center;
-  font-family: "Ruluko";
-}
-
-.p {
-  display: flex;
-}
-
-.socialMedias {
-  display: flex;
-}
-
-.socialMedias img {
-  padding: 1rem;
-  height: 2rem;
-  width: 2rem;
-  padding-top: 7rem;
-}
-
-.shifumi-Inc {
-  color: rgba(88, 218, 235, 0.938);
-  text-decoration: underline;
-  font-size: 1.3rem;
+  &__form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 100%;
+    align-items: center;
+    div {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
+    &__input {
+      box-sizing: border-box;
+      border: 0.1rem solid gainsboro;
+      background-color: whitesmoke;
+      padding: 0.3rem;
+      text-align: start;
+      width: 45%;
+      &--big {
+        width: 90%;
+      }
+      &--bigger {
+        height: 4rem;
+        width: 90%;
+      }
+    }
+    &__button {
+      color: whitesmoke;
+      background-color: #dd5405;
+      border: none;
+      font-size: 1rem;
+      width: 10rem;
+      height: 3rem;
+      border-radius: 2rem;
+      margin: 1rem;
+      text-align: center;
+      &:hover {
+        color: #dd5405;
+        background-color: whitesmoke;
+        border: 1px solid #dd5405;
+      }
+    }
+  }
 }
