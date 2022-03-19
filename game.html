@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Game</title>
     <style></style>
-    <script src="game.js"></script>
+    
 </head>
 <body>
 
@@ -27,19 +27,19 @@
 
     <section class="game">
         <div class="game__score">
-            <div class="game__score__player">12</div>
-            <img src="assets/slash.png" class="game__score_slashBar"></img>
-            <div class="game__score__computer">34</div>
+            <div class="game__score__player"> - </div>
+            <img src="assets/slash.png" class="game__score__slashBar"></img>
+            <div class="game__score__computer"> - </div>
         </div>
         <div class="game__result">
-            <img src="assets/PierreGauche.png"  class="game__result__player" id="playerArea"></img>
+            <img src="assets/PierreGauche.png" class= "game__result__player" id="playerArea"></img>
             <div class="game__result__vs"></div>
             <img src="assets/PierreDroite.png" class="game__result__computer" id="computerArea"></img>
         </div>
         <div class="game__button">
-            <button class="game__button__1">Pierre</button>
-            <button class="game__button__2">Feuille</button>
-            <button class="game__button__3">Ciseaux</button>
+            <button class="game__button__1" id="buttonRock">Pierre</button>
+            <button class="game__button__2" id="buttonPaper">Feuille</button>
+            <button class="game__button__3" id="buttonCisors">Ciseaux</button>
         </div>
     </section>
 
@@ -54,7 +54,7 @@
             <br>
             Mail: contactus@shifumi.incorporation</p>
         </div>
-        <div class="footer__socialMedias">
+        <div class="footer__socialMedias"> 
             <img src="assets/svgexport-21.svg"></img>
             <img src="assets/svgexport-22.svg"></img>
             <img src="assets/svgexport-23.svg"></img>
@@ -62,32 +62,7 @@
             <img src="assets/svgexport-25.svg"></img>
         </div>
     </footer> 
-    <script>
-        function getRandomInt(max) {
-             return Math.floor(Math.random() * max);}
-
-        function shifumi() {
-            // Generating a random number which will be transformed in a sign.
-            let randomNumber = 0;
-            randomNumber = getRandomInt(3);
-            document.getElementsById("computerArea").scr = "assets/FeuilleDroite.png";
-            // Transforming number in sign.
-            // switch (randomNumber){
-            //     case 1: 
-            //         computerSign.scr = url("../assets/PierreDroite.png");
-            //         break;  
-            //     case 2: 
-            //         computerSign.scr = url("../assets/CiseauxDroite.png");
-            //         break;  
-            //     case 3: 
-            //         computerSign.scr = url("../assets/FeuilleDroite.png");
-            //         break;
-            //     default:
-            //         computerSign = "Not working"
-            //         break;
-            // }
-        }
-        shifumi(); 
-    </script>
+    
+    <script src="game.js"></script>
 </body>
 </html>
