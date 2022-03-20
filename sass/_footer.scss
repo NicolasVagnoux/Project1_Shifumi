@@ -1,19 +1,20 @@
 .footer{
     display: flex;
+    font-size: 16px;
     background-color: $black-color;
     justify-content: space-between;
     align-items: center;
     &__logo{
         display: flex;
-        height: 8rem;
-        width: 9rem;
-        padding: 1rem;
+        height: 6em;
+        width: 7em;
+        padding: 1em 1em 1em 3em;
         color: $white-color;
     }
     &__text{
         display: flex;
         color: $white-color;
-        font-size: 1rem;
+        font-size: 1em;
         flex-direction: column;
         text-align: center;
         font-family: $font-text;
@@ -21,23 +22,47 @@
             display: flex 1;
             color: rgba(88, 218, 235, 0.938);
             text-decoration: underline;
-            font-size: 1.6rem;
+            font-size: 1.6em;
             font-family: $font-text;
-            margin: 1rem;
+            margin: 1em;
         }
         &__paragraph{
             display: flex 2;
+            padding-bottom: 2em;
             font-family: $font-text;
         }
     }
     &__socialMedias{
         display: flex;
         img{
-            padding: 1rem;
-            height: 2rem;
-            width: 2rem;
-            padding-top: 7rem;   
+            padding: 1em;
+            height: 2em;
+            width: 2em;
+            padding-top: 7em;   
         }
+    }
+}
+
+@media screen and (max-width:600px) {
+   .footer {
+        font-size: 8px;
+        &__socialMedias{
+            flex-wrap: wrap;
+            flex-direction: column;
+            img{
+                display: flex;
+                height: 1em;
+                width: 1em;
+                padding: 1em;
+            }
+
+        }
+    }
+}
+
+@media screen and (max_width:1000px) {
+    .footer{
+        font-size: 10px;
     }
 }
 

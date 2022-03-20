@@ -60,8 +60,18 @@ function displaySigns(playerSource){
     const signValue = generateNewComputerSign();
     return signValue;
 }        
-   
-  
+
+function initalisation(){
+    const myTimeOut1 = setTimeout(disapear, 50);
+    playerZone.style.opacity=0; 
+    computerZone.style.opacity=0;
+    function disapear(){
+        playerZone.style.opacity=1; 
+        computerZone.style.opacity=1; 
+    }
+}
+
+
 let playerScoreScreen = document.querySelector(".game__score__player");
 let computerScoreScreen = document.querySelector(".game__score__computer");
 const rockButton = document.getElementById("buttonRock");
@@ -71,6 +81,7 @@ let playerScore = 0;
 let computerScore = 0;
 
 rockButton.addEventListener("click",function(){
+    initalisation();
     computerSign=displaySigns(rockLeftSource);
     switch(computerSign){
         case 0:
@@ -88,6 +99,7 @@ rockButton.addEventListener("click",function(){
     }
 })
 paperButton.addEventListener("click",function(){
+    initalisation();
     computerSign=displaySigns(paperLeftSource);
     switch(computerSign){
         case 0:
@@ -105,6 +117,7 @@ paperButton.addEventListener("click",function(){
     }
 })
 cisorsButton.addEventListener("click",function(){
+    initalisation();
     computerSign=displaySigns(cisorsLeftSource);
     switch(computerSign){
         case 0:

@@ -192,19 +192,20 @@ h2 {
 
 .footer {
   display: flex;
+  font-size: 16px;
   background-color: #050505;
   justify-content: space-between;
   align-items: center; }
   .footer__logo {
     display: flex;
-    height: 8rem;
-    width: 9rem;
-    padding: 1rem;
+    height: 6em;
+    width: 7em;
+    padding: 1em 1em 1em 3em;
     color: whitesmoke; }
   .footer__text {
     display: flex;
     color: whitesmoke;
-    font-size: 1rem;
+    font-size: 1em;
     flex-direction: column;
     text-align: center;
     font-family: "Ruluko"; }
@@ -212,25 +213,50 @@ h2 {
       display: flex 1;
       color: rgba(88, 218, 235, 0.938);
       text-decoration: underline;
-      font-size: 1.6rem;
+      font-size: 1.6em;
       font-family: "Ruluko";
-      margin: 1rem; }
+      margin: 1em; }
     .footer__text__paragraph {
       display: flex 2;
+      padding-bottom: 2em;
       font-family: "Ruluko"; }
   .footer__socialMedias {
     display: flex; }
     .footer__socialMedias img {
-      padding: 1rem;
-      height: 2rem;
-      width: 2rem;
-      padding-top: 7rem; }
+      padding: 1em;
+      height: 2em;
+      width: 2em;
+      padding-top: 7em; }
+
+@media screen and (max-width: 600px) {
+  .footer {
+    font-size: 8px; }
+    .footer__socialMedias {
+      flex-wrap: wrap;
+      flex-direction: column; }
+      .footer__socialMedias img {
+        display: flex;
+        height: 1em;
+        width: 1em;
+        padding: 1em; } }
+
+@media screen and (max_width: 1000px) {
+  .footer {
+    font-size: 10px; } }
 
 .gameHeader {
   background-image: url("../assets/game.jpeg");
   height: 100vh;
   width: 100vw;
   background-size: cover; }
+  .gameHeader__title {
+    font-size: 8vw;
+    text-align: center;
+    padding-top: 40vh;
+    font-family: "Proza Libre";
+    font-weight: lighter;
+    color: white;
+    text-shadow: 5px 5px 5px black; }
 
 .game {
   display: flex;
@@ -241,10 +267,10 @@ h2 {
   border-radius: 2rem;
   background-image: url("../assets/gamewallpaper.jpg");
   background-size: cover;
-  margin: 5rem;
+  margin: 10vh 1vw 10vh 1vw;
   border: 1px solid black; }
   .game__score {
-    margin-top: 2rem;
+    margin-top: 6vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -253,16 +279,16 @@ h2 {
       display: flex;
       background-image: url("../assets/craies.jpg");
       background-size: cover;
-      font-size: 2rem;
       color: whitesmoke;
       text-shadow: 3px 3px 2px black;
-      padding: 2rem 4rem 2rem 4rem;
-      margin: 0 6rem 0 6rem;
+      font-size: 3.5vw;
+      padding: 4vh 8vw 4vh 8vw;
+      margin: 0 15vw 0 15vw;
       border-radius: .5rem; }
     .game__score__slashBar {
       display: flex;
-      height: 3rem;
-      width: 3rem; }
+      height: 10vh;
+      width: 10vh; }
   .game__result {
     display: flex;
     flex-direction: row;
@@ -270,14 +296,14 @@ h2 {
     align-items: center; }
     .game__result__player, .game__result__computer {
       display: flex;
-      height: 10rem;
-      width: 10rem;
-      padding: 4rem;
-      margin: 0 8rem 0 8rem; }
+      height: 10vw;
+      width: 10vw;
+      margin: 0 10vw 0 10vw; }
     .game__result__vs {
       display: flex;
       background-image: url("../assets/fighting.png");
-      padding: 4rem 4rem 4rem 4rem;
+      height: 10vw;
+      width: 10vw;
       background-size: cover; }
   .game__button {
     display: flex;
@@ -285,16 +311,74 @@ h2 {
     justify-content: space-between;
     align-items: center; }
     .game__button__1, .game__button__2, .game__button__3 {
-      margin: 0 4rem 4rem 4rem;
+      display: flex;
+      margin: 0 8vw 10vh 8vw;
+      padding: 2.5vh 4vw 2.5vh 4vw;
+      font-size: 2.5vw;
+      border-radius: 0.5rem;
       background-color: rgba(24, 23, 23, 0.942);
       color: whitesmoke;
-      border-color: black; }
+      border-color: #fa0f0f; }
       .game__button__1:hover, .game__button__2:hover, .game__button__3:hover {
         color: rgba(24, 23, 23, 0.942);
         background-color: whitesmoke;
         cursor: pointer;
         font-weight: bold;
-        font-size: 2.5rem; }
+        font-size: 2vw; }
+
+@media screen and (max-width: 600px) {
+  .game {
+    font-size: 10px;
+    display: flex;
+    height: 90vh;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2rem;
+    background-image: url("../assets/gamewallpaper.jpg");
+    background-size: cover;
+    margin: 10vh 1vw 10vh 1vw;
+    border: 1px solid black; }
+    .game__score {
+      margin-top: 8vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center; }
+      .game__score__player, .game__score__computer {
+        display: flex;
+        background-image: url("../assets/craies.jpg");
+        background-size: cover;
+        color: whitesmoke;
+        text-shadow: 3px 3px 2px black;
+        font-size: 3.5vw;
+        padding: 4vh 8vw 4vh 8vw;
+        margin: 0 15vw 0 15vw;
+        border-radius: .5rem; }
+      .game__score__slashBar {
+        display: flex;
+        height: 10vh;
+        width: 10vh; }
+    .game__result {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center; }
+      .game__result__player, .game__result__computer {
+        display: flex;
+        height: 12vh;
+        width: 12vh;
+        margin: 0 10vh 0 10vh; }
+      .game__result__vs {
+        display: flex;
+        background-image: url("../assets/fighting.png");
+        height: 10vh;
+        width: 10vh;
+        background-size: cover; } }
+
+@media screen and (max-width: 1100px) {
+  * {
+    font-size: 12px; } }
 
 /* Barre de navigation */
 .navbar {
