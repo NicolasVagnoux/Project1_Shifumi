@@ -1,6 +1,6 @@
 // Fonction pour changer la couleur de la navbar quand on scrolle
 
-const navBar = document.querySelector('nav');
+const navBar = document.querySelector('.navbar');
 const logoImg = document.querySelector('#navlogo');
 const navText = document.querySelector('.navbar__list');
 
