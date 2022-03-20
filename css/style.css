@@ -230,12 +230,30 @@ h2 {
   z-index: 1;
   padding: 16px;
   display: grid;
+  align-items: center;
   width: 100%;
   grid-template-columns: 140px 1fr;
+  grid-template-rows: 60px 1fr;
   position: fixed;
   background-color: rgba(255, 255, 255, 0); }
   .navbar img {
     width: 100px; }
+    @media screen and (max-width: 800px) {
+      .navbar img {
+        width: 160px; } }
+  .navbar label {
+    display: none; }
+    @media screen and (max-width: 800px) {
+      .navbar label {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 3rem;
+        padding-right: 5%;
+        color: white;
+        text-shadow: 3px 3px 3px black;
+        cursor: pointer; } }
+  .navbar #toggle {
+    display: none; }
   .navbar__list {
     display: flex;
     justify-content: space-around;
@@ -245,12 +263,22 @@ h2 {
     font-size: 2.2rem;
     text-align: center;
     text-shadow: 3px 3px 3px black; }
+    @media screen and (max-width: 800px) {
+      .navbar__list {
+        grid-area: 2 / 2 / 3 / 3;
+        display: none;
+        flex-direction: column;
+        align-items: flex-end;
+        line-height: 0.7; } }
     .navbar__list__link {
       font-family: "Ruluko";
       text-decoration: none;
       color: white; }
       .navbar__list__link:hover {
         text-decoration: underline; }
+
+#toggle:checked + .navbar__list {
+  display: flex; }
 
 .titleHistory {
   height: 100vh;
