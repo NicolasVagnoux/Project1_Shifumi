@@ -6,15 +6,15 @@
     align-items: center;
     &__logo{
         display: flex;
-        height: 6em;
-        width: 7em;
+        height: 13vh;
+        width: 13vw;
         padding: 1em 1em 1em 3em;
         color: $white-color;
     }
     &__text{
         display: flex;
         color: $white-color;
-        font-size: 1em;
+        font-size: 2vw;
         flex-direction: column;
         text-align: center;
         font-family: $font-text;
@@ -22,7 +22,7 @@
             display: flex 1;
             color: rgba(88, 218, 235, 0.938);
             text-decoration: underline;
-            font-size: 1.6em;
+            font-size: 3vw;
             font-family: $font-text;
             margin: 1em;
         }
@@ -36,24 +36,31 @@
         display: flex;
         img{
             padding: 1em;
-            height: 2em;
-            width: 2em;
-            padding-top: 7em;   
+            height: 3vh;
+            width: 3vw;
+            padding-top: 10vh;   
         }
     }
 }
 
 @media screen and (max-width:600px) {
    .footer {
-        font-size: 8px;
+        font-size: 10px;
+        &__logo{
+            height: 10vh;
+            width: 20vw;
+            padding-right: 20vw;
+        }
         &__socialMedias{
             flex-wrap: wrap;
             flex-direction: column;
             img{
                 display: flex;
+                flex-basis: 3;
+                flex-wrap: wrap;
                 height: 1em;
                 width: 1em;
-                padding: 1em;
+                padding: 2vh 2vw 2vh 20vw;
             }
 
         }
