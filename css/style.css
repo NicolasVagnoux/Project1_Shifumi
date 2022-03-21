@@ -3,7 +3,8 @@
 * {
   padding: 0;
   margin: 0;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  font-size: 16px; }
 
 /* ------------------- */
 /*----image de fond----*/
@@ -249,17 +250,171 @@ h2 {
   .footer {
     font-size: 10px; } }
 
+.gameHeader {
+  background-image: url("../assets/game.jpeg");
+  height: 100vh;
+  width: 100vw;
+  background-size: cover; }
+  .gameHeader__title {
+    font-size: 8vw;
+    text-align: center;
+    padding-top: 40vh;
+    font-family: "Proza Libre";
+    font-weight: lighter;
+    color: white;
+    text-shadow: 5px 5px 5px black; }
+
+.game {
+  display: flex;
+  height: 90vh;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 2rem;
+  background-image: url("../assets/gamewallpaper.jpg");
+  background-size: cover;
+  margin: 10vh 1vw 10vh 1vw;
+  border: 1px solid black; }
+  .game__score {
+    margin-top: 6vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+    .game__score__player, .game__score__computer {
+      display: flex;
+      background-image: url("../assets/craies.jpg");
+      background-size: cover;
+      color: whitesmoke;
+      text-shadow: 3px 3px 2px black;
+      font-size: 3.5vw;
+      padding: 4vh 8vw 4vh 8vw;
+      margin: 0 15vw 0 15vw;
+      border-radius: .5rem; }
+    .game__score__slashBar {
+      display: flex;
+      height: 10vh;
+      width: 10vh; }
+  .game__result {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+    .game__result__player, .game__result__computer {
+      display: flex;
+      height: 10vw;
+      width: 10vw;
+      margin: 0 10vw 0 10vw; }
+    .game__result__vs {
+      display: flex;
+      background-image: url("../assets/fighting.png");
+      height: 10vw;
+      width: 10vw;
+      background-size: cover; }
+  .game__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    .game__button__1, .game__button__2, .game__button__3 {
+      display: flex;
+      margin: 0 8vw 10vh 8vw;
+      padding: 2.5vh 4vw 2.5vh 4vw;
+      font-size: 2.5vw;
+      border-radius: 0.5rem;
+      background-color: rgba(24, 23, 23, 0.942);
+      color: whitesmoke;
+      border-color: #fa0f0f; }
+      .game__button__1:hover, .game__button__2:hover, .game__button__3:hover {
+        color: rgba(24, 23, 23, 0.942);
+        background-color: whitesmoke;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 2vw; }
+
+@media screen and (max-width: 600px) {
+  .game {
+    font-size: 10px;
+    display: flex;
+    height: 90vh;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2rem;
+    background-image: url("../assets/gamewallpaper.jpg");
+    background-size: cover;
+    margin: 10vh 1vw 10vh 1vw;
+    border: 1px solid black; }
+    .game__score {
+      margin-top: 8vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center; }
+      .game__score__player, .game__score__computer {
+        display: flex;
+        background-image: url("../assets/craies.jpg");
+        background-size: cover;
+        color: whitesmoke;
+        text-shadow: 3px 3px 2px black;
+        font-size: 3.5vw;
+        padding: 4vh 8vw 4vh 8vw;
+        margin: 0 15vw 0 15vw;
+        border-radius: .5rem; }
+      .game__score__slashBar {
+        display: flex;
+        height: 10vh;
+        width: 10vh; }
+    .game__result {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center; }
+      .game__result__player, .game__result__computer {
+        display: flex;
+        height: 12vh;
+        width: 12vh;
+        margin: 0 10vh 0 10vh; }
+      .game__result__vs {
+        display: flex;
+        background-image: url("../assets/fighting.png");
+        height: 10vh;
+        width: 10vh;
+        background-size: cover; } }
+
+@media screen and (max-width: 1100px) {
+  * {
+    font-size: 12px; } }
+
 /* Barre de navigation */
 .navbar {
   z-index: 1;
   padding: 16px;
   display: grid;
+  align-items: center;
   width: 100%;
   grid-template-columns: 140px 1fr;
+  grid-template-rows: 60px 1fr;
   position: fixed;
   background-color: rgba(255, 255, 255, 0); }
   .navbar img {
     width: 100px; }
+    @media screen and (max-width: 800px) {
+      .navbar img {
+        width: 160px; } }
+  .navbar label {
+    display: none; }
+    @media screen and (max-width: 800px) {
+      .navbar label {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 3rem;
+        padding-right: 5%;
+        color: white;
+        text-shadow: 3px 3px 3px black;
+        cursor: pointer; } }
+  .navbar #toggle {
+    display: none; }
   .navbar__list {
     display: flex;
     justify-content: space-around;
@@ -269,12 +424,22 @@ h2 {
     font-size: 2.2rem;
     text-align: center;
     text-shadow: 3px 3px 3px black; }
+    @media screen and (max-width: 800px) {
+      .navbar__list {
+        grid-area: 2 / 2 / 3 / 3;
+        display: none;
+        flex-direction: column;
+        align-items: flex-end;
+        line-height: 0.7; } }
     .navbar__list__link {
       font-family: "Ruluko";
       text-decoration: none;
       color: white; }
       .navbar__list__link:hover {
         text-decoration: underline; }
+
+#toggle:checked + .navbar__list {
+  display: flex; }
 
 .titleHistory {
   height: 100vh;

@@ -1,0 +1,157 @@
+.gameHeader{
+    background-image: url("../assets/game.jpeg");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    &__title{
+        font-size: 8vw;
+        text-align: center;
+        padding-top: 40vh;
+        font-family: $font-title;
+        font-weight: lighter;
+        color: white;
+        text-shadow: 5px 5px 5px black;
+    }
+}
+
+.game{
+    display: flex;
+        height: 90vh;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 2rem;
+        background-image: url("../assets/gamewallpaper.jpg");
+        background-size: cover;
+        margin: 10vh 1vw 10vh 1vw;
+        border: 1px solid black;
+    &__score{
+        margin-top: 6vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        &__player, &__computer{
+            display: flex;
+            background-image: url("../assets/craies.jpg");
+            background-size: cover;
+            color: $white-color;
+            text-shadow: $text-shadow;
+            font-size: 3.5vw;
+            padding: 4vh 8vw 4vh 8vw;
+            margin: 0 15vw 0 15vw;
+            border-radius: .5rem;
+        }
+        &__slashBar{
+            display: flex ;
+            height: 10vh;
+            width: 10vh;
+        }
+    }
+    &__result{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        &__player, &__computer{
+            display: flex;
+            height: 10vw;
+            width: 10vw;
+            margin: 0 10vw 0 10vw;
+        }
+        &__vs{
+            display: flex;
+            background-image: url("../assets/fighting.png");
+            height: 10vw;
+            width: 10vw;
+            background-size: cover;
+        }
+        
+    }
+    &__button{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        &__1, &__2, &__3{
+            display: flex;
+            margin: 0 8vw 10vh 8vw;
+            padding: 2.5vh 4vw 2.5vh 4vw;
+            font-size: 2.5vw;
+            border-radius: 0.5rem;
+            background-color:rgba(24, 23, 23, 0.942);
+            color: whitesmoke;
+            border-color: rgb(250, 15, 15);
+            &:hover{
+                color:rgba(24, 23, 23, 0.942); 
+                background-color: whitesmoke;
+                cursor: pointer;
+                font-weight: bold;
+                font-size: 2vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+ .game{
+    font-size: 10px;
+    display: flex;
+        height: 90vh;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 2rem;
+        background-image: url("../assets/gamewallpaper.jpg");
+        background-size: cover;
+        margin: 10vh 1vw 10vh 1vw;
+        border: 1px solid black;
+    &__score{
+        margin-top: 8vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        &__player, &__computer{
+            display: flex;
+            background-image: url("../assets/craies.jpg");
+            background-size: cover;
+            color: $white-color;
+            text-shadow: $text-shadow;
+            font-size: 3.5vw;
+            padding: 4vh 8vw 4vh 8vw;
+            margin: 0 15vw 0 15vw;
+            border-radius: .5rem;
+        }
+        &__slashBar{
+            display: flex ;
+            height: 10vh;
+            width: 10vh;
+        }
+    }
+    &__result{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        &__player, &__computer{
+            display: flex;
+            height: 12vh;
+            width: 12vh;
+            margin: 0 10vh 0 10vh;
+        }
+        &__vs{
+            display: flex;
+            background-image: url("../assets/fighting.png");
+            height: 10vh;
+            width: 10vh;
+            background-size: cover;
+        }
+    }
+ }
+}
+
+@media screen and (max-width:1100px) {
+    *{font-size: 12px;} 
+}
+
