@@ -10,7 +10,8 @@ h1 {
   font-family: "Proza Libre";
   font-weight: lighter;
   color: white;
-  text-shadow: 5px 5px 5px black; }
+  text-shadow: 5px 5px 5px black;
+  text-align: center; }
   @media screen and (max-width: 800px) {
     h1 {
       font-size: 4rem; } }
@@ -409,6 +410,10 @@ h2 {
   @media screen and (max-width: 800px) {
     .navbar {
       background-color: rgba(0, 0, 0, 0.75); } }
+  @media screen and (max-width: 400px) {
+    .navbar {
+      width: 100%;
+      height: 50px; } }
   .navbar img {
     width: 100px; }
     @media screen and (max-width: 800px) {
@@ -421,7 +426,7 @@ h2 {
         display: flex;
         justify-content: flex-end;
         font-size: 3rem;
-        padding-right: 5%;
+        padding-right: 8%;
         color: white;
         text-shadow: 3px 3px 3px black;
         cursor: pointer; } }
@@ -443,7 +448,8 @@ h2 {
         flex-direction: column;
         align-items: flex-end;
         line-height: 0.9;
-        font-size: 1.6rem; } }
+        font-size: 1.6rem;
+        padding: 0px 8% 0px 8%; } }
     .navbar__list__link {
       font-family: "Ruluko";
       text-decoration: none;
@@ -463,7 +469,12 @@ h2 {
   background-color: rgba(255, 255, 255, 0); }
   @media screen and (max-width: 800px) {
     .navbarMobile {
-      background-color: rgba(0, 0, 0, 0.75); } }
+      background-color: rgba(0, 0, 0, 0.75);
+      padding: 10px; } }
+  @media screen and (max-width: 400px) {
+    .navbarMobile {
+      width: 100%;
+      padding: 2px 10px 2px 10px; } }
   .navbarMobile img {
     width: 100px; }
     @media screen and (max-width: 800px) {
@@ -476,7 +487,7 @@ h2 {
         display: flex;
         justify-content: flex-end;
         font-size: 3rem;
-        padding-right: 5%;
+        padding-right: 8%;
         color: white;
         text-shadow: 3px 3px 3px black;
         cursor: pointer; } }
@@ -498,7 +509,8 @@ h2 {
         flex-direction: column;
         align-items: flex-end;
         line-height: 0.7;
-        font-size: 1.6rem; } }
+        font-size: 1.6rem;
+        padding: 0px 8% 0px 8%; } }
     .navbarMobile__list__link {
       font-family: "Ruluko";
       text-decoration: none;
@@ -508,6 +520,36 @@ h2 {
 
 #toggle:checked + .navbar__list {
   display: flex; }
+
+.backOnTop {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 30px;
+  padding-right: 5%; }
+  @media screen and (max-width: 800px) {
+    .backOnTop {
+      padding-top: 30px; } }
+  .backOnTop__box {
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px grey;
+    background-color: rgba(255, 0, 0, 0.05); }
+    .backOnTop__box:hover {
+      transform: scale(1.05); }
+  .backOnTop a {
+    font-family: "Ruluko";
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: black;
+    text-shadow: 2px 2px 2px grey; }
+    @media screen and (max-width: 800px) {
+      .backOnTop a {
+        font-size: 1.2rem; } }
+    @media screen and (max-width: 400px) {
+      .backOnTop a {
+        font-size: 0.8rem; } }
 
 .titleHistory {
   height: 100vh;
@@ -595,15 +637,12 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  .homeImg h1 {
-    font-size: 8vw;
-    font-family: "Proza Libre";
-    font-weight: lighter;
-    color: white;
-    text-shadow: 5px 5px 5px black; }
-    @media screen and (max-width: 800px) {
+  @media screen and (max-width: 400px) {
+    .homeImg {
+      height: auto;
+      width: 400px; }
       .homeImg h1 {
-        font-size: 4rem; } }
+        font-size: 3rem; } }
   .homeImg p {
     width: 90%;
     text-align: center;
@@ -615,6 +654,9 @@ h2 {
     @media screen and (max-width: 800px) {
       .homeImg p {
         font-size: 1.2rem; } }
+    @media screen and (max-width: 400px) {
+      .homeImg p {
+        font-size: 1rem; } }
   .homeImg__arrow {
     width: 50px; }
     .homeImg__arrow:hover {
