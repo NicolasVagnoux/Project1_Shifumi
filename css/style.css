@@ -1,5 +1,7 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Ruluko&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -16,9 +18,14 @@ h1 {
     h1 {
       font-size: 4rem; } }
 
-/* ------------------- */
-/*----image de fond----*/
-/* ------------------- */
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  width: 100%;
+  height: 100vh; }
+
 .contact-img {
   height: 100vh;
   background-image: url("../assets/contact_img_background.jpg");
@@ -43,17 +50,31 @@ h2 {
   text-decoration: underline;
   font-size: 1.5em;
   text-align: center;
-  margin: 1rem; }
+  margin-top: 2rem; }
 
-/* ---form d'avis------ */
 .formOpinion__container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 1rem; }
+  @media (max-width: 800px) {
+    .formOpinion__container {
+      display: flex;
+      justify-content: center;
+      padding: auto;
+      margin: 10px; } }
   .formOpinion__container div {
     display: flex;
-    width: 100%;
-    justify-content: flex-start; }
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 0 10px; }
+    @media (max-width: 800px) {
+      .formOpinion__container div {
+        width: 50%;
+        margin: auto; } }
   .formOpinion__container__userImg {
     display: flex;
     align-items: center;
@@ -61,144 +82,223 @@ h2 {
     height: 3rem; }
     .formOpinion__container__userImg__write {
       display: flex;
-      align-items: center; }
-      .formOpinion__container__userImg__write__starsImg {
-        width: 5rem;
-        height: 5rem; }
+      align-items: center;
+      padding: 5px;
+      color: #000;
+      text-decoration: none; }
 
-/* --AVIS DES JOUEURS-- */
-.opinion {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 10px 10px;
-  grid-template-areas: "opinion__img-1 opinion__art-1 opinion__art-2 opinion__img-2" "opinion__img-3 opinion__art-3 opinion__art-4 opinion__img-4";
-  align-content: stretch;
-  justify-items: stretch;
-  align-items: center;
-  margin-top: 4rem; }
+#opinionContainerId {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem; }
 
-.photo_joueurs {
-  height: 7rem;
-  width: 7rem; }
-
-.opinionSpan {
-  color: #dd5405;
-  display: grid;
-  margin-top: 1rem; }
-
-.opinion__img-1 {
-  grid-area: opinion__img-1;
-  display: grid;
-  align-items: center;
-  justify-content: flex-end; }
-
-.opinion__art-1 {
-  grid-area: opinion__art-1;
-  background-color: gainsboro;
-  display: grid;
-  align-items: center;
-  justify-content: flex-start;
-  text-align: start;
-  padding: 1rem;
-  height: 6rem;
-  width: 30rem; }
-
-.opinion__art-2 {
-  grid-area: opinion__art-2;
-  background-color: gainsboro;
-  display: grid;
-  align-items: center;
-  justify-content: flex-end;
-  text-align: end;
-  padding: 1rem;
-  height: 6rem;
-  width: 30rem; }
-
-.opinion__img-2 {
-  grid-area: opinion__img-2;
-  display: grid;
-  align-items: center;
-  justify-content: flex-start; }
-
-.opinion__img-3 {
-  grid-area: opinion__img-3;
-  display: grid;
-  align-items: flex-end;
-  justify-content: flex-end; }
-
-.opinion__art-3 {
-  grid-area: opinion__art-3;
-  background-color: gainsboro;
-  display: grid;
-  align-items: center;
-  justify-content: flex-start;
-  text-align: start;
-  padding: 1rem;
-  width: 30rem;
-  height: 6rem; }
-
-.opinion__art-4 {
-  grid-area: opinion__art-4;
-  background-color: gainsboro;
-  display: grid;
-  align-items: center;
-  justify-content: flex-end;
-  text-align: end;
-  padding: 1rem;
-  height: 6rem;
-  width: 30rem; }
-
-.opinion__img-4 {
-  grid-area: opinion__img-4;
-  display: grid;
-  align-items: flex-start;
-  justify-content: flex-start; }
-
-/* -formulaire contact- */
-.contact__formContainer {
+.opinionContainer {
   display: flex;
   flex-direction: column;
-  font-size: 1.2rem;
-  margin-top: 4rem;
-  text-align: center;
-  flex-wrap: wrap; }
-  .contact__formContainer__form {
+  box-sizing: border-box;
+  position: relative;
+  width: 800px;
+  min-width: 350px;
+  min-height: 250px;
+  padding-bottom: 40px;
+  overflow: hidden; }
+  @media (max-width: 800px) {
+    .opinionContainer {
+      margin: 1rem; } }
+  .opinionContainer__wrapper {
+    box-sizing: border-box;
+    width: 400%;
+    /* 100%/card */
+    min-height: 100%;
     display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    width: 100%;
-    align-items: center; }
-    .contact__formContainer__form div {
-      display: flex;
-      width: 100%;
-      justify-content: center; }
-    .contact__formContainer__form__input {
+    justify-content: space-between;
+    transition: 1s; }
+    .opinionContainer__wrapper__card {
       box-sizing: border-box;
-      border: 0.1rem solid gainsboro;
-      background-color: whitesmoke;
-      padding: 0.3rem;
-      text-align: start;
-      width: 45%; }
-      .contact__formContainer__form__input--big {
-        width: 90%; }
-      .contact__formContainer__form__input--bigger {
-        height: 4rem;
-        width: 90%; }
-    .contact__formContainer__form__button {
-      color: whitesmoke;
-      background-color: #dd5405;
-      border: none;
-      font-size: 1rem;
-      width: 10rem;
-      height: 3rem;
-      border-radius: 2rem;
-      margin: 1rem;
-      text-align: center; }
-      .contact__formContainer__form__button:hover {
-        color: #dd5405;
-        background-color: whitesmoke;
-        border: 1px solid #dd5405; }
+      width: 800px;
+      min-height: 100%;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      margin: 0 10px; }
+      @media (max-width: 800px) {
+        .opinionContainer__wrapper__card {
+          flex-direction: column; } }
+      .opinionContainer__wrapper__card__player {
+        box-sizing: border-box;
+        width: 70%;
+        height: 250px;
+        overflow: hidden;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        position: relative; }
+        @media (max-width: 800px) {
+          .opinionContainer__wrapper__card__player {
+            width: 100%;
+            border-radius: 10px; } }
+        .opinionContainer__wrapper__card__player__image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          background-size: contain; }
+        .opinionContainer__wrapper__card__player__name {
+          box-sizing: border-box;
+          position: absolute;
+          bottom: 10px;
+          right: 0.5px;
+          border-top-left-radius: 50px;
+          border-bottom-left-radius: 50px;
+          padding: 5px 20px;
+          background: #fff;
+          color: black;
+          text-transform: capitalize;
+          font-size: 14px; }
+      .opinionContainer__wrapper__card__body {
+        box-sizing: border-box;
+        width: 120%;
+        min-height: 100%;
+        height: auto;
+        margin-left: 20px;
+        position: relative;
+        padding-bottom: 50px; }
+        @media (max-width: 800px) {
+          .opinionContainer__wrapper__card__body {
+            width: 100%;
+            min-height: auto;
+            margin-left: 0; } }
+        .opinionContainer__wrapper__card__body__review {
+          box-sizing: border-box;
+          font-size: 20px;
+          line-height: 30px;
+          margin-top: 30px; }
+        .opinionContainer__wrapper__card__body__rating {
+          box-sizing: border-box;
+          position: absolute;
+          bottom: 10px;
+          left: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .opinionContainer__wrapper__card__body__rating__star {
+            box-sizing: border-box;
+            width: 25px;
+            margin-right: 5px; }
+  .opinionContainer__indicators {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); }
+
+.opinionContainer__indicators button {
+  box-sizing: border-box;
+  background: none;
+  border: none;
+  outline: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  cursor: pointer;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: transform 0.5s; }
+
+button.opinionContainer__indicators__active {
+  box-sizing: border-box;
+  width: 40px;
+  border-radius: 50px;
+  background: #fff; }
+
+.formulaire {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  margin-bottom: 4rem; }
+  .formulaire__contact {
+    padding: 30px;
+    border-radius: 10px;
+    width: 800px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin: 0 10px; }
+    .formulaire__contact__title {
+      font-size: 20px; }
+    .formulaire__contact__line {
+      width: 100%;
+      height: 1px;
+      background-color: #dd5405; }
+    .formulaire__contact__form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 30px; }
+      .formulaire__contact__form__left {
+        width: 300px; }
+        .formulaire__contact__form__left__group {
+          position: relative;
+          margin-top: 20px;
+          display: flex;
+          flex-direction: column; }
+          .formulaire__contact__form__left__group__input {
+            margin-top: 5px;
+            padding: 10px 5px 10px 30px;
+            border: 1px solid #c9c9c9;
+            outline-color: #dd5405;
+            border-radius: 5px; }
+          .formulaire__contact__form__left__group i {
+            position: absolute;
+            /* positionné par rapport à son parent le plus proche positionné */
+            left: 0;
+            top: 25px;
+            padding: 9px 8px;
+            color: #dd5405; }
+      .formulaire__contact__form__right {
+        margin-left: 40px;
+        width: 300px; }
+        @media screen and (max-width: 920px) {
+          .formulaire__contact__form__right {
+            margin-left: 0px; } }
+        .formulaire__contact__form__right__group {
+          height: 100%;
+          position: relative;
+          margin-top: 20px;
+          display: flex;
+          flex-direction: column; }
+          .formulaire__contact__form__right__group__textarea {
+            margin-top: 5px;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border: 2px solid #dd5405;
+            outline: none;
+            border-radius: 5px;
+            resize: none;
+            height: 72%; }
+      .formulaire__contact__form__footer {
+        display: flex;
+        justify-content: center; }
+        .formulaire__contact__form__footer__button {
+          margin-top: 10px;
+          background-color: #dd5405;
+          color: white;
+          font-size: 15px;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 5px;
+          outline: none;
+          cursor: pointer;
+          transition: transform 0.5s;
+          text-align: center; }
+          .formulaire__contact__form__footer__button:hover {
+            transform: scale(1.05);
+            border: 1px solid #dd5405;
+            background-color: white;
+            color: #dd5405; }
 
 .footer {
   display: flex;
@@ -730,9 +830,6 @@ h2 {
         grid-area: 6 / 1 / 7 / 1;
         height: 70%; } }
 
-* {
-  font-family: "Syne Mono", Verdana, Geneva, Tahoma, sans-serif; }
-
 /*global*/
 .bloc {
   position: relative;
@@ -944,6 +1041,172 @@ h2 {
     cursor: pointer;
     opacity: 0.7; }
   .spinOff__grid__2__paragraph, .spinOff__grid__4__paragraph, .spinOff__grid__6__paragraph {
+
+    display: none; }
+
+@media screen and (max-width: 650px) {
+  .rules {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    text-align: center; }
+    .rules__title {
+      display: flex 1;
+      font-size: 5vh;
+      color: #dd5405;
+      margin: 10vh 0 2vh 0; }
+    .rules__paragraph1 {
+      display: flex 2;
+      font-size: 3vh;
+      margin: 10vh 20vw 5vh 20vw; }
+    .rules__paragraph2 {
+      display: flex 3;
+      font-size: 3vh;
+      margin: 3vh 20vw 10vh 20vw; }
+  .spinOff__title {
+    font-size: 5vh;
+    color: #dd5405;
+    margin: 10vh 0 2vh 0;
+    text-align: center; }
+  .spinOff__grid {
+    grid-template-columns: 40vw 40vw;
+    grid-template-rows: 40vh 40vh 40vh;
+    gap: 5vh;
+    margin: 10vh 10vw 30vh 10vw; }
+    .spinOff__grid__1, .spinOff__grid__2, .spinOff__grid__3, .spinOff__grid__4, .spinOff__grid__5, .spinOff__grid__6 {
+      line-height: 8vh; }
+    .spinOff__grid__1 {
+      grid-column: 1;
+      grid-row: 1; }
+    .spinOff__grid__2 {
+      grid-column: 2;
+      grid-row: 1;
+      background-position: center; }
+    .spinOff__grid__3 {
+      grid-column: 1;
+      grid-row: 2;
+      background-position: bottom; }
+    .spinOff__grid__4 {
+      grid-column: 2;
+      grid-row: 2; }
+    .spinOff__grid__5 {
+      grid-column: 1;
+      grid-row: 3; }
+    .spinOff__grid__6 {
+      grid-column: 2;
+      grid-row: 3; } }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  width: 100%;
+  height: 100vh; }
+
+.playerOpinion__header {
+  font-family: "Proza Libre";
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; }
+  .playerOpinion__header__firstContainer {
+    background-color: black; }
+    .playerOpinion__header__firstContainer__logo {
+      display: flex;
+      padding: 1rem;
+      width: 6rem;
+      margin-left: 4rem; }
+  .playerOpinion__header__secondContainer {
+    background-color: #f4f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-size: 2rem; }
+    @media screen and (max-width: 800px) {
+      .playerOpinion__header__secondContainer {
+        font-size: 1rem;
+        display: flex;
+        justify-content: center; } }
+    .playerOpinion__header__secondContainer__title {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+
+.playerForm {
+  font-family: "Proza Libre";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f3f3; }
+  @media screen and (max-width: 800px) {
+    .playerForm {
+      display: flex;
+      flex-direction: column;
+      overflow: auto;
+      width: auto; } }
+  .playerForm__opinion {
+    background-color: white;
+    width: 600px;
+    height: 100%;
+    padding: 30px;
+    margin: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); }
+    @media screen and (max-width: 800px) {
+      .playerForm__opinion {
+        width: auto; } }
+    .playerForm__opinion__note {
+      height: 100px;
+      padding: 1rem; }
+      .playerForm__opinion__note__beers {
+        padding: 1rem; }
+        .playerForm__opinion__note__beers i {
+          font-size: 4rem; }
+    .playerForm__opinion__commit {
+      padding: 1rem; }
+      .playerForm__opinion__commit__textarea {
+        width: 90%;
+        height: 15rem;
+        border: 2px solid #dd5405;
+        outline: none;
+        border-radius: 5px;
+        resize: none;
+        margin: 1rem 0;
+        font-size: 1rem;
+        padding: 1rem; }
+    .playerForm__opinion__date {
+      padding: 1rem;
+      height: 6rem; }
+      .playerForm__opinion__date__input {
+        margin: 1rem 0;
+        font-size: 1.5rem;
+        width: 90%;
+        padding: 0 1rem;
+        border: 2px solid #dd5405;
+        border-radius: 5px; }
+    .playerForm__opinion__footer {
+      display: flex;
+      justify-content: center; }
+      .playerForm__opinion__footer__button {
+        margin-top: 10px;
+        background-color: #dd5405;
+        color: white;
+        font-size: 15px;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        outline: none;
+        cursor: pointer;
+        transition: transform 0.5s;
+        text-align: center; }
+        .playerForm__opinion__footer__button:hover {
+          transform: scale(1.05);
+          border: 1px solid #dd5405;
+          background-color: white;
+          color: #dd5405; }
+
     position: absolute;
     z-index: 1;
     justify-content: center;

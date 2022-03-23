@@ -1,7 +1,3 @@
-* {
-  font-family: "Syne Mono", Verdana, Geneva, Tahoma, sans-serif;
-}
-
 /*global*/
 .bloc {
   position: relative;
@@ -71,12 +67,12 @@
     border: 0.2rem solid purple;
     font-size: 2rem;
     padding: 1rem 2rem;
-  
+
     @media screen and (max-width: 1024px) {
       font-size: 1.5rem;
       margin: auto;
     }
-  
+
     @media screen and (max-width: 480px) {
       font-size: 5vw;
     }
