@@ -8,11 +8,34 @@ body {
   height: 100vh;
 }
 
-.playerOpinion {
-  background-color: aqua;
-  display: flex;
-  justify-content: center;
-  &__logo {
-    width: 4rem;
+.formPlayer {
+  background-color: aquamarine;
+  &__opinion {
+    background-color: yellow;
+
+    &__note {
+      margin: auto;
+      &__tilte {
+        margin: auto;
+      }
+    }
+    &__commit {
+      margin: auto;
+      &__title {
+        margin: auto;
+      }
+      &__textarea {
+        margin: auto;
+      }
+    }
+    &__date {
+      margin: auto;
+      &__title {
+        margin: auto;
+      }
+      &__input {
+        margin: auto;
+      }
+    }
   }
 }
