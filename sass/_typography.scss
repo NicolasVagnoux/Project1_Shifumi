@@ -1,2 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Ruluko&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap');
+
+h1 {
+    font-size: 8vw;
+    font-family: $font-title;
+    font-weight: lighter;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+    text-align: center;
+    @media screen and (max-width: 800px) {
+        font-size: 4rem;
+    }
+}
