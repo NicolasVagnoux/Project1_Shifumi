@@ -830,14 +830,6 @@ button.opinionContainer__indicators__active {
         grid-area: 6 / 1 / 7 / 1;
         height: 70%; } }
 
-<<<<<<< HEAD
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Syne Mono", Verdana, Geneva, Tahoma, sans-serif; }
-
-=======
->>>>>>> 068ffc4bb75f82ab88f998c5e45e0976ef02fdc9
 /*global*/
 .index {
   position: relative;
@@ -912,6 +904,7 @@ button.opinionContainer__indicators__active {
         font-size: 10vw;
         margin: auto; } }
     .index__button__design {
+      font-family: "Syne Mono", "Proza Libre", Arial, Helvetica, sans-serif;
       background: whitesmoke;
       border-radius: 80px;
       border: 0.2rem solid purple;
