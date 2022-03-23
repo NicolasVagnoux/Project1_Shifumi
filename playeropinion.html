@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="playeropinion.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
       rel="stylesheet"
@@ -12,20 +12,25 @@
     <title>Évaluez Shifumi</title>
     <style></style>
     <script src=""></script>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- header -->
-    <section class="playerOpinion">
-      <a href="home.html">
-        <img
-          src="assets/logo.jpeg"
-          alt="logo shifumi"
-          class="playerOpinion__logo"
-        />
-      </a>
-      <h2>Shifumi - Le jeu Wilditionel</h2>
-      <p>www.shifumi.com</p>
+    <section class="playerOpinion__header">
+      <div class="playerOpinion__header__firstContainer">
+        <a href="home.html">
+          <img
+            src="assets/logo.png"
+            alt="logo shifumi"
+            class="playerOpinion__header__firstContainer__logo"
+          />
+        </a>
+      </div>
+      <div class="playerOpinion__header__secondContainer">
+        <h2 class="playerOpinion__header__secondContainer__title">
+          Shifumi - Le jeu Wilditionel
+        </h2>
+        <p>www.shifumi.com</p>
+      </div>
     </section>
 
     <!-- formulaire -->
@@ -47,8 +52,6 @@
 
           <textarea
             class="playerForm__opinion__commit__textarea"
-            id="message"
-            name="message"
             placeholder="Écrivez votre avis ici. Parlez de votre expérience, quelle soit bonne ou mauvaise."
           >
           </textarea>
@@ -68,34 +71,11 @@
           />
         </div>
         <div class="playerForm__opinion__footer">
-          <button class="playerForm__opinion_footer__button">Envoyer l'évaluation</button>
+          <button class="playerForm__opinion_footer__button">
+            Envoyer l'évaluation
+          </button>
         </div>
-
       </form>
     </section>
-
-  <!-- ----------------- !-->
-<!-- -----footer------ !-->
-<!-- ----------------- !-->
-<footer class="footer">
-  <div class="footer__logo"><img src="assets/logo.png" alt="logo"></img></div>
-  <div class="footer__text">
-      <p class="footer__text__title">SHIFUMI Inc.</p>
-      <p class="footer__text__paragraph">
-      27 route de Pitoys, 64600 ANGLET
-      <br>
-      Téléphone: +33 6 55 66 77 88
-      <br>
-      Mail: contactus@shifumi.incorporation</p>
-  </div>
-  <div class="footer__socialMedias">
-      <img src="assets/svgexport-21.svg"></img>
-      <img src="assets/svgexport-22.svg"></img>
-      <img src="assets/svgexport-23.svg"></img>
-      <img src="assets/svgexport-24.svg"></img>
-      <img src="assets/svgexport-25.svg"></img>
-  </div>
-</footer> 
-<script src="home.js"></script>
   </body>
 </html>

@@ -8,46 +8,99 @@ body {
   height: 100vh;
 }
 
-.playerForm {
-  background-color: aquamarine;
-  &__opinion {
-    background-color: yellow;
+.playerOpinion__header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  &__firstContainer {
+    background-color: black;
+    &__logo {
+      display: flex;
+      padding: 1rem;
+      width: 6rem;
+      margin-left: 4rem;
+    }
+  }
+  &__secondContainer {
+    background-color: #f4f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-size: 2rem;
+    &__title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
 
+.playerForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f3f3;
+  &__opinion {
+    background-color: white;
+    width: 600px;
+    height: 100%;
+    padding: 30px;
+    margin: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     &__note {
-      margin: auto;
-      background-color: fuchsia;
-      &__tilte {
-        margin: auto;
-      }
+      height: 100px;
+      padding: 1rem;
     }
     &__commit {
-      margin: auto;
-      &__title {
-        margin: auto;
-      }
+      padding: 1rem;
       &__textarea {
-        margin: auto;
+        width: 90%;
+        height: 15rem;
+        border: 2px solid #dd5405;
+        outline: none;
+        border-radius: 5px;
+        resize: none;
+        margin: 1rem 0;
+        font-size: 1rem;
+        padding: 1rem;
       }
     }
     &__date {
-      margin: auto;
-      &__title {
-        margin: auto;
-        color: aqua;
-        background-color: pink;
-      }
+      padding: 1rem;
+      height: 6rem;
       &__input {
-        margin: auto;
-        color: aqua;
-        background-color: pink;
+        margin: 1rem 0;
+        font-size: 1.5rem;
+        width: 90%;
+        padding: 0 1rem;
+        border: 2px solid #dd5405;
+        border-radius: 5px;
       }
     }
     &__footer {
-      margin: auto;
-      color: aqua;
-      background-color: pink;
+      display: flex;
+      justify-content: center;
       &__button {
-        color: aqua;
+        margin-top: 10px;
+        background-color: #dd5405;
+        color: white;
+        font-size: 15px;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        outline: none;
+        cursor: pointer;
+        transition: transform 0.5s;
+        text-align: center;
+        &:hover {
+          transform: scale(1.05);
+          border: 1px solid #dd5405;
+          background-color: white;
+          color: #dd5405;
+        }
       }
     }
   }
