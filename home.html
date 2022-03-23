@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
-    <link href="https://fonts.googleapis.com/css2?family=Ruluko&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <nav class="navbar"> <!-- Barre de navigation! -->
-            <img src="assets/logo.png" id="navlogo"></img>
+            <a><img src="assets/logo.png" id="navlogo"></img></a>
+            <label for="toggle">☰</label>
+            <input type="checkbox" id="toggle"></input>
             <ul class="navbar__list">
                 <li><a href="home.html" class="navbar__list__link">Accueil</a></li>
                 <li><a href="history.html" class="navbar__list__link">L'histoire</a></li>
@@ -24,9 +24,25 @@
     </header>
 
     <main>
-        <section class="home-img">
-            <h1>ACCUEIL</h1>
-            <p><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, sint expedita, quasi doloremque quos atque vitae cupiditate quam nulla voluptates beatae illum blanditiis aut minus iusto deleniti amet hic? Autem.</p>
+        <section class="homeImg">
+            <br><br>
+            <h1><br>BIENVENUE !</h1>
+            <p><br>Bienvenue sur le site référence dans le monde du Shifumi !<br>Vous souhaitez en savoir plus sur ce jeu ancestral et légendaire ? Alors vous êtes au bon endroit ! Tout au long de votre visite, préparez-vous à être embarqués dans un fabuleux voyage dans l'univers du Shifumi ! Ses origines lointaines, ses règles et variantes complexes... Et même une partie endiablée contre votre ordinateur ! Accrochez-vous à votre chaise, dans quelques minutes, le Shifumi n'aura plus de secret pour vous !<br>Bonne visite !</p>
+            <a href="#homeGrid"><img src="assets/arrow.png" class="homeImg__arrow"></img></a>
+        </section>
+        <section class="homeGrid" id="homeGrid">
+            <div class="homeGrid__img1">
+                <a href="history.html"><img src="assets/japan_sakura.png"></img></a>
+            </div>
+            <div class="homeGrid__txt1">Une histoire millénaire...</div>
+            <div class="homeGrid__txt2">Un principe révolutionnaire...</div>
+            <div class="homeGrid__img2">
+                <a href="rules.html"><img src="assets/think_rules.png"></img></a>
+            </div>
+            <div class="homeGrid__img3">
+                <a href="game.html"><img src="assets/game_start.png"></img></a>
+            </div>
+            <div class="homeGrid__txt3">Envolez-vous vers une expérience inoubliable...</div>
         </section>
     </main>
 

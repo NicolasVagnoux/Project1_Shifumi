@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Game</title>
     <style></style>
-    <script src=""></script>
+    
 </head>
 <body>
 
-    <header>
+    <header class="gameHeader">
         <nav class="navbar"> <!-- Barre de navigation! -->
-            <img src="assets/logo.png" id="navlogo"></img>
+            <a href="index.html"><img src="assets/logo.png" id="navlogo"></img></a>
             <ul class="navbar__list">
                 <li><a href="home.html" class="navbar__list__link">Accueil</a></li>
                 <li><a href="history.html" class="navbar__list__link">L'histoire</a></li>
@@ -22,11 +22,26 @@
                 <li><a href="contact.html" class="navbar__list__link">Contact</a></li>
             </ul>
         </nav>
-        <img src="" alt="">
-        <h1></h1>
+        <h1 class="gameHeader__title">SHI FU MI</h1> 
     </header>
 
-    <main></main>
+    <section class="game">
+        <div class="game__score">
+            <div class="game__score__player"> - </div>
+            <img src="assets/slash.png" class="game__score__slashBar"></img>
+            <div class="game__score__computer"> - </div>
+        </div>
+        <div class="game__result">
+            <img src="assets/PierreGauche.png" class= "game__result__player" id="playerArea"></img>
+            <div class="game__result__vs"></div>
+            <img src="assets/PierreDroite.png" class="game__result__computer" id="computerArea"></img>
+        </div>
+        <div class="game__button">
+            <button class="game__button__1" id="buttonRock">Pierre</button>
+            <button class="game__button__2" id="buttonPaper">Feuille</button>
+            <button class="game__button__3" id="buttonCisors">Ciseaux</button>
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="footer__logo"><img src="assets/logo.png" alt="logo"></img></div>
@@ -39,7 +54,7 @@
             <br>
             Mail: contactus@shifumi.incorporation</p>
         </div>
-        <div class="footer__socialMedias">
+        <div class="footer__socialMedias"> 
             <img src="assets/svgexport-21.svg"></img>
             <img src="assets/svgexport-22.svg"></img>
             <img src="assets/svgexport-23.svg"></img>
@@ -48,5 +63,6 @@
         </div>
     </footer> 
     
+    <script src="game.js"></script>
 </body>
 </html>
