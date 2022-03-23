@@ -71,7 +71,6 @@ function initalisation(){
     }
 }
 
-
 let playerScoreScreen = document.querySelector(".game__score__player");
 let computerScoreScreen = document.querySelector(".game__score__computer");
 const rockButton = document.getElementById("buttonRock");
