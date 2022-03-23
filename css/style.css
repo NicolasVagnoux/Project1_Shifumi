@@ -446,42 +446,44 @@ h2 {
   background-image: url("../assets/history_img_background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 .h1History {
   color: whitesmoke;
   font-family: "Proza Libre";
   font-weight: lighter;
-  text-align: center;
-  padding-top: 20rem;
   font-size: 8vw;
   text-shadow: 5px 5px 5px black; }
 
+.titleHistoryArrow {
+  width: 50px; }
+
+.titleHistoryArrow :hover {
+  transform: scale(1.1); }
+
 .mainHistory {
   height: 100vh;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: whitesmoke; }
 
 .slideHistoryAll {
   position: relative;
   background: whitesmoke;
-  width: 100%;
-  min-height: 60%;
   display: flex;
-  margin: auto;
-  overflow: hidden; }
+  flex-direction: row;
+  width: 200%;
+  margin: 150px auto; }
   .slideHistoryAll .slideHistory {
-    display: flex;
+    position: relative;
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    animation: sliding 15s infinite; }
     .slideHistoryAll .slideHistory .imgSlide {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      object-fit: cover; }
+      position: absolute;
+      width: 100%; }
     .slideHistoryAll .slideHistory .infoHistory {
       position: absolute;
       color: black;
@@ -498,6 +500,22 @@ h2 {
       .slideHistoryAll .slideHistory .infoHistory .pHistory {
         font-size: 1em;
         font-weight: 400; }
+
+@keyframes sliding {
+  0% {
+    transform: translateX(0); }
+  20% {
+    transform: translateX(0); }
+  35% {
+    transform: translateX(-100%); }
+  55% {
+    transform: translateX(-100%); }
+  70% {
+    transform: translateX(-200%); }
+  90% {
+    transform: translateX(-200%); }
+  100% {
+    transform: translateX(0); } }
 
 .homeImg {
   height: 100vh;
