@@ -9,6 +9,7 @@ body {
 }
 
 .playerOpinion__header {
+  font-family: $font-title;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -29,6 +30,11 @@ body {
     align-items: center;
     padding: 1rem;
     font-size: 2rem;
+    @media screen and (max-width: 800px) {
+      font-size: 1rem;
+      display: flex;
+      justify-content: center;
+    }
     &__title {
       display: flex;
       justify-content: center;
@@ -38,10 +44,17 @@ body {
 }
 
 .playerForm {
+  font-family: $font-title;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #f4f3f3;
+  @media screen and (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    width: auto;
+  }
   &__opinion {
     background-color: white;
     width: 600px;
@@ -50,9 +63,18 @@ body {
     margin: 2rem;
     border-radius: 20px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    @media screen and (max-width: 800px) {
+      width: auto;
+    }
     &__note {
       height: 100px;
       padding: 1rem;
+      &__beers {
+        padding: 1rem;
+        & i {
+          font-size: 4rem;
+        }
+      }
     }
     &__commit {
       padding: 1rem;

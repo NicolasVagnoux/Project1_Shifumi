@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="playeropinion.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
       rel="stylesheet"
     />
     <title>Évaluez Shifumi</title>
@@ -41,6 +41,16 @@
           <h3 class="playerForm__opinion__note__title">
             Évaluez votre expérience récente
           </h3>
+          <div class="playerForm__opinion__note__beers">
+            <i class="lar la-star" data-value="1"></i>
+            <i class="lar la-star" data-value="2"></i>
+            <i class="lar la-star" data-value="3"></i>
+            <i class="lar la-star" data-value="4"></i>
+            <i class="lar la-star" data-value="5"></i>
+          </div>
+          <input type="hidden" name="note" id="note" value="0" />
+          <script src="playeropinion.js"></script>
+
           <!-- ajouter div avec des étoiles ou notes -->
         </div>
 
@@ -53,8 +63,7 @@
           <textarea
             class="playerForm__opinion__commit__textarea"
             placeholder="Écrivez votre avis ici. Parlez de votre expérience, quelle soit bonne ou mauvaise."
-          >
-          </textarea>
+          ></textarea>
         </div>
 
         <!-- Partie 2 mettre une date -->
@@ -65,13 +74,13 @@
             type="date"
             id="start"
             name="trip-start"
-            value="2022-03-21"
+            value="2022-03-25"
             min="2022-01-01"
             max="2022-12-31"
           />
         </div>
         <div class="playerForm__opinion__footer">
-          <button class="playerForm__opinion_footer__button">
+          <button class="playerForm__opinion__footer__button">
             Envoyer l'évaluation
           </button>
         </div>
