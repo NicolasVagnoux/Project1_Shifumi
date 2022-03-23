@@ -71,38 +71,6 @@ function initalisation(){
     }
 }
 
-function handAnimation(){
-    let start = Date.now(); // remember start time
-
-    let timer = setInterval(function() {
-  // how much time passed from the start?
-        let timePassed = Date.now() - start;
-
-        if (timePassed >= 3000) {
-        clearInterval(timer); // finish the animation after 2 seconds
-         return;
-  }
-
-  // draw the animation at the moment timePassed
-  draw(timePassed);
-  drawReverse(timePassed);
-
-});
-
-// as timePassed goes from 0 to 2000
-// left gets values from 0px to 400px
-function draw(timePassed) {
-  computerZone.style.paddingTop = timePassed / 150 + 'rem';
-  playerZone.style.paddingTop = timePassed / 150 + 'rem';
-}
-function drawReverse(timePassed) {
-    computerZone.style.paddingBottom = timePassed / 150 + 'rem';
-    playerZone.style.paddingBottom = timePassed / 150 + 'rem';
-  }
-
-}
-
-
 let playerScoreScreen = document.querySelector(".game__score__player");
 let computerScoreScreen = document.querySelector(".game__score__computer");
 const rockButton = document.getElementById("buttonRock");
