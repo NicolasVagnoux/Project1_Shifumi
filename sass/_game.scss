@@ -58,6 +58,8 @@
             height: 10vw;
             width: 10vw;
             margin: 0 10vw 0 10vw;
+            animation-duration: 3s;
+            animation-name: slideUp;
         }
         &__vs{
             display: flex;
@@ -93,17 +95,31 @@
     }
 }
 
+@-webkit-keyframes slideUp {
+    50% {
+      -webkit-transform: translateX(300px);
+      -moz-transform: translateX(300px);
+      -ms-transform: translateX(300px);
+      -o-transform: translateX(300px);
+      transform: translateX(300px);
+    }
+    100% {
+      -webkit-transform: translateX(300px) translateY(300px);
+      -moz-transform: translateX(300px) translateY(300px);
+      -ms-transform: translateX(300px) translateY(300px);
+      -o-transform: translateX(300px) translateY(300px);
+      transform: translateX(300px) translateY(300px);
+      
+    }
+  }
+  
+
 @media screen and (max-width:600px) {
  .game{
     font-size: 10px;
     display: flex;
         height: 90vh;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        border-radius: 2rem;
-        background-image: url("../assets/gamewallpaper.jpg");
-        background-size: cover;
+     
         margin: 10vh 1vw 10vh 1vw;
         border: 1px solid black;
     &__score{
