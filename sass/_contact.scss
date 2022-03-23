@@ -8,9 +8,6 @@ body {
   height: 100vh;
 }
 
-/* ------------------- */
-/*----image de fond----*/
-/* ------------------- */
 .contact-img {
   height: 100vh;
   background-image: url("../assets/contact_img_background.jpg");
@@ -40,7 +37,6 @@ h2 {
   margin-top: 2rem;
 }
 
-/* ---form d'avis------ */
 .formOpinion__container {
   display: flex;
   flex-direction: row;
@@ -81,7 +77,6 @@ h2 {
   }
 }
 
-/* --AVIS DES JOUEURS-- */
 #opinionContainerId {
   display: flex;
   justify-content: center;
@@ -223,7 +218,6 @@ button.opinionContainer__indicators__active {
   background: #fff;
 }
 
-/* -formulaire contact- */
 .formulaire {
   display: flex;
   justify-content: center;
@@ -237,7 +231,6 @@ button.opinionContainer__indicators__active {
     background: #fff;
     border-radius: 20px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    padding: 20px;
     margin: 0 10px;
 
     &__title {
@@ -256,7 +249,7 @@ button.opinionContainer__indicators__active {
       &__left {
         width: 300px;
         &__group {
-          position: relative; /* Pour mettre positionner l’élément dans le flux normal de la page */
+          position: relative;
           margin-top: 20px;
           display: flex;
           flex-direction: column;
@@ -268,7 +261,8 @@ button.opinionContainer__indicators__active {
             border-radius: 5px;
           }
           & i {
-            position: absolute; /* positionné par rapport à son parent le plus proche positionné */
+            position: absolute;
+            /* positionné par rapport à son parent le plus proche positionné */
             left: 0;
             top: 25px;
             padding: 9px 8px;

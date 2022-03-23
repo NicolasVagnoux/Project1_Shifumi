@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Ruluko&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -25,9 +26,6 @@ body {
   width: 100%;
   height: 100vh; }
 
-/* ------------------- */
-/*----image de fond----*/
-/* ------------------- */
 .contact-img {
   height: 100vh;
   background-image: url("../assets/contact_img_background.jpg");
@@ -54,7 +52,6 @@ h2 {
   text-align: center;
   margin-top: 2rem; }
 
-/* ---form d'avis------ */
 .formOpinion__container {
   display: flex;
   flex-direction: row;
@@ -90,7 +87,6 @@ h2 {
       color: #000;
       text-decoration: none; }
 
-/* --AVIS DES JOUEURS-- */
 #opinionContainerId {
   display: flex;
   justify-content: center;
@@ -218,7 +214,6 @@ button.opinionContainer__indicators__active {
   border-radius: 50px;
   background: #fff; }
 
-/* -formulaire contact- */
 .formulaire {
   display: flex;
   justify-content: center;
@@ -231,7 +226,6 @@ button.opinionContainer__indicators__active {
     background: #fff;
     border-radius: 20px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    padding: 20px;
     margin: 0 10px; }
     .formulaire__contact__title {
       font-size: 20px; }
@@ -248,7 +242,6 @@ button.opinionContainer__indicators__active {
         width: 300px; }
         .formulaire__contact__form__left__group {
           position: relative;
-          /* Pour mettre positionner l’élément dans le flux normal de la page */
           margin-top: 20px;
           display: flex;
           flex-direction: column; }
@@ -837,11 +830,6 @@ button.opinionContainer__indicators__active {
         grid-area: 6 / 1 / 7 / 1;
         height: 70%; } }
 
-<<<<<<< HEAD
-=======
-* {
-  font-family: "Syne Mono", Verdana, Geneva, Tahoma, sans-serif; }
-
 /*global*/
 .bloc {
   position: relative;
@@ -918,7 +906,6 @@ button.opinionContainer__indicators__active {
     text-decoration: none;
     color: purple; }
 
->>>>>>> 02c0223ab192da8e11ccd9b42865664509392a11
 .headerRules {
   background-image: url("../assets/rules_img.jpeg");
   height: 100vh;
@@ -1054,6 +1041,172 @@ button.opinionContainer__indicators__active {
     cursor: pointer;
     opacity: 0.7; }
   .spinOff__grid__2__paragraph, .spinOff__grid__4__paragraph, .spinOff__grid__6__paragraph {
+
+    display: none; }
+
+@media screen and (max-width: 650px) {
+  .rules {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    text-align: center; }
+    .rules__title {
+      display: flex 1;
+      font-size: 5vh;
+      color: #dd5405;
+      margin: 10vh 0 2vh 0; }
+    .rules__paragraph1 {
+      display: flex 2;
+      font-size: 3vh;
+      margin: 10vh 20vw 5vh 20vw; }
+    .rules__paragraph2 {
+      display: flex 3;
+      font-size: 3vh;
+      margin: 3vh 20vw 10vh 20vw; }
+  .spinOff__title {
+    font-size: 5vh;
+    color: #dd5405;
+    margin: 10vh 0 2vh 0;
+    text-align: center; }
+  .spinOff__grid {
+    grid-template-columns: 40vw 40vw;
+    grid-template-rows: 40vh 40vh 40vh;
+    gap: 5vh;
+    margin: 10vh 10vw 30vh 10vw; }
+    .spinOff__grid__1, .spinOff__grid__2, .spinOff__grid__3, .spinOff__grid__4, .spinOff__grid__5, .spinOff__grid__6 {
+      line-height: 8vh; }
+    .spinOff__grid__1 {
+      grid-column: 1;
+      grid-row: 1; }
+    .spinOff__grid__2 {
+      grid-column: 2;
+      grid-row: 1;
+      background-position: center; }
+    .spinOff__grid__3 {
+      grid-column: 1;
+      grid-row: 2;
+      background-position: bottom; }
+    .spinOff__grid__4 {
+      grid-column: 2;
+      grid-row: 2; }
+    .spinOff__grid__5 {
+      grid-column: 1;
+      grid-row: 3; }
+    .spinOff__grid__6 {
+      grid-column: 2;
+      grid-row: 3; } }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  width: 100%;
+  height: 100vh; }
+
+.playerOpinion__header {
+  font-family: "Proza Libre";
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; }
+  .playerOpinion__header__firstContainer {
+    background-color: black; }
+    .playerOpinion__header__firstContainer__logo {
+      display: flex;
+      padding: 1rem;
+      width: 6rem;
+      margin-left: 4rem; }
+  .playerOpinion__header__secondContainer {
+    background-color: #f4f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-size: 2rem; }
+    @media screen and (max-width: 800px) {
+      .playerOpinion__header__secondContainer {
+        font-size: 1rem;
+        display: flex;
+        justify-content: center; } }
+    .playerOpinion__header__secondContainer__title {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+
+.playerForm {
+  font-family: "Proza Libre";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f3f3; }
+  @media screen and (max-width: 800px) {
+    .playerForm {
+      display: flex;
+      flex-direction: column;
+      overflow: auto;
+      width: auto; } }
+  .playerForm__opinion {
+    background-color: white;
+    width: 600px;
+    height: 100%;
+    padding: 30px;
+    margin: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); }
+    @media screen and (max-width: 800px) {
+      .playerForm__opinion {
+        width: auto; } }
+    .playerForm__opinion__note {
+      height: 100px;
+      padding: 1rem; }
+      .playerForm__opinion__note__beers {
+        padding: 1rem; }
+        .playerForm__opinion__note__beers i {
+          font-size: 4rem; }
+    .playerForm__opinion__commit {
+      padding: 1rem; }
+      .playerForm__opinion__commit__textarea {
+        width: 90%;
+        height: 15rem;
+        border: 2px solid #dd5405;
+        outline: none;
+        border-radius: 5px;
+        resize: none;
+        margin: 1rem 0;
+        font-size: 1rem;
+        padding: 1rem; }
+    .playerForm__opinion__date {
+      padding: 1rem;
+      height: 6rem; }
+      .playerForm__opinion__date__input {
+        margin: 1rem 0;
+        font-size: 1.5rem;
+        width: 90%;
+        padding: 0 1rem;
+        border: 2px solid #dd5405;
+        border-radius: 5px; }
+    .playerForm__opinion__footer {
+      display: flex;
+      justify-content: center; }
+      .playerForm__opinion__footer__button {
+        margin-top: 10px;
+        background-color: #dd5405;
+        color: white;
+        font-size: 15px;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        outline: none;
+        cursor: pointer;
+        transition: transform 0.5s;
+        text-align: center; }
+        .playerForm__opinion__footer__button:hover {
+          transform: scale(1.05);
+          border: 1px solid #dd5405;
+          background-color: white;
+          color: #dd5405; }
+
     position: absolute;
     z-index: 1;
     justify-content: center;
