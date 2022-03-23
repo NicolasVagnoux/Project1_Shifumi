@@ -1045,6 +1045,12 @@ body {
         padding: 1rem; }
         .playerForm__opinion__note__beers i {
           font-size: 4rem; }
+          @media screen and (max-width: 1024px) {
+            .playerForm__opinion__note__beers i {
+              font-size: 3.2rem; } }
+          @media screen and (max-width: 600px) {
+            .playerForm__opinion__note__beers i {
+              font-size: 2.2rem; } }
     .playerForm__opinion__commit {
       padding: 1rem; }
       .playerForm__opinion__commit__textarea {
