@@ -15,9 +15,6 @@ body {
   width: 100%;
   height: 100vh; }
 
-/* ------------------- */
-/*----image de fond----*/
-/* ------------------- */
 .contact-img {
   height: 100vh;
   background-image: url("../assets/contact_img_background.jpg");
@@ -44,7 +41,6 @@ h2 {
   text-align: center;
   margin-top: 2rem; }
 
-/* ---form d'avis------ */
 .formOpinion__container {
   display: flex;
   flex-direction: row;
@@ -80,7 +76,6 @@ h2 {
       color: #000;
       text-decoration: none; }
 
-/* --AVIS DES JOUEURS-- */
 #opinionContainerId {
   display: flex;
   justify-content: center;
@@ -208,7 +203,6 @@ button.opinionContainer__indicators__active {
   border-radius: 50px;
   background: #fff; }
 
-/* -formulaire contact- */
 .formulaire {
   display: flex;
   justify-content: center;
@@ -238,7 +232,6 @@ button.opinionContainer__indicators__active {
         width: 300px; }
         .formulaire__contact__form__left__group {
           position: relative;
-          /* Pour mettre positionner l’élément dans le flux normal de la page */
           margin-top: 20px;
           display: flex;
           flex-direction: column; }
@@ -742,8 +735,6 @@ button.opinionContainer__indicators__active {
         grid-area: 6 / 1 / 7 / 1;
         height: 70%; } }
 
-<<<<<<< HEAD
-=======
 * {
   font-family: "Syne Mono", Verdana, Geneva, Tahoma, sans-serif; }
 
@@ -823,7 +814,6 @@ button.opinionContainer__indicators__active {
     text-decoration: none;
     color: purple; }
 
->>>>>>> 02c0223ab192da8e11ccd9b42865664509392a11
 .headerRules {
   background-image: url("../assets/rules_img.jpeg");
   height: 100vh;

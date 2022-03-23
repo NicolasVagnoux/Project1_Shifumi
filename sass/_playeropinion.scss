@@ -8,13 +8,14 @@ body {
   height: 100vh;
 }
 
-.formPlayer {
+.playerForm {
   background-color: aquamarine;
   &__opinion {
     background-color: yellow;
 
     &__note {
       margin: auto;
+      background-color: fuchsia;
       &__tilte {
         margin: auto;
       }
@@ -32,9 +33,21 @@ body {
       margin: auto;
       &__title {
         margin: auto;
+        color: aqua;
+        background-color: pink;
       }
       &__input {
         margin: auto;
+        color: aqua;
+        background-color: pink;
+      }
+    }
+    &__footer {
+      margin: auto;
+      color: aqua;
+      background-color: pink;
+      &__button {
+        color: aqua;
       }
     }
   }

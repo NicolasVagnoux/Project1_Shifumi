@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Évaluer Shifumi</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <link
-      href="https://fonts.googleapis.com/css2?family=Ruluko&display=swap"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/playeropinion.css" />
-  </head>
-  <body>
+    <title>Évaluez Shifumi</title>
+    <style></style>
+    <script src=""></script>
+</head>
+<body>
 
     <!-- header -->
     <section class="playerOpinion">
@@ -30,66 +28,74 @@
       <p>www.shifumi.com</p>
     </section>
 
+    <!-- formulaire -->
+    <section class="playerForm">
+      <form class="playerForm__opinion">
+        <!-- Partie 1 : note avec étoiles -->
+        <div class="playerForm__opinion__note">
+          <h3 class="playerForm__opinion__note__title">
+            Évaluez votre expérience récente
+          </h3>
+          <!-- ajouter div avec des étoiles ou notes -->
+        </div>
 
+        <!-- Partie 2 commentez -->
+        <div class="playerForm__opinion__commit">
+          <h3 class="playerForm__opinion__commit__title">
+            Racontez-nous votre expérience
+          </h3>
 
-
-<!-- formulaire -->
-    <form class="formPlayerOpinion">
-              
-      
-<!-- Partie 1 : note avec étoiles -->
-      <div class="formPlayerOpinion__note">
-        <h3 class="formPlayerOpinion__note__text">Évaluez votre expérience récente</h3>
-              <!-- ajouter div avec des étoiles ou notes -->
-      </div>
-
-
-<!-- Partie 2 commentez -->
-      <div class="formPlayerOpinion__commit">
-        <h3>Racontez-nous votre expérience</h3>
-
-          <textarea class="formPlayerOpinion__commit__textarea"
-            id="message" 
-            name="message" 
-            placeholder="Écrivez votre avis ici. Parlez de votre expérience, quelle soit bonne ou mauvaise.">
+          <textarea
+            class="playerForm__opinion__commit__textarea"
+            id="message"
+            name="message"
+            placeholder="Écrivez votre avis ici. Parlez de votre expérience, quelle soit bonne ou mauvaise."
+          >
           </textarea>
-      </div>
+        </div>
 
-    
-<!-- Partie 2 mettre une date -->
-<div class="formPlayerOpinion__date">
-
-      <h3>Date de l'expérience</h3>
-
-      <input 
-            type="date" 
-            id="start" 
-            name="trip-start" 
+        <!-- Partie 2 mettre une date -->
+        <div class="playerForm__opinion__date">
+          <h3 class="playerForm__opinion__date__title">Date de l'expérience</h3>
+          <input
+            class="playerForm__opinion__date__input"
+            type="date"
+            id="start"
+            name="trip-start"
             value="2022-03-21"
-            min="2022-01-01" 
-            max="2022-12-31">
-</div>
-
-
-
-
-
-
-
-      
-
-
-
-
-
-
-
-
-
-
-
+            min="2022-01-01"
+            max="2022-12-31"
+          />
+        </div>
+        <div class="playerForm__opinion__footer">
+          <button class="playerForm__opinion_footer__button">Envoyer l'évaluation</button>
+        </div>
 
       </form>
-  </section>
+    </section>
+
+  <!-- ----------------- !-->
+<!-- -----footer------ !-->
+<!-- ----------------- !-->
+<footer class="footer">
+  <div class="footer__logo"><img src="assets/logo.png" alt="logo"></img></div>
+  <div class="footer__text">
+      <p class="footer__text__title">SHIFUMI Inc.</p>
+      <p class="footer__text__paragraph">
+      27 route de Pitoys, 64600 ANGLET
+      <br>
+      Téléphone: +33 6 55 66 77 88
+      <br>
+      Mail: contactus@shifumi.incorporation</p>
+  </div>
+  <div class="footer__socialMedias">
+      <img src="assets/svgexport-21.svg"></img>
+      <img src="assets/svgexport-22.svg"></img>
+      <img src="assets/svgexport-23.svg"></img>
+      <img src="assets/svgexport-24.svg"></img>
+      <img src="assets/svgexport-25.svg"></img>
+  </div>
+</footer> 
+<script src="home.js"></script>
   </body>
 </html>
