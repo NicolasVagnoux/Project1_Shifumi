@@ -14,9 +14,6 @@
     text-shadow: 5px 5px 5px black;
 }
 
-body{
-    background-color: #F4F3F3;
-}
 
 .rules{
     display: flex;
@@ -24,19 +21,28 @@ body{
     width: 100vw;
     text-align: center;
     &__title{
+        font-size: 3rem;
         display: flex 1;
-        font-size: 5vh;
         color: rgb(221, 84, 5);
         margin: 10vh 0 2vh 0;
+        @media screen and (max-width:600px){
+            font-size: 2.2rem;
+        }
     }
     &__paragraph1{
         display: flex 2;
-        font-size: 3vh;
+        font-size: 1.4rem;
         margin: 10vh 20vw 5vh 20vw;
+        &__strong{
+            color: rgb(221, 84, 5);
+            font-size: 1.6rem;
+            text-decoration: underline;
+        }
     }
     &__paragraph2{
         display: flex 3;
-        font-size: 3vh;
+        font-size: 1.4rem;
+        line-height: 1.2rem;
         margin: 5vh 20vw 5vh 20vw;
     }
 }
@@ -44,7 +50,7 @@ body{
 .spinOff{
     &__title{
         display: flex 4;
-        font-size: 5vh;
+        font-size: 2.2rem;
         color: hsl(22, 96%, 44%);
         margin: 10vh 0 2vh 0;
         text-align: center;
@@ -55,160 +61,130 @@ body{
         justify-content: center;
         grid-template-columns: 20vw 20vw 20vw;
         grid-template-rows: 50vh 50vh;
-        gap: 3rem;
+        gap: 5vw;
         margin: 10vh 10vw 30vh 10vw;
+        @media screen and (max-width:600px){
+            grid-template-columns: 40vw 40vw;
+            grid-template-rows: 40vh 40vh 40vh ;
+            gap: 8vh;
+            margin: 10vh 15vw 30vh 10vw;
+        }
         &__1, &__2, &__3, &__4, &__5, &__6{
             border-radius: 0.4rem;
-            color: hsl(22, 96%, 44%);
+            color: hsl(20, 24%, 93%);
             text-shadow: 2px 3px 2px black;
             line-height: 5vw;
             background: linear-gradient(145deg, #b3b2b2, #d5d4d4);
             box-shadow:  12px 12px 24px #a9a8a8,
                         -12px -12px 24px #e5e4e4;
             font-size: 5vh;
-           
+            @media screen and (max-width:600px){
+                line-height: 8vh;
+            }
         }
         &__1{
             grid-column: 1;
             grid-row: 1;
-            background-image: url(../assets/lezard.jpg);
-            background-size: cover;
             &__PFCLS{
                 display: flex;
                 flex-direction: column;
                 list-style: none;
+                
+            }
+            @media screen and (max-width:600px){
+                grid-column: 1;
+                grid-row: 1;
             }
         }
         &__2{
             grid-column: 1;
             grid-row: 2;
-            background-image: url(../assets/spock.jpeg);
-            background-size: cover;
+            @media screen and (max-width:600px){
+                grid-column: 2;
+                grid-row: 1;
+                background-position: center;
+            }
         }
         &__3{
             grid-column: 3;
             grid-row: 1;
-            background-image: url(../assets/feu.jpg);
-            background-size: cover;
             &__FEF{
                 display: flex;
                 flex-direction: column;
                 list-style: none;
                 padding: 3vw;
             }
+            @media screen and (max-width:600px){
+                grid-column: 1;
+                grid-row: 2;
+                background-position: bottom;
+            } 
         }
         &__4{
             grid-column: 2;
             grid-row: 1;
-            background-image: url(../assets/feuille.jpg);
-            background-size: cover;
-            background-position: center;
+            @media screen and (max-width:600px){
+                grid-column: 2;
+                grid-row: 3;
+            }
         }
         &__5{
             grid-column: 2;
             grid-row: 2;
-            background-image: url(../assets/puit.jpg);
-            background-size: cover;
-            background-position: bottom;
             &__PFCP{
                 display: flex;
                 flex-direction: column;
                 list-style: none;
                 padding: 3vw;
             }
+            @media screen and (max-width:600px){
+                grid-column: 1;
+                grid-row: 3;
+            }
         }
         &__6{
             grid-column: 3;
             grid-row: 2;
-            background-image: url(../assets/ciseaux2.jpg);
-            background-size: cover;
-            background-position: bottom;
-            
+            @media screen and (max-width:600px){
+                grid-column: 2;
+                grid-row: 2;
+            }
         }
 
         &__2, &__4, &__6{
             &:hover{
-                opacity: 0.3;
                 cursor: pointer;
-                &__paragraph{
-                    display: flex;
-                }
+                opacity: 0.7;
             }
-            &__paragraph{
-                display: none;
+            &__paragraph{ 
+                position: absolute;
+                z-index: 1;
+                justify-content: center;
+                padding: 3vh;
+                height: 88%;
+                border-radius: 1vh;
+                color: $black-color;
+                text-shadow: nones;
+                @media screen and (max-width:600px) {
+                    height: 85%;
+                }
             }
         }
     }
 }
 
-
-@media screen and (max-width:650px){
-    .rules{
-        display: flex;
-        flex-direction: column;
-        width: 100vw;
-        text-align: center;
-        &__title{
-            display: flex 1;
-            font-size: 5vh;
-            color: rgb(221, 84, 5);
-            margin: 10vh 0 2vh 0;
-        }
-        &__paragraph1{
-            display: flex 2;
-            font-size: 3vh;
-            margin: 10vh 20vw 5vh 20vw;
-        }
-        &__paragraph2{
-            display: flex 3;
-            font-size: 3vh;
-            margin: 3vh 20vw 10vh 20vw;
-       
-        }
-    }
-
-    .spinOff{
-        &__title{
-            font-size: 5vh;
-            color: rgb(221, 84, 5);
-
-            margin: 10vh 0 2vh 0;
-            text-align: center;
-        }
-        &__grid{
-            grid-template-columns: 40vw 40vw;
-            grid-template-rows: 40vh 40vh 40vh ;
-            gap: 5vh;
-            margin: 10vh 10vw 30vh 10vw;
-            &__1, &__2, &__3, &__4, &__5, &__6{
-                line-height: 8vh;
-            }
-            &__1{
-                grid-column: 1;
-                grid-row: 1;
-            }
-            &__2{
-                grid-column: 2;
-                grid-row: 1;
-                background-position: center;
-            }
-            &__3{
-                grid-column: 1;
-                grid-row: 2;
-                background-position: bottom;
-            }
-            &__4{
-                grid-column: 2;
-                grid-row: 2;
-            }
-            &__5{
-                grid-column: 1;
-                grid-row: 3;
-            }
-            &__6{
-                grid-column: 2;
-                grid-row: 3;
-            }
-        }
+#background-video {
+    position: relative;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    height: 55vh;
+    width: 22vw;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1vh;
+    @media screen and (max-width:600px) {
+        height: 45vh;
+        width: 45vw;
     }
 }
