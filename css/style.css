@@ -202,7 +202,7 @@ h2 {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  border: 2px solid #fff;
+  border: 2px solid #dd5405;
   cursor: pointer;
   margin-left: 5px;
   cursor: pointer;
@@ -831,17 +831,33 @@ button.opinionContainer__indicators__active {
         height: 70%; } }
 
 /*global*/
-.bloc {
+.index {
   position: relative;
   height: 100vh;
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; }
   @media screen and (max-width: 1024px) {
-    .bloc {
+    .index {
       display: flex;
       flex-direction: column;
       overflow: auto; } }
-  .bloc video {
+  @media screen and (max-width: 480px) {
+    .index {
+      display: flex;
+      flex-direction: column;
+      overflow: auto; } }
+  .index__logo__design {
+    padding: 1rem;
+    width: 8.75rem; }
+    @media screen and (max-width: 1024px) {
+      .index__logo__design {
+        width: 8rem; } }
+    @media screen and (max-width: 480px) {
+      .index__logo__design {
+        width: 20vw; } }
+  .index__video {
     position: absolute;
     min-width: 100%;
     min-height: 100%;
@@ -849,62 +865,62 @@ button.opinionContainer__indicators__active {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -100; }
-  .bloc a img {
-    padding: 1rem;
-    width: 8.75rem; }
+  .index__title {
+    font-family: "Syne Mono", "Proza Libre", Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    display: flex;
+    align-items: justify;
+    justify-content: center;
+    text-align: center;
+    font-size: 7rem;
+    text-shadow: 3px 3px 3px purple; }
     @media screen and (max-width: 1024px) {
-      .bloc a img {
-        width: 8rem; } }
+      .index__title {
+        font-size: 5.8rem;
+        margin: auto;
+        align-items: center;
+        justify-content: center; } }
     @media screen and (max-width: 480px) {
-      .bloc a img {
-        width: 20vw; } }
-
-/*title*/
-.title_index {
-  color: whitesmoke;
-  display: flex;
-  align-items: justify;
-  justify-content: center;
-  text-align: center;
-  font-size: 7rem; }
-  @media screen and (max-width: 1024px) {
-    .title_index {
-      font-size: 5.8rem;
-      margin: auto;
-      align-items: center; } }
-  @media screen and (max-width: 480px) {
-    .title_index {
-      font-size: 17vw; } }
-
-/*section button*/
-.div_button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 5rem; }
-  @media screen and (max-width: 1024px) {
-    .div_button {
-      font-size: 5rem;
-      margin: auto; } }
-  @media screen and (max-width: 480px) {
-    .div_button {
-      font-size: 10vw; } }
-  .div_button button {
-    background: whitesmoke;
-    border-radius: 80px;
-    border: 0.2rem solid purple;
-    font-size: 2rem;
-    padding: 1rem 2rem; }
+      .index__title {
+        font-size: 17vw;
+        margin: auto;
+        align-items: center;
+        justify-content: center; } }
+  .index__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem; }
     @media screen and (max-width: 1024px) {
-      .div_button button {
-        font-size: 1.5rem;
+      .index__button {
+        align-items: center;
+        justify-content: center;
+        font-size: 5rem;
         margin: auto; } }
     @media screen and (max-width: 480px) {
-      .div_button button {
-        font-size: 5vw; } }
-  .div_button a {
-    text-decoration: none;
-    color: purple; }
+      .index__button {
+        align-items: center;
+        justify-content: center;
+        font-size: 10vw;
+        margin: auto; } }
+    .index__button__design {
+      font-family: "Syne Mono", "Proza Libre", Arial, Helvetica, sans-serif;
+      background: whitesmoke;
+      border-radius: 80px;
+      border: 0.2rem solid purple;
+      font-size: 2rem;
+      padding: 1rem 2rem 1rem 2rem; }
+      @media screen and (max-width: 1024px) {
+        .index__button__design {
+          font-size: 1.5rem;
+          margin: auto; } }
+      @media screen and (max-width: 480px) {
+        .index__button__design {
+          font-size: 5vw;
+          margin: auto; } }
+      .index__button__design__clic {
+        text-decoration: none;
+        color: purple; }
 
 .headerRules {
   background-image: url("../assets/rules_img.jpeg");
