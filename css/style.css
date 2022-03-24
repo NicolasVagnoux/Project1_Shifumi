@@ -52,9 +52,12 @@ h2 {
   font-family: "Ruluko";
   color: #dd5405;
   text-decoration: underline;
-  font-size: 1.5em;
+  font-size: 3rem;
   text-align: center;
   margin-top: 2rem; }
+  @media (max-width: 600px) {
+    h2 {
+      font-size: 2.2rem; } }
 
 .formOpinion__container {
   display: flex;
@@ -683,9 +686,12 @@ button.opinionContainer__indicators__active {
   .mainHistory__h2 {
     font-family: "Ruluko";
     display: flex 1;
-    font-size: 4vh;
+    font-size: 3rem;
     color: #dd5405;
     padding: 4vh; }
+    @media screen and (max-width: 600px) {
+      .mainHistory__h2 {
+        font-size: 2.2rem; } }
   .mainHistory__gridContainer {
     display: flex 2;
     justify-content: center;
@@ -1003,7 +1009,7 @@ button.opinionContainer__indicators__active {
     text-shadow: 2px 3px 2px black;
     line-height: 5vw;
     background: linear-gradient(145deg, #b3b2b2, #d5d4d4);
-    box-shadow: 12px 12px 24px #a9a8a8, -12px -12px 24px #e5e4e4;
+    box-shadow: 12px 12px 24px #a9a8a8, -12px -12px 24px #e5e4e4;
     font-size: 5vh; }
     @media screen and (max-width: 600px) {
       .spinOff__grid__1, .spinOff__grid__2, .spinOff__grid__3, .spinOff__grid__4, .spinOff__grid__5, .spinOff__grid__6 {
