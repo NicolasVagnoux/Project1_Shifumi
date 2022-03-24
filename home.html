@@ -10,7 +10,7 @@
 <body>
     <header>
         <nav class="navbar"> <!-- Barre de navigation! -->
-            <a><img src="assets/logo.png" id="navlogo"></img></a>
+            <a href="index.html"><img src="assets/logo.png" id="navlogo"></img></a>
             <label for="toggle">☰</label>
             <input type="checkbox" id="toggle"></input>
             <ul class="navbar__list">
@@ -24,12 +24,13 @@
     </header>
 
     <main>
-        <section class="homeImg">
+        <section class="homeImg" id="homeImg">
             <br><br>
             <h1><br>BIENVENUE !</h1>
             <p><br>Bienvenue sur le site référence dans le monde du Shifumi !<br>Vous souhaitez en savoir plus sur ce jeu ancestral et légendaire ? Alors vous êtes au bon endroit ! Tout au long de votre visite, préparez-vous à être embarqués dans un fabuleux voyage dans l'univers du Shifumi ! Ses origines lointaines, ses règles et variantes complexes... Et même une partie endiablée contre votre ordinateur ! Accrochez-vous à votre chaise, dans quelques minutes, le Shifumi n'aura plus de secret pour vous !<br>Bonne visite !</p>
             <a href="#homeGrid"><img src="assets/arrow.png" class="homeImg__arrow"></img></a>
         </section>
+
         <section class="homeGrid" id="homeGrid">
             <div class="homeGrid__img1">
                 <a href="history.html"><img src="assets/japan_sakura.png"></img></a>
@@ -44,6 +45,12 @@
             </div>
             <div class="homeGrid__txt3">Envolez-vous vers une expérience inoubliable...</div>
         </section>
+
+       <section class="backOnTop">
+           <div class="backOnTop__box">
+               <a href="#homeImg">▲ Retour en haut de page</a>
+           </div>
+       </section> 
     </main>
 
     <footer class="footer">
@@ -63,6 +70,7 @@
             <img src="assets/svgexport-23.svg"></img>
             <img src="assets/svgexport-24.svg"></img>
             <img src="assets/svgexport-25.svg"></img>
+            <img src="assets/github.svg"></img>
         </div>
     </footer> 
     <script src="home.js"></script>

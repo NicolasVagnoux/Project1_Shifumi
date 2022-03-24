@@ -1,20 +1,35 @@
 .footer{
     display: flex;
+    width: 100%;
     font-size: 16px;
     background-color: $black-color;
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width:400px) {
+        width: 400px;
+    }
     &__logo{
         display: flex;
-        height: 13vh;
-        width: 13vw;
-        padding: 1em 1em 1em 3em;
+        height: 15vh;
+        width: 15vw;
+        padding: 3vh 3vw 3vh 3vw;
         color: $white-color;
+        @media screen and (max-width:1000px) {
+            height: 12vh;
+            width: 12vw;
+        }
+        @media screen and (max-width:800px) {
+            height: 10vh;
+            width: 10vw;
+        }
+        @media screen and (max-width:600px) {
+            height: 8vh;
+            width: 8vw;
+        }
     }
     &__text{
         display: flex;
         color: $white-color;
-        font-size: 2vw;
         flex-direction: column;
         text-align: center;
         font-family: $font-text;
@@ -22,56 +37,64 @@
             display: flex 1;
             color: rgba(88, 218, 235, 0.938);
             text-decoration: underline;
-            font-size: 3vw;
+            font-size: 2vw;
             font-family: $font-text;
             margin: 1em;
+            @media screen and (max-width:600px) {
+                font-size: 1.2rem;
+            }
         }
         &__paragraph{
             display: flex 2;
-            padding-bottom: 2em;
+            font-size: 1.4vw;
+            padding-bottom: 5vh;
             font-family: $font-text;
+            @media screen and (max-width:600px) {
+                font-size: 0.7rem;
+            }
         }
     }
     &__socialMedias{
         display: flex;
         img{
-            padding: 1em;
             height: 3vh;
             width: 3vw;
-            padding-top: 10vh;   
+            margin: 12vh 1vw 2vh 1vw;
+            &:hover{
+            cursor: pointer;
+            }
         }
-    }
-}
-
-@media screen and (max-width:600px) {
-   .footer {
-        font-size: 10px;
-        &__logo{
-            height: 10vh;
-            width: 20vw;
-            padding-right: 20vw;
-        }
-        &__socialMedias{
-            flex-wrap: wrap;
-            flex-direction: column;
+        @media screen and (max-width:600px) {
+            display: grid;
+            gap:1vh;
+            padding: 2vh;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
             img{
-                display: flex;
-                flex-basis: 3;
-                flex-wrap: wrap;
-                height: 1em;
-                width: 1em;
-                padding: 2vh 2vw 2vh 20vw;
+                height: 2.5vh;
+                width: 2.5vw;
+                margin: 1vh;
+                padding: 1vh;
+            }
+        }
+        @media screen and (min-width:600px) and (max-width:1000px) {
+            display: grid;
+            gap: 1vw;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            img{
+                height: 4vh;
+                width: 4vw;
+                margin: 1vh;
+                padding: 1vh;
             }
 
         }
+        
     }
 }
 
-@media screen and (max_width:1000px) {
-    .footer{
-        font-size: 10px;
-    }
-}
+
 
 
 

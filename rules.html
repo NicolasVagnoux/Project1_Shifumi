@@ -11,7 +11,9 @@
     <body>
         <header class="headerRules">
             <nav class="navbar"> <!-- Barre de navigation! -->
-                <img src="assets/logo.png" id="navlogo"></img>
+                <a href="home.html"><img src="assets/logo.png" id="navlogo"></img></a>
+                <label for="toggle">☰</label>
+                <input type="checkbox" id="toggle"></input>
                 <ul class="navbar__list">
                     <li><a href="home.html" class="navbar__list__link">Accueil</a></li>
                     <li><a href="history.html" class="navbar__list__link">L'histoire</a></li>
@@ -20,15 +22,18 @@
                     <li><a href="contact.html" class="navbar__list__link">Contact</a></li>
                 </ul>
             </nav>
-            <h1 class="pageTitle">Règles du jeu</h1>
         </header>
         <main>
-            <section>
+            <section class="pageTitle" id="pageTitle">
+                <h1>REGLES DU JEU</h1>
+                <a href="#rules"><img src="assets/arrow.png" class="homeImg__arrow"></img></a>
+            </section>
+            <section id="rules">
                 <div1 class="rules">
                     <h2 class="rules__title">Règles traditionnelles</h2>
-                    <p class="rules__paragraph1"><strong>La pierre :</strong> est représentée par un poing fermé. <br><br>
-                        <strong>La feuille :</strong>  est représentée par une main à plat, la paume en direction du sol. <br><br>
-                        <strong>Les ciseaux :</strong> sont représentés par deux doigts formant un V. <br></p>
+                    <p class="rules__paragraph1"><strong class="rules__paragraph1__strong">La pierre :</strong> est représentée par un poing fermé. <br><br>
+                        <strong class="rules__paragraph1__strong">La feuille :</strong>  est représentée par une main à plat, la paume en direction du sol. <br><br>
+                        <strong class="rules__paragraph1__strong">Les ciseaux :</strong> sont représentés par deux doigts formant un V. <br></p>
                     <p class="rules__paragraph2">La pierre écrase les ciseaux et gagne. <br><br>
                         La feuille enveloppe la pierre et gagne. <br><br>
                         Les ciseaux découpent la feuille et gagnent. <br><br>
@@ -39,40 +44,63 @@
                     <h2 class="spinOff__title">Variantes</h2>
                     <div class="spinOff__grid">
                         <div class="spinOff__grid__1">
-                            <ul class="spinOff__grid__1__PFCLS">
-                                <li>Pierre</li>
-                                <li>Feuille</li>
-                                <li>Ciseaux</li>
-                                <li>Lézard</li>
-                                <li>Spoke</li>
-                            </ul>
+                            <video id="background-video" autoplay loop muted>
+                                <ul class="spinOff__grid__1__PFCLS">
+                                    <li>Pierre</li>
+                                    <li>Feuille</li>
+                                    <li>Ciseaux</li>
+                                    <li>Lézard</li>
+                                    <li>Spoke</li>
+                                </ul>
+                                <source src="./assets/pierre2.mp4" type="video/mp4">
+                            </video>
                         </div>
                         <div class="spinOff__grid__2">
-                            <p class="spinOff__grid__2__paragraph">Paragraphe sur le PFCLS</p>
+                            <video id="background-video" autoplay loop muted>
+                                <p class="spinOff__grid__2__paragraph">Paragraphe sur le PFCLS</p>
+                                <source src="./assets/pierre1.mp4" type="video/mp4">
+                            </video>
                         </div>
                         <div class="spinOff__grid__3">
-                            <ul class="spinOff__grid__3__FEF">
-                                <li>Feu</li>
-                                <li>Eau</li>
-                                <li>Feuille</li>
-                            </ul>
+                            <video id="background-video" autoplay loop muted>
+                                <ul class="spinOff__grid__3__FEF">
+                                    <li>Feu</li>
+                                    <li>Eau</li>
+                                    <li>Feuille</li>
+                                </ul>
+                                <source src="./assets/ciseaux1.mp4" type="video/mp4">
+                            </video>
                         </div>
                         <div class="spinOff__grid__4">
-                            <p class="spinOff__grid__4__paragraph">Paragraphe sur le FEF</p>
+                            <video id="background-video" autoplay loop muted>
+                                <p class="spinOff__grid__4__paragraph">Paragraphe sur le FEF</p>
+                                <source src="./assets/feuille3.mp4" type="video/mp4">
+                            </video>
                         </div>
                         <div class="spinOff__grid__5">
-                            <ul class="spinOff__grid__5__PFCP">
-                                <li>Pierre</li>
-                                <li>Feuille</li>
-                                <li>Ciseaux</li>
-                                <li>Puit</li>
-                            </ul>
+                            <video id="background-video" autoplay loop muted>
+                                <ul class="spinOff__grid__5__PFCP">
+                                    <li>Pierre</li>
+                                    <li>Feuille</li>
+                                    <li>Ciseaux</li>
+                                    <li>Puit</li>
+                                </ul>
+                                <source src="./assets/feuille1.mp4" type="video/mp4">
+                            </video>
                         </div>
                         <div class="spinOff__grid__6">
-                            <p class="spinOff__grid__6__paragraph">Paragraphe sur le PFCP</p>
+                            <video id="background-video" autoplay loop muted>
+                                <p class="spinOff__grid__6__paragraph">Paragraphe sur le PFCP</p>
+                                <source src="./assets/ciseaux2.mp4" type="video/mp4">
+                            </video>
                         </div>
                     </div>
                 </div2>            
+            </section>
+            <section class="backOnTop">
+                <div class="backOnTop__box">
+                    <a href="#pageTitle">▲ Retour en haut de page</a>
+                </div>
             </section>
         </main>
         <footer class="footer">
@@ -92,9 +120,10 @@
                 <img src="assets/svgexport-23.svg"></img>
                 <img src="assets/svgexport-24.svg"></img>
                 <img src="assets/svgexport-25.svg"></img>
+                <img src="assets/github.svg"></img>
             </div>
         </footer> 
         <script src="home.js"></script>
+        <script src="rules.js"></script>
     </body>
-
 </html>
