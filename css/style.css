@@ -18,6 +18,11 @@ h1 {
     h1 {
       font-size: 4rem; } }
 
+h2 {
+  font-family: "Ruluko";
+  font-size: 3rem;
+  color: #dc5304; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -47,9 +52,12 @@ h2 {
   font-family: "Ruluko";
   color: #dd5405;
   text-decoration: underline;
-  font-size: 1.5em;
+  font-size: 3rem;
   text-align: center;
   margin-top: 2rem; }
+  @media (max-width: 600px) {
+    h2 {
+      font-size: 2.2rem; } }
 
 .formOpinion__container {
   display: flex;
@@ -678,9 +686,12 @@ button.opinionContainer__indicators__active {
   .mainHistory__h2 {
     font-family: "Ruluko";
     display: flex 1;
-    font-size: 4vh;
-    color: #dc5304;
+    font-size: 3rem;
+    color: #dd5405;
     padding: 4vh; }
+    @media screen and (max-width: 600px) {
+      .mainHistory__h2 {
+        font-size: 2.2rem; } }
   .mainHistory__gridContainer {
     display: flex 2;
     justify-content: center;
