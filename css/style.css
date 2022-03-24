@@ -86,24 +86,10 @@ h2 {
       color: #000;
       text-decoration: none; }
 
-<<<<<<< HEAD
-/* --AVIS DES JOUEURS-- */
-.opinion {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 10px 10px;
-  grid-template-areas: "opinion__img-1 opinion__art-1 opinion__art-2 opinion__img-2" "opinion__img-3 opinion__art-3 opinion__art-4 opinion__img-4";
-  align-content: stretch;
-  justify-items: stretch;
-  align-items: center;
-  margin-top: 4rem; }
-=======
 #opinionContainerId {
   display: flex;
   justify-content: center;
   margin-bottom: 4rem; }
->>>>>>> adf3c0390750daaf45a45dcbba8c7fd79e2697ef
 
 .opinionContainer {
   display: flex;
@@ -631,9 +617,6 @@ button.opinionContainer__indicators__active {
 #toggle:checked + .navbar__list {
   display: flex; }
 
-<<<<<<< HEAD
-.headTitle {
-=======
 .backOnTop {
   display: flex;
   justify-content: flex-end;
@@ -664,8 +647,7 @@ button.opinionContainer__indicators__active {
       .backOnTop a {
         font-size: 0.8rem; } }
 
-.titleHistory {
->>>>>>> adf3c0390750daaf45a45dcbba8c7fd79e2697ef
+.headTitle {
   height: 100vh;
   background-image: url("../assets/history_img_background.jpg");
   background-size: cover;
@@ -1000,15 +982,15 @@ button.opinionContainer__indicators__active {
   display: grid;
   text-align: center;
   justify-content: center;
-  grid-template-columns: 20vw 20vw 20vw;
-  grid-template-rows: 50vh 50vh;
+  grid-template-columns: 22vw 22vw 22vw;
+  grid-template-rows: 55vh 55vh;
   gap: 5vw;
   margin: 10vh 10vw 30vh 10vw; }
   @media screen and (max-width: 600px) {
     .spinOff__grid {
       grid-template-columns: 40vw 40vw;
       grid-template-rows: 40vh 40vh 40vh;
-      gap: 8vh;
+      gap: 10vh;
       margin: 10vh 15vw 30vh 10vw; } }
   .spinOff__grid__1, .spinOff__grid__2, .spinOff__grid__3, .spinOff__grid__4, .spinOff__grid__5, .spinOff__grid__6 {
     border-radius: 0.4rem;
@@ -1016,14 +998,16 @@ button.opinionContainer__indicators__active {
     text-shadow: 2px 3px 2px black;
     line-height: 5vw;
     background: linear-gradient(145deg, #b3b2b2, #d5d4d4);
-    box-shadow: 12px 12px 24px #a9a8a8, -12px -12px 24px #e5e4e4;
+    box-shadow: 12px 12px 24px #a9a8a8, -12px -12px 24px #e5e4e4;
     font-size: 5vh; }
     @media screen and (max-width: 600px) {
       .spinOff__grid__1, .spinOff__grid__2, .spinOff__grid__3, .spinOff__grid__4, .spinOff__grid__5, .spinOff__grid__6 {
         line-height: 8vh; } }
   .spinOff__grid__1 {
     grid-column: 1;
-    grid-row: 1; }
+    grid-row: 1;
+    background-image: url("../assets/sheldon.jpeg");
+    background-size: cover; }
     .spinOff__grid__1__PFCLS {
       display: flex;
       flex-direction: column;
@@ -1042,7 +1026,10 @@ button.opinionContainer__indicators__active {
         background-position: center; } }
   .spinOff__grid__3 {
     grid-column: 3;
-    grid-row: 1; }
+    grid-row: 1;
+    background-image: url("../assets/feu.jpeg");
+    background-size: cover;
+    background-position: center; }
     .spinOff__grid__3__FEF {
       display: flex;
       flex-direction: column;
@@ -1062,7 +1049,10 @@ button.opinionContainer__indicators__active {
         grid-row: 3; } }
   .spinOff__grid__5 {
     grid-column: 2;
-    grid-row: 2; }
+    grid-row: 2;
+    background-image: url("../assets/puits.jpeg");
+    background-size: cover;
+    background-position: center; }
     .spinOff__grid__5__PFCP {
       display: flex;
       flex-direction: column;
@@ -1079,12 +1069,8 @@ button.opinionContainer__indicators__active {
       .spinOff__grid__6 {
         grid-column: 2;
         grid-row: 2; } }
-  .spinOff__grid__2:hover, .spinOff__grid__4:hover, .spinOff__grid__6:hover {
-    cursor: pointer;
-    opacity: 0.7; }
   .spinOff__grid__2__paragraph, .spinOff__grid__4__paragraph, .spinOff__grid__6__paragraph {
-    position: absolute;
-    z-index: 1;
+    display: flex;
     justify-content: center;
     padding: 3vh;
     height: 88%;
@@ -1094,12 +1080,25 @@ button.opinionContainer__indicators__active {
     @media screen and (max-width: 600px) {
       .spinOff__grid__2__paragraph, .spinOff__grid__4__paragraph, .spinOff__grid__6__paragraph {
         height: 85%; } }
+  .spinOff__grid__1, .spinOff__grid__3, .spinOff__grid__5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Ruluko";
+    width: 22vw;
+    height: 55vh; }
+    .spinOff__grid__1:hover, .spinOff__grid__3:hover, .spinOff__grid__5:hover {
+      cursor: pointer;
+      transform: scale(1.2); }
+    @media screen and (max-width: 600px) {
+      .spinOff__grid__1, .spinOff__grid__3, .spinOff__grid__5 {
+        height: 45vh;
+        width: 45vw; }
+        .spinOff__grid__1:hover, .spinOff__grid__3:hover, .spinOff__grid__5:hover {
+          cursor: pointer;
+          transform: scale(1.1); } }
 
 #background-video {
-  position: relative;
-  z-index: 0;
-  top: 0;
-  left: 0;
   height: 55vh;
   width: 22vw;
   object-fit: cover;

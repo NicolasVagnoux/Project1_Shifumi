@@ -64,14 +64,14 @@
         display: grid;
         text-align: center;
         justify-content: center;
-        grid-template-columns: 20vw 20vw 20vw;
-        grid-template-rows: 50vh 50vh;
+        grid-template-columns: 22vw 22vw 22vw;
+        grid-template-rows: 55vh 55vh;
         gap: 5vw;
         margin: 10vh 10vw 30vh 10vw;
         @media screen and (max-width:600px){
             grid-template-columns: 40vw 40vw;
             grid-template-rows: 40vh 40vh 40vh ;
-            gap: 8vh;
+            gap: 10vh;
             margin: 10vh 15vw 30vh 10vw;
         }
         &__1, &__2, &__3, &__4, &__5, &__6{
@@ -90,11 +90,12 @@
         &__1{
             grid-column: 1;
             grid-row: 1;
+            background-image: url("../assets/sheldon.jpeg");
+            background-size: cover;
             &__PFCLS{
                 display: flex;
                 flex-direction: column;
                 list-style: none;
-                
             }
             @media screen and (max-width:600px){
                 grid-column: 1;
@@ -113,6 +114,9 @@
         &__3{
             grid-column: 3;
             grid-row: 1;
+            background-image: url("../assets/feu.jpeg");
+            background-size: cover;
+            background-position: center;
             &__FEF{
                 display: flex;
                 flex-direction: column;
@@ -136,6 +140,9 @@
         &__5{
             grid-column: 2;
             grid-row: 2;
+            background-image: url("../assets/puits.jpeg");
+            background-size: cover;
+            background-position: center;
             &__PFCP{
                 display: flex;
                 flex-direction: column;
@@ -155,15 +162,9 @@
                 grid-row: 2;
             }
         }
-
         &__2, &__4, &__6{
-            &:hover{
-                cursor: pointer;
-                opacity: 0.7;
-            }
             &__paragraph{ 
-                position: absolute;
-                z-index: 1;
+                display: flex;
                 justify-content: center;
                 padding: 3vh;
                 height: 88%;
@@ -175,14 +176,31 @@
                 }
             }
         }
+
+        &__1, &__3, &__5{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: $font-text;
+            width: 22vw;
+            height: 55vh;
+            &:hover{
+                cursor: pointer;
+                transform: scale(1.2);
+            }
+            @media screen and (max-width:600px){
+                height: 45vh;
+                width: 45vw;
+                &:hover{
+                    cursor: pointer;
+                    transform: scale(1.1);
+                }
+            }
+        }
     }
 }
 
 #background-video {
-    position: relative;
-    z-index: 0;
-    top: 0;
-    left: 0;
     height: 55vh;
     width: 22vw;
     object-fit: cover;
