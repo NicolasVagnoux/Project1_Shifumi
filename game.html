@@ -13,7 +13,7 @@
 
     <header class="gameHeader">
         <nav class="navbar"> <!-- Barre de navigation! -->
-            <a><img src="assets/logo.png" id="navlogo"></img></a>
+            <a href="home.html"><img src="assets/logo.png" id="navlogo"></img></a>
             <label for="toggle">☰</label>
             <input type="checkbox" id="toggle"></input>
             <ul class="navbar__list">
@@ -23,11 +23,14 @@
                 <li><a href="game.html" class="navbar__list__link">Jouez !</a></li>
                 <li><a href="contact.html" class="navbar__list__link">Contact</a></li>
             </ul>
-        </nav>
-        <h1 class="gameHeader__title">SHI FU MI</h1> 
+        </nav> 
     </header>
 
-    <section class="game">
+    <section class="gameTitle" id="gameTitle">
+        <h1 >SHI FU MI</h1>
+        <a href="#game"><img src="assets/arrow.png" class="homeImg__arrow"></img></a>
+    </section>
+    <section class="game" id="game">
         <div class="game__score">
             <div class="game__score__player"> - </div>
             <img src="assets/slash.png" class="game__score__slashBar"></img>
@@ -42,6 +45,12 @@
             <button class="game__button__1" id="buttonRock">Pierre</button>
             <button class="game__button__2" id="buttonPaper">Feuille</button>
             <button class="game__button__3" id="buttonCisors">Ciseaux</button>
+        </div>
+    </section>
+
+    <section class="backOnTop">
+        <div class="backOnTop__box">
+            <a href="#gameTitle">▲ Retour en haut de page</a>
         </div>
     </section>
 

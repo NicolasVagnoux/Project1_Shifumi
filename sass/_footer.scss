@@ -1,27 +1,30 @@
 .footer{
     display: flex;
-    width: 100vw;
+    width: 100%;
     font-size: 16px;
     background-color: $black-color;
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width:400px) {
+        width: 400px;
+    }
     &__logo{
         display: flex;
-        height: 20vh;
-        width: 20vw;
+        height: 15vh;
+        width: 15vw;
         padding: 3vh 3vw 3vh 3vw;
         color: $white-color;
         @media screen and (max-width:1000px) {
-            height: 15vh;
-            width: 15vw;
-        }
-        @media screen and (max-width:800px) {
             height: 12vh;
             width: 12vw;
         }
+        @media screen and (max-width:800px) {
+            height: 10vh;
+            width: 10vw;
+        }
         @media screen and (max-width:600px) {
-            height: 9vh;
-            width: 9vw;
+            height: 8vh;
+            width: 8vw;
         }
     }
     &__text{
@@ -37,12 +40,18 @@
             font-size: 2vw;
             font-family: $font-text;
             margin: 1em;
+            @media screen and (max-width:600px) {
+                font-size: 1.2rem;
+            }
         }
         &__paragraph{
             display: flex 2;
             font-size: 1.4vw;
             padding-bottom: 5vh;
             font-family: $font-text;
+            @media screen and (max-width:600px) {
+                font-size: 0.7rem;
+            }
         }
     }
     &__socialMedias{
