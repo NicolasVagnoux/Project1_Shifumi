@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class = "bodyHistory">
-
     <header>
         <nav class="navbar"> <!-- Barre de navigation! -->
             <a href="home.html"><img src="assets/logo.png" id="navlogo"></img></a>
@@ -24,50 +23,23 @@
                 <li><a href="contact.html" class="navbar__list__link">Contact</a></li>
             </ul>
         </nav>
-        <section class = "titleHistory" id="titleHistory">
-            <h1 class = "h1History">HISTOIRE !</h1>
-            <a href="#historyGrid"><img src="assets/arrow.png" class="homeImg__arrow"></img></a>
+        <section class = "headTitle" id="titleHistory">
+            <h1 class = "headTitle__h1">HISTOIRE</h1>
+            <a href="#historyGrid"><img src="assets/arrow.png" class="headTitle__arrow"></img></a>
         </section>
     </header>
 
     <main>
-        <section class = "titleMainHistory" id = "historyGrid">
-        <h2>Tout commence ici...</h2>
-        </section>
-        <section class = "mainHistory">
-           
-            <div class = slideHistoryAll>
-                <div class = "slideHistory">
-                    <img class = "imgSlide" src="assets/history2.png" alt="imghistory1">
-                    <div class = "infoHistory">
-                        <h3 class = "h3History">Origine</h3>
-                        <p class = "pHistory">Le Shifumi provient du "jeu des trois coups", inventé en Chine il y a très longtemps.</p>
-                    </div>
-                </div>
-                <div class = "slideHistory">
-                    <img class = "imgSlide" src="assets/history1.png" alt="imghistory2">
-                    <div class = "infoHistory">
-                        <h3 class = "h3History">Les écrits</h3>
-                        <p class = "pHistory">Les premiers écrits datent de la fin de l'ère Ming, entre 206 BC à 220 AD.</p>
-                    </div>               
-                </div>
-                <div class = "slideHistory">
-                    <img class = "imgSlide" src="assets/history5.png" alt="imghistory3">
-                    <div class = "infoHistory">
-                        <h3 class = "h3History">Provenance</h3>
-                        <p class = "pHistory">Il est arrivé en occident via le japon, avec son nom alternatif "shifumi".</p>
-                    </div>
-                </div>
-                <div class = "slideHistory">
-                    <img class = "imgSlide" src="assets/history4.png" alt="imghistory4">
-                    <div class = "infoHistory">
-                        <h3 class = "h3History">Signification</h3>
-                        <p class = "pHistory">Le nom Shifumi vient du japonais "Hi-Fu-Mi" : chiffres un-deux-trois  一, 二, 三.</p>
-                    </div>
-                
-                </div>
+        <section class = "mainHistory" id="historyGrid">
+            <h2 class = "mainHistory__h2">Tout commence ici...</h2>
+            <div class="mainHistory__gridContainer"></div>
+                <div class = "mainHistory__gridContainer__grid">
+                    <div class = "mainHistory__gridContainer__grid__1"></div>
+                    <div class = "mainHistory__gridContainer__grid__2"></div>
+                    <div class = "mainHistory__gridContainer__grid__3"></div>
+                    <div class = "mainHistory__gridContainer__grid__4"></div>
+                </div> 
             </div>
-        
         </section>
 
         <section class="backOnTop">

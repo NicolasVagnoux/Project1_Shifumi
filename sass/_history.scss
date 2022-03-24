@@ -1,5 +1,4 @@
-
-.titleHistory{
+.headTitle{
     height: 100vh;
     background-image: url('../assets/history_img_background.jpg');
     background-size: cover;
@@ -7,106 +6,80 @@
     background-position: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:space-evenly;
     align-items: center;
-    
-}
 
-.h1History{
-    color: $white-color;
-    font-family: $font-title;
-    font-weight: lighter;
-    font-size: 8vw;
-    text-shadow: 5px 5px 5px black;   
-}
-
-.titleHistoryArrow{
-    width: 50px;
-}
-
-.titleHistoryArrow :hover {
-    transform: scale(1.1);
+    &__h1{
+        color: $white-color;
+        font-family: $font-title;
+        font-weight: lighter;
+        font-size: 8vw;
+        text-shadow: 5px 5px 5px black;
+        padding-top: 7%;
+    }
+    &__arrow{
+        width: 50px;
+        &:hover {
+            transform: scale(1.1);
+            }
+      
+    }
 }
 
 .mainHistory{
-    height: 100vh;
-    background: $white-color;
-}
-
-.slideHistoryAll{
-    position: relative;
-    background: $white-color;
-    display: flex;
-    flex-direction: row;
-    width:200%;
-    margin: 150px auto;
-
-    
-    
-
-    .slideHistory{
-        position:relative;
-        width: 100%;
-        height: 100%;
-        animation: sliding 15s infinite;
-        
-        
-        
-        
-
-        .imgSlide{
-            position: absolute;
-            width: 100%;
-        }
-
-        
-
-        .infoHistory{
-            position: absolute;
-            color: black;
-            background: rgba(255,255,255,0.3);
-            width: 75%;
-            margin-top: 50px;
-            margin-left: 50px;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 5px 25px rgba(1, 1, 1, 0.05);
-
-            .h3History{
-                font-size: 2em;
-                font-weight: 800;                
-            }
-
-            .pHistory{
-                font-size: 1em;
-                font-weight: 400;                
-            }
-
-            @keyframes sliding{
-                0%{
-                    transform: translateX(0);
-                }
-                20%{
-                    transform: translateX(0);
-                }
-                35%{
-                    transform: translateX(-100%);
-                }
-                55%{
-                    transform: translateX(-100%);
-                }
-                70%{
-                    transform: translateX(-200%);
-                }
-                90%{
-                    transform: translateX(-200%);
-                }
-                100%{
-                    transform: translateX(0);
-                }
-            }
-
-
-        }   
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1vh 10vw 1vh 10vw;
+    &__h2{
+        font-family: $font-text;
+        display: flex 1;
+        font-size: 4vh;
+        color: hsl(22, 96%, 44%);
+        padding: 4vh;
     }
+    &__gridContainer{
+        display:flex 2;
+        justify-content: center;
+        align-items: center;
+        &__grid{
+            display: grid;
+            margin-bottom: 20vh;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 5vh;
+            @media screen and (max-width: 870px) {
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                // 
+                // margin-bottom: 50vh;
+            }
+            &__1, &__2, &__3,&__4{
+                border-radius: 1vh;
+                width: 40vw;
+                height: 40vh;
+                background-size: cover;
+                &:hover {
+                    transform: scale(1.1);
+                }
+                @media screen and (max-width: 870px){
+                    width: 80vw;
+                }
+            }
+            &__1{
+                background-image: url("../assets/hist1.png")
+                
+            }
+            &__2{
+                background-image: url("../assets/hist2.png")
+            }
+            &__3{
+                background-image: url("../assets/hist3.png")
+            }
+            &__4{
+                background-image: url("../assets/hist4.png");
+            }
+        } 
+    }  
 }

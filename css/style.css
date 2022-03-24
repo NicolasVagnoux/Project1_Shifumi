@@ -86,10 +86,24 @@ h2 {
       color: #000;
       text-decoration: none; }
 
+<<<<<<< HEAD
+/* --AVIS DES JOUEURS-- */
+.opinion {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px 10px;
+  grid-template-areas: "opinion__img-1 opinion__art-1 opinion__art-2 opinion__img-2" "opinion__img-3 opinion__art-3 opinion__art-4 opinion__img-4";
+  align-content: stretch;
+  justify-items: stretch;
+  align-items: center;
+  margin-top: 4rem; }
+=======
 #opinionContainerId {
   display: flex;
   justify-content: center;
   margin-bottom: 4rem; }
+>>>>>>> adf3c0390750daaf45a45dcbba8c7fd79e2697ef
 
 .opinionContainer {
   display: flex;
@@ -617,6 +631,9 @@ button.opinionContainer__indicators__active {
 #toggle:checked + .navbar__list {
   display: flex; }
 
+<<<<<<< HEAD
+.headTitle {
+=======
 .backOnTop {
   display: flex;
   justify-content: flex-end;
@@ -648,6 +665,7 @@ button.opinionContainer__indicators__active {
         font-size: 0.8rem; } }
 
 .titleHistory {
+>>>>>>> adf3c0390750daaf45a45dcbba8c7fd79e2697ef
   height: 100vh;
   background-image: url("../assets/history_img_background.jpg");
   background-size: cover;
@@ -655,73 +673,64 @@ button.opinionContainer__indicators__active {
   background-position: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center; }
-
-.h1History {
-  color: whitesmoke;
-  font-family: "Proza Libre";
-  font-weight: lighter;
-  font-size: 8vw;
-  text-shadow: 5px 5px 5px black; }
-
-.titleHistoryArrow {
-  width: 50px; }
-
-.titleHistoryArrow :hover {
-  transform: scale(1.1); }
+  .headTitle__h1 {
+    color: whitesmoke;
+    font-family: "Proza Libre";
+    font-weight: lighter;
+    font-size: 8vw;
+    text-shadow: 5px 5px 5px black;
+    padding-top: 7%; }
+  .headTitle__arrow {
+    width: 50px; }
+    .headTitle__arrow:hover {
+      transform: scale(1.1); }
 
 .mainHistory {
-  height: 100vh;
-  background: whitesmoke; }
-
-.slideHistoryAll {
-  position: relative;
-  background: whitesmoke;
   display: flex;
-  flex-direction: row;
-  width: 200%;
-  margin: 150px auto; }
-  .slideHistoryAll .slideHistory {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    animation: sliding 15s infinite; }
-    .slideHistoryAll .slideHistory .imgSlide {
-      position: absolute;
-      width: 100%; }
-    .slideHistoryAll .slideHistory .infoHistory {
-      position: absolute;
-      color: black;
-      background: rgba(255, 255, 255, 0.3);
-      width: 75%;
-      margin-top: 50px;
-      margin-left: 50px;
-      padding: 20px;
-      border-radius: 5px;
-      box-shadow: 0 5px 25px rgba(1, 1, 1, 0.05); }
-      .slideHistoryAll .slideHistory .infoHistory .h3History {
-        font-size: 2em;
-        font-weight: 800; }
-      .slideHistoryAll .slideHistory .infoHistory .pHistory {
-        font-size: 1em;
-        font-weight: 400; }
-
-@keyframes sliding {
-  0% {
-    transform: translateX(0); }
-  20% {
-    transform: translateX(0); }
-  35% {
-    transform: translateX(-100%); }
-  55% {
-    transform: translateX(-100%); }
-  70% {
-    transform: translateX(-200%); }
-  90% {
-    transform: translateX(-200%); }
-  100% {
-    transform: translateX(0); } }
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1vh 10vw 1vh 10vw; }
+  .mainHistory__h2 {
+    font-family: "Ruluko";
+    display: flex 1;
+    font-size: 4vh;
+    color: #dc5304;
+    padding: 4vh; }
+  .mainHistory__gridContainer {
+    display: flex 2;
+    justify-content: center;
+    align-items: center; }
+    .mainHistory__gridContainer__grid {
+      display: grid;
+      margin-bottom: 20vh;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 5vh; }
+      @media screen and (max-width: 870px) {
+        .mainHistory__gridContainer__grid {
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 1fr 1fr 1fr; } }
+      .mainHistory__gridContainer__grid__1, .mainHistory__gridContainer__grid__2, .mainHistory__gridContainer__grid__3, .mainHistory__gridContainer__grid__4 {
+        border-radius: 1vh;
+        width: 40vw;
+        height: 40vh;
+        background-size: cover; }
+        .mainHistory__gridContainer__grid__1:hover, .mainHistory__gridContainer__grid__2:hover, .mainHistory__gridContainer__grid__3:hover, .mainHistory__gridContainer__grid__4:hover {
+          transform: scale(1.1); }
+        @media screen and (max-width: 870px) {
+          .mainHistory__gridContainer__grid__1, .mainHistory__gridContainer__grid__2, .mainHistory__gridContainer__grid__3, .mainHistory__gridContainer__grid__4 {
+            width: 80vw; } }
+      .mainHistory__gridContainer__grid__1 {
+        background-image: url("../assets/hist1.png"); }
+      .mainHistory__gridContainer__grid__2 {
+        background-image: url("../assets/hist2.png"); }
+      .mainHistory__gridContainer__grid__3 {
+        background-image: url("../assets/hist3.png"); }
+      .mainHistory__gridContainer__grid__4 {
+        background-image: url("../assets/hist4.png"); }
 
 .homeImg {
   height: 100vh;
@@ -1007,7 +1016,7 @@ button.opinionContainer__indicators__active {
     text-shadow: 2px 3px 2px black;
     line-height: 5vw;
     background: linear-gradient(145deg, #b3b2b2, #d5d4d4);
-    box-shadow: 12px 12px 24px #a9a8a8, -12px -12px 24px #e5e4e4;
+    box-shadow: 12px 12px 24px #a9a8a8, -12px -12px 24px #e5e4e4;
     font-size: 5vh; }
     @media screen and (max-width: 600px) {
       .spinOff__grid__1, .spinOff__grid__2, .spinOff__grid__3, .spinOff__grid__4, .spinOff__grid__5, .spinOff__grid__6 {
