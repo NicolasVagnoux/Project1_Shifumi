@@ -18,23 +18,26 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 400px) {
+    height: 400px;
+    width: 400px;
+    h1 {
+        font-size: 3rem;
+    }
 }
-
-.contact-img h1 {
-  font-size: 10vw;
-  font-family: "Proza Libre";
-  font-weight: lighter;
-  letter-spacing: 8px;
-  color: white;
-  text-shadow: 4px 4px 2px black;
 }
 
 h2 {
+  font-family: $font-text;
   color: #dd5405;
   text-decoration: underline;
-  font-size: 1.5em;
+  font-size: 3rem;
   text-align: center;
   margin-top: 2rem;
+  @media (max-width: 600px) {
+    font-size: 2.2rem;
+  }
+  
 }
 
 .formOpinion__container {

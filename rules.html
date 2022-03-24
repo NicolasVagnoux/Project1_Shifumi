@@ -11,7 +11,7 @@
     <body>
         <header class="headerRules">
             <nav class="navbar"> <!-- Barre de navigation! -->
-                <a><img src="assets/logo.png" id="navlogo"></img></a>
+                <a href="home.html"><img src="assets/logo.png" id="navlogo"></img></a>
                 <label for="toggle">☰</label>
                 <input type="checkbox" id="toggle"></input>
                 <ul class="navbar__list">
@@ -22,10 +22,13 @@
                     <li><a href="contact.html" class="navbar__list__link">Contact</a></li>
                 </ul>
             </nav>
-            <h1 class="pageTitle">Règles du jeu</h1>
         </header>
         <main>
-            <section>
+            <section class="pageTitle" id="pageTitle">
+                <h1>REGLES DU JEU</h1>
+                <a href="#rules"><img src="assets/arrow.png" class="homeImg__arrow"></img></a>
+            </section>
+            <section id="rules">
                 <div1 class="rules">
                     <h2 class="rules__title">Règles traditionnelles</h2>
                     <p class="rules__paragraph1"><strong class="rules__paragraph1__strong">La pierre :</strong> est représentée par un poing fermé. <br><br>
@@ -41,58 +44,54 @@
                     <h2 class="spinOff__title">Variantes</h2>
                     <div class="spinOff__grid">
                         <div class="spinOff__grid__1">
-                            <video id="background-video" autoplay loop muted>
-                                <ul class="spinOff__grid__1__PFCLS">
-                                    <li>Pierre</li>
-                                    <li>Feuille</li>
-                                    <li>Ciseaux</li>
-                                    <li>Lézard</li>
-                                    <li>Spoke</li>
-                                </ul>
-                                <source src="./assets/pierre2.mp4" type="video/mp4">
-                            </video>
+                            <ul class="spinOff__grid__1__PFCLS">
+                                <li>Pierre</li>
+                                <li>Feuille</li>
+                                <li>Ciseaux</li>
+                                <li>Lézard</li>
+                                <li>Spoke</li>
+                            </ul>
                         </div>
                         <div class="spinOff__grid__2">
                             <video id="background-video" autoplay loop muted>
                                 <p class="spinOff__grid__2__paragraph">Paragraphe sur le PFCLS</p>
-                                <source src="./assets/pierre1.mp4" type="video/mp4">
+                                <source src="./assets/feuille.mp4" type="video/mp4">
                             </video>
                         </div>
                         <div class="spinOff__grid__3">
-                            <video id="background-video" autoplay loop muted>
-                                <ul class="spinOff__grid__3__FEF">
-                                    <li>Feu</li>
-                                    <li>Eau</li>
-                                    <li>Feuille</li>
-                                </ul>
-                                <source src="./assets/ciseaux1.mp4" type="video/mp4">
-                            </video>
+                            <ul class="spinOff__grid__3__FEF">
+                                <li>Feu</li>
+                                <li>Eau</li>
+                                <li>Feuille</li>
+                            </ul>
                         </div>
                         <div class="spinOff__grid__4">
                             <video id="background-video" autoplay loop muted>
                                 <p class="spinOff__grid__4__paragraph">Paragraphe sur le FEF</p>
-                                <source src="./assets/feuille3.mp4" type="video/mp4">
+                                <source src="./assets/page.mp4" type="video/mp4">
                             </video>
                         </div>
                         <div class="spinOff__grid__5">
-                            <video id="background-video" autoplay loop muted>
-                                <ul class="spinOff__grid__5__PFCP">
-                                    <li>Pierre</li>
-                                    <li>Feuille</li>
-                                    <li>Ciseaux</li>
-                                    <li>Puit</li>
-                                </ul>
-                                <source src="./assets/feuille1.mp4" type="video/mp4">
-                            </video>
+                            <ul class="spinOff__grid__5__PFCP">
+                                <li>Pierre</li>
+                                <li>Feuille</li>
+                                <li>Ciseaux</li>
+                                <li>Puit</li>
+                            </ul>
                         </div>
                         <div class="spinOff__grid__6">
                             <video id="background-video" autoplay loop muted>
                                 <p class="spinOff__grid__6__paragraph">Paragraphe sur le PFCP</p>
-                                <source src="./assets/ciseaux2.mp4" type="video/mp4">
+                                <source src="./assets/ciseaux.mp4" type="video/mp4">
                             </video>
                         </div>
                     </div>
                 </div2>            
+            </section>
+            <section class="backOnTop">
+                <div class="backOnTop__box">
+                    <a href="#pageTitle">▲ Retour en haut de page</a>
+                </div>
             </section>
         </main>
         <footer class="footer">
