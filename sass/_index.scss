@@ -1,0 +1,98 @@
+/*global*/
+.index {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  @media screen and (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+  }
+  @media screen and (max-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+  }
+  &__logo__design {
+    padding: 1rem;
+    width: 8.75rem;
+    @media screen and (max-width: 1024px) {
+      width: 8rem;
+    }
+    @media screen and (max-width: 480px) {
+      width: 20vw;
+    }
+  }
+  &__video {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -100;
+  }
+  &__title {
+    font-family: "Syne Mono", "Proza Libre", Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    display: flex;
+    align-items: justify;
+    justify-content: center;
+    text-align: center;
+    font-size: 7rem;
+    text-shadow: 3px 3px 3px purple;
+    @media screen and (max-width: 1024px) {
+      font-size: 5.8rem;
+      margin: auto;
+      align-items: center;
+      justify-content: center;
+    }
+    @media screen and (max-width: 480px) {
+      font-size: 17vw;
+      margin: auto;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem;
+    @media screen and (max-width: 1024px) {
+      align-items: center;
+      justify-content: center;
+      font-size: 5rem;
+      margin: auto;
+    }
+    @media screen and (max-width: 480px) {
+      align-items: center;
+      justify-content: center;
+      font-size: 10vw;
+      margin: auto;
+    }
+    &__design {
+      font-family: "Syne Mono", "Proza Libre", Arial, Helvetica, sans-serif;
+      background: whitesmoke;
+      border-radius: 80px;
+      border: 0.2rem solid purple;
+      font-size: 2rem;
+      padding: 1rem 2rem 1rem 2rem;
+      @media screen and (max-width: 1024px) {
+        font-size: 1.5rem;
+        margin: auto;
+      }
+      @media screen and (max-width: 480px) {
+        font-size: 5vw;
+        margin: auto;
+      }
+      &__clic {
+        text-decoration: none;
+        color: purple;
+      }
+    }
+  }
+}

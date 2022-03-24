@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histoire</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ruluko&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class = "bodyHistory">
+    <header>
+        <nav class="navbar"> <!-- Barre de navigation! -->
+            <a href="home.html"><img src="assets/logo.png" id="navlogo"></img></a>
+            <label for="toggle">☰</label>
+            <input type="checkbox" id="toggle"></input>
+            <ul class="navbar__list">
+                <li><a href="home.html" class="navbar__list__link">Accueil</a></li>
+                <li><a href="history.html" class="navbar__list__link">L'histoire</a></li>
+                <li><a href="rules.html" class="navbar__list__link">Règles du jeu</a></li>
+                <li><a href="game.html" class="navbar__list__link">Jouez !</a></li>
+                <li><a href="contact.html" class="navbar__list__link">Contact</a></li>
+            </ul>
+        </nav>
+        <section class = "headTitle" id="titleHistory">
+            <h1 class = "headTitle__h1">HISTOIRE</h1>
+            <p class = "historyP">Once upon a time...</p>
+            <a href="#historyGrid"><img src="assets/arrow.png" class="headTitle__arrow"></img></a>
+        </section>
+    </header>
+
+    <main>
+        <section class = "mainHistory" id="historyGrid">
+            <h2 class = "mainHistory__h2">Tout commence ici...</h2>
+            <div class="mainHistory__gridContainer"></div>
+                <div class = "mainHistory__gridContainer__grid">
+                    <div class = "mainHistory__gridContainer__grid__1"></div>
+                    <div class = "mainHistory__gridContainer__grid__2"></div>
+                    <div class = "mainHistory__gridContainer__grid__3"></div>
+                    <div class = "mainHistory__gridContainer__grid__4"></div>
+                </div> 
+            </div>
+        </section>
+
+        <section class="backOnTop">
+            <div class="backOnTop__box">
+                <a href="#titleHistory">▲ Retour en haut de page</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__logo"><img src="assets/logo.png" alt="logo"></img></div>
+        <div class="footer__text">
+            <p class="footer__text__title">SHIFUMI Inc.</p>
+            <p class="footer__text__paragraph">
+            27 route de Pitoys, 64600 ANGLET
+            <br>
+            Téléphone: +33 6 55 66 77 88
+            <br>
+            Mail: contactus@shifumi.incorporation</p>
+        </div>
+        <div class="footer__socialMedias">
+            <img src="assets/svgexport-21.svg" alt="facebook"/>
+            <img src="assets/svgexport-22.svg" alt="twitter"/>
+            <img src="assets/svgexport-23.svg" alt="linkdin"/>
+            <img src="assets/svgexport-24.svg" alt="instagram"/>
+            <img src="assets/svgexport-25.svg" alt="youtube"/>
+            <img src="assets/github.svg" alt="github"/>
+        </div>
+    </footer> 
+    <script src="home.js"></script>
+</body>
+</html>

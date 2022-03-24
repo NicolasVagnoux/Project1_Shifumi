@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar"> <!-- Barre de navigation! -->
+            <a href="index.html"><img src="assets/logo.png" id="navlogo"></img></a>
+            <label for="toggle">☰</label>
+            <input type="checkbox" id="toggle"></input>
+            <ul class="navbar__list">
+                <li><a href="home.html" class="navbar__list__link">Accueil</a></li>
+                <li><a href="history.html" class="navbar__list__link">L'histoire</a></li>
+                <li><a href="rules.html" class="navbar__list__link">Règles du jeu</a></li>
+                <li><a href="game.html" class="navbar__list__link">Jouez !</a></li>
+                <li><a href="contact.html" class="navbar__list__link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="homeImg" id="homeImg">
+            <br><br>
+            <h1><br>BIENVENUE !</h1>
+            <p><br>Bienvenue sur le site référence dans le monde du Shifumi !<br>Vous souhaitez en savoir plus sur ce jeu ancestral et légendaire ? Alors vous êtes au bon endroit ! Tout au long de votre visite, préparez-vous à être embarqués dans un fabuleux voyage dans l'univers du Shifumi ! Ses origines lointaines, ses règles et variantes complexes... Et même une partie endiablée contre votre ordinateur ! Accrochez-vous à votre chaise, dans quelques minutes, le Shifumi n'aura plus de secret pour vous !<br>Bonne visite !</p>
+            <a href="#homeGrid"><img src="assets/arrow.png" class="homeImg__arrow"></a>
+        </section>
+
+        <section class="homeGrid" id="homeGrid">
+            <div class="homeGrid__img1">
+                <a href="history.html"><img src="assets/japan_sakura.png"></a>
+            </div>
+            <div class="homeGrid__txt1">Une histoire millénaire...</div>
+            <div class="homeGrid__txt2">Un principe révolutionnaire...</div>
+            <div class="homeGrid__img2">
+                <a href="rules.html"><img src="assets/think_rules.png"></a>
+            </div>
+            <div class="homeGrid__img3">
+                <a href="game.html"><img src="assets/game_start.png"></a>
+            </div>
+            <div class="homeGrid__txt3">Envolez-vous vers une expérience inoubliable...</div>
+        </section>
+
+       <section class="backOnTop">
+           <div class="backOnTop__box">
+               <a href="#homeImg">▲ Retour en haut de page</a>
+           </div>
+       </section> 
+    </main>
+
+    <footer class="footer">
+        <div class="footer__logo"><img src="assets/logo.png" alt="logo"></img></div>
+        <div class="footer__text">
+            <p class="footer__text__title">SHIFUMI Inc.</p>
+            <p class="footer__text__paragraph">
+            27 route de Pitoys, 64600 ANGLET
+            <br>
+            Téléphone: +33 6 55 66 77 88
+            <br>
+            Mail: contactus@shifumi.incorporation</p>
+        </div>
+        <div class="footer__socialMedias">
+            <img src="assets/svgexport-21.svg" alt="facebook"/>
+            <img src="assets/svgexport-22.svg" alt="twitter"/>
+            <img src="assets/svgexport-23.svg" alt="linkdin"/>
+            <img src="assets/svgexport-24.svg" alt="instagram"/>
+            <img src="assets/svgexport-25.svg" alt="youtube"/>
+            <img src="assets/github.svg" alt="github"/>
+        </div>
+    </footer> 
+    <script src="home.js"></script>
+</body>
+</html>

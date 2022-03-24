@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <title>Shifumi Inc</title>
+    <style></style>
+    <script src=""></script>
+</head>
+<body>
+
+    <header>        
+        <nav class="navbar"> <!-- Barre de navigation! -->
+            <a href="home.html"><img src="assets/logo.png" id="navlogo" alt="logo shifumi"/></a>
+            <label for="toggle">☰</label>
+            <input type="checkbox" id="toggle"/>
+            <ul class="navbar__list">
+                <li><a href="home.html" class="navbar__list__link">Accueil</a></li>
+                <li><a href="history.html" class="navbar__list__link">L'histoire</a></li>
+                <li><a href="rules.html" class="navbar__list__link">Règles du jeu</a></li>
+                <li><a href="game.html" class="navbar__list__link">Jouez !</a></li>
+                <li><a href="contact.html" class="navbar__list__link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- ------------------------- !-->
+<!--& background image & title !-->
+<!-- ------------------------- !-->
+    <main>
+        <section class="contact-img" id="contact-img">
+            <h1> CONTACT </h1>
+            <p class = "contactP">"Full contact !" - JCVD</p>
+            <a href="#form"><img src="assets/arrow.png" class="homeImg__arrow"></img></a>
+        </section>
+
+        <h2> Avis des joueurs </h2>
+
+
+<section class="formOpinion__container" id="form">
+  <!-- ----formulaire avis------ !-->
+  <div class = formContaine>
+      <img src="assets/user_img.png" alt="user image" class ="formOpinion__container__userImg">
+      <a href="playeropinion.html" class="formOpinion__container__userImg__write"> Écrire un avis </a>
+  </div>
+<!-- <img src="assets/stars_img.png" alt="stars image" class="formOpinion__container__userImg__write__starsImg"> -->
+</section>
+
+
+
+<article id="opinionContainerId">
+<section class="opinionContainer">
+  <!-- avis des joueurs + photos ! -->
+    <div class="opinionContainer__wrapper">
+      <div class="opinionContainer__wrapper__card">
+        
+        <div class="opinionContainer__wrapper__card__player">
+          <img
+            src="assets/contact-img-player1.jpeg"
+            class="opinionContainer__wrapper__card__player__image"
+            alt=""
+          />
+      
+          <span class="opinionContainer__wrapper__card__player__name"
+            >Nicolas alias le Crack</span
+          >
+        </div>
+        <div class="opinionContainer__wrapper__card__body">
+
+          <p class="opinionContainer__wrapper__card__body__review">
+            Joli site pour un jeu bien sympathique ! 
+            Les développeurs derrière cela sont vraiment des cracks !
+          </p>
+          <div class="opinionContainer__wrapper__card__body__rating">
+            <img
+              src="assets/contact-star-fill.png"
+              class="opinionContainer__wrapper__card__body__rating__star"
+              alt=""
+            />
+            <img
+              src="assets/contact-star-fill.png"
+              class="opinionContainer__wrapper__card__body__rating__star"
+              alt=""
+            />
+            <img
+              src="assets/contact-star-fill.png"
+              class="opinionContainer__wrapper__card__body__rating__star"
+              alt=""
+            />
+            <img
+              src="assets/contact-star-fill.png"
+              class="opinionContainer__wrapper__card__body__rating__star"
+              alt=""
+            />
+            <img
+              src="assets/contact-star-fill.png"
+              class="opinionContainer__wrapper__card__body__rating__star"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="opinionContainer__wrapper__card">
+        <div class="opinionContainer__wrapper__card__player">
+          <img
+            src="assets/contact-img-player2.jpeg"
+            class="opinionContainer__wrapper__card__player__image"
+            alt=""
+          />
+          <span class="opinionContainer__wrapper__card__player__name"
+            >Lucas alias Pimousse</span
+          >
+        </div>
+        <div class="opinionContainer__wrapper__card__body">
+          <p class="opinionContainer__wrapper__card__body__review">
+            L'ordinateur est rusé mais j'ai décrypté son algorithme ... 
+            Comme au loup garou d'ailleurs !
+            Donc je ne fais que gagner maintenant !
+          </p>
+          <div class="opinionContainer__wrapper__card__body__rating">
+            <img
+              src="assets/contact-star-fill.png"
+              class="opinionContainer__wrapper__card__body__rating__star"
+              alt=""
+            />
+            <img
+              src="assets/contact-star-fill.png"
+              class="opinionContainer__wrapper__card__body__rating__star"
+              alt=""
+            />
+            <img
+              src="assets/contact-star-no-fill.png"
+              class="opinionContainer__wrapper__card__body__rating__star"
+              alt=""
+            />
+            <img
+              src="assets/contact-star-no-fill.png"
+              class="opinionContainer__wrapper__card__body__rating__star"
+              alt=""
+            />
+            <img
+              src="assets/contact-star-no-fill.png"
+              class="opinionContainer__wrapper__card__body__rating__star"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="opinionContainer__wrapper__card">
+        <div class="opinionContainer__wrapper__card__player">
+          <img
+            src="assets/contact-img-player3.jpeg"
+            class="opinionContainer__wrapper__card__player__image"
+            alt=""
+          />
+          <span class="opinionContainer__wrapper__card__player__name"
+            >Rémi alias Réminator</span
+          >
+        </div>
+        <div class="opinionContainer__wrapper__card__body">
+          <p class="opinionContainer__wrapper__card__body__review">
+            J'adore ce jeu et encore plus quand je gagne! <br>
+            Mon secret : toujours jouer ciseaux ! 
+            Resultat : Invaincu depuis 999 parties ! Bientôt la 1000ème...
+
+          </p>
+          <div class="opinionContainer__wrapper__card__body__rating">
+            <img
+              src="assets/contact-star-fill.png"
+              class="opinionContainer__wrapper__card__body__rating__star"
+              alt=""
+            />
+            <img
+              src="assets/contact-star-fill.png"
+              class="opinionContainer__wrapper__card__body__rating__star"
+              alt=""
+            />
+            <img
+              src="assets/contact-star-fill.png"
+              class="opinionContainer__wrapper__card__body__rating__star"
+              alt=""
+            />
+            <img
+              src="assets/contact-star-fill.png"
+              class="opinionContainer__wrapper__card__body__rating__star"
+              alt=""
+            />
+            <img
+              src="assets/contact-star-no-fill.png"
+              class="opinionContainer__wrapper__card__body__rating__star"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="opinionContainer__wrapper__card">
+        <div class="opinionContainer__wrapper__card__player">
+          <img
+            src="assets/contact-img-player4.jpeg"
+            class="opinionContainer__wrapper__card__player__image"
+            alt=""
+          />
+          <span class="opinionContainer__wrapper__card__player__name"
+            >Geoffrey alias Cho Frais</span
+          >
+
+        </div>
+        <div class="opinionContainer__wrapper__card__body">
+          <p class="opinionContainer__wrapper__card__body__review">
+            Ce jeu est vraiment indémodable ! 
+        Et ce site le met vraiment en valeur donc BRAVO !
+        Seul chose dommage... Je ne peux pas être loup à ce jeu... SNIFF !
+
+          </p>
+          <div class="opinionContainer__wrapper__card__body__rating">
+            <img
+              src="assets/contact-star-fill.png"
+              class="opinionContainer__wrapper__card__body__rating__star"
+              alt=""
+            />
+            <img
+              src="assets/contact-star-fill.png"
+              class="opinionContainer__wrapper__card__body__rating__star"
+              alt=""
+            />
+            <img
+              src="assets/contact-star-fill.png"
+              class="opinionContainer__wrapper__card__body__rating__star"
+              alt=""
+            />
+            <img
+              src="assets/contact-star-no-fill.png"
+              class="opinionContainer__wrapper__card__body__rating__star"
+              alt=""
+            />
+            <img
+              src="assets/contact-star-no-fill.png"
+              class="opinionContainer__wrapper__card__body__rating__star"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="opinionContainer__indicators">
+      <button class="opinionContainer__indicators__active"></button>
+      <button></button>
+      <button></button>
+      <button></button>
+    </div>
+</section>
+</article>
+
+  <script src="contact.js"></script>
+
+
+<!-- --------------------- !-->
+<!-- formulaire de contact !-->
+<!-- --------------------- !-->
+
+            <h2> Formulaire de contact </h2>
+
+<section class="formulaire">
+
+  <form class="formulaire__contact">
+
+    <h3 class="formulaire__contact__title">Contactez-nous</h3>
+    
+
+    <div class="formulaire__contact__line"></div>
+
+    <div class="formulaire__contact__form">
+
+      <div class="formulaire__contact__form__left">
+
+        <div class="formulaire__contact__form__left__group">
+          <label>Votre Prénom</label>
+          <input
+            class="formulaire__contact__form__left__group__input"
+            type="text"
+            autocomplete="off"
+          />
+          <i class="fas fa-user"></i>
+        </div>
+
+        <div class="formulaire__contact__form__left__group">
+          <label>Votre adresse e-mail</label>
+          <input
+            class="formulaire__contact__form__left__group__input"
+            type="text"
+            autocomplete="off"
+          />
+          <i class="fas fa-envelope"></i>
+        </div>
+
+        <div class="formulaire__contact__form__left__group">
+          <label>Votre téléphone</label>
+          <input
+            class="formulaire__contact__form__left__group__input"
+            type="text"
+            autocomplete="off"
+          />
+          <i class="fas fa-mobile"></i>
+        </div>
+      </div>
+
+      <div class="formulaire__contact__form__right">
+
+        <div class="formulaire__contact__form__right__group">
+          <label>Message</label>
+          <textarea class="formulaire__contact__form__right__group__textarea" placeholder="Saisissez ici..."></textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="formulaire__contact__form__footer">
+      <button class="formulaire__contact__form__footer__button">Envoyer le message</button>
+    </div>
+  </form>
+</section>
+<section class="backOnTop">
+  <div class="backOnTop__box">
+      <a href="#contact-img">▲ Retour en haut de page</a>
+  </div>
+</section> 
+    </main>
+
+<!-- ----------------- !-->
+<!-- -----footer------ !-->
+<!-- ----------------- !-->
+    <footer class="footer">
+        <div class="footer__logo"><img src="assets/logo.png" alt="logo"/></div>
+        <div class="footer__text">
+            <p class="footer__text__title">SHIFUMI Inc.</p>
+            <p class="footer__text__paragraph">
+            27 route de Pitoys, 64600 ANGLET
+            <br>
+            Téléphone: +33 6 55 66 77 88
+            <br>
+            Mail: contactus@shifumi.incorporation</p>
+        </div>
+        <div class="footer__socialMedias">
+            <img src="assets/svgexport-21.svg" alt="facebook"/>
+            <img src="assets/svgexport-22.svg" alt="twitter"/>
+            <img src="assets/svgexport-23.svg" alt="linkdin"/>
+            <img src="assets/svgexport-24.svg" alt="instagram"/>
+            <img src="assets/svgexport-25.svg" alt="youtube"/>
+            <img src="assets/github.svg" alt="github"/>
+        </div>
+    </footer> 
+    <script src="home.js"></script>
+</body>
+</html>
