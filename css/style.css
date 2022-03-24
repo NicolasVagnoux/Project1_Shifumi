@@ -36,16 +36,15 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-
-.contact-img h1 {
-  font-size: 10vw;
-  font-family: "Proza Libre";
-  font-weight: lighter;
-  letter-spacing: 8px;
-  color: white;
-  text-shadow: 4px 4px 2px black; }
+  @media screen and (max-width: 400px) {
+    .contact-img {
+      height: 400px;
+      width: 400px; }
+      .contact-img h1 {
+        font-size: 3rem; } }
 
 h2 {
+  font-family: "Ruluko";
   color: #dd5405;
   text-decoration: underline;
   font-size: 1.5em;
@@ -302,29 +301,32 @@ button.opinionContainer__indicators__active {
 
 .footer {
   display: flex;
-  width: 100vw;
+  width: 100%;
   font-size: 16px;
   background-color: #050505;
   justify-content: space-between;
   align-items: center; }
+  @media screen and (max-width: 400px) {
+    .footer {
+      width: 400px; } }
   .footer__logo {
     display: flex;
-    height: 20vh;
-    width: 20vw;
+    height: 15vh;
+    width: 15vw;
     padding: 3vh 3vw 3vh 3vw;
     color: whitesmoke; }
     @media screen and (max-width: 1000px) {
       .footer__logo {
-        height: 15vh;
-        width: 15vw; } }
-    @media screen and (max-width: 800px) {
-      .footer__logo {
         height: 12vh;
         width: 12vw; } }
+    @media screen and (max-width: 800px) {
+      .footer__logo {
+        height: 10vh;
+        width: 10vw; } }
     @media screen and (max-width: 600px) {
       .footer__logo {
-        height: 9vh;
-        width: 9vw; } }
+        height: 8vh;
+        width: 8vw; } }
   .footer__text {
     display: flex;
     color: whitesmoke;
@@ -338,11 +340,17 @@ button.opinionContainer__indicators__active {
       font-size: 2vw;
       font-family: "Ruluko";
       margin: 1em; }
+      @media screen and (max-width: 600px) {
+        .footer__text__title {
+          font-size: 1.2rem; } }
     .footer__text__paragraph {
       display: flex 2;
       font-size: 1.4vw;
       padding-bottom: 5vh;
       font-family: "Ruluko"; }
+      @media screen and (max-width: 600px) {
+        .footer__text__paragraph {
+          font-size: 0.7rem; } }
   .footer__socialMedias {
     display: flex; }
     .footer__socialMedias img {
@@ -375,19 +383,22 @@ button.opinionContainer__indicators__active {
           margin: 1vh;
           padding: 1vh; } }
 
-.gameHeader {
+.gameTitle {
   background-image: url("../assets/game.jpeg");
   height: 100vh;
-  width: 100vw;
-  background-size: cover; }
-  .gameHeader__title {
-    font-size: 8vw;
-    text-align: center;
-    padding-top: 40vh;
-    font-family: "Proza Libre";
-    font-weight: lighter;
-    color: white;
-    text-shadow: 5px 5px 5px black; }
+  width: auto;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  @media screen and (max-width: 400px) {
+    .gameTitle {
+      height: 400px;
+      width: 400px; }
+      .gameTitle h1 {
+        font-size: 3rem; } }
 
 .game {
   display: flex;
@@ -922,19 +933,21 @@ button.opinionContainer__indicators__active {
         text-decoration: none;
         color: purple; }
 
-.headerRules {
+.pageTitle {
   background-image: url("../assets/rules_img.jpeg");
   height: 100vh;
-  background-size: cover; }
-
-.pageTitle {
-  color: #F4F3F3;
-  text-align: center;
-  padding-top: 40vh;
-  font-size: 8vw;
-  font-family: "Proza Libre";
-  font-weight: lighter;
-  text-shadow: 5px 5px 5px black; }
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  @media screen and (max-width: 400px) {
+    .pageTitle {
+      height: 400px;
+      width: 400px; }
+      .pageTitle h1 {
+        font-size: 3rem; } }
 
 .rules {
   display: flex;
@@ -942,6 +955,7 @@ button.opinionContainer__indicators__active {
   width: 100vw;
   text-align: center; }
   .rules__title {
+    font-family: "Ruluko";
     font-size: 3rem;
     display: flex 1;
     color: #dd5405;
@@ -950,6 +964,7 @@ button.opinionContainer__indicators__active {
       .rules__title {
         font-size: 2.2rem; } }
   .rules__paragraph1 {
+    font-family: "Ruluko";
     display: flex 2;
     font-size: 1.4rem;
     margin: 10vh 20vw 5vh 20vw; }
@@ -958,12 +973,14 @@ button.opinionContainer__indicators__active {
       font-size: 1.6rem;
       text-decoration: underline; }
   .rules__paragraph2 {
+    font-family: "Ruluko";
     display: flex 3;
     font-size: 1.4rem;
     line-height: 1.2rem;
     margin: 5vh 20vw 5vh 20vw; }
 
 .spinOff__title {
+  font-family: "Ruluko";
   display: flex 4;
   font-size: 2.2rem;
   color: #dc5304;

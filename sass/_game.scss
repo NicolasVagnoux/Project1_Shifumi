@@ -1,17 +1,29 @@
-.gameHeader{
+.gameTitle{
     background-image: url("../assets/game.jpeg");
     height: 100vh;
-    width: 100vw;
+    width: auto;
     background-size: cover;
-    &__title{
-        font-size: 8vw;
-        text-align: center;
-        padding-top: 40vh;
-        font-family: $font-title;
-        font-weight: lighter;
-        color: white;
-        text-shadow: 5px 5px 5px black;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 400px) {
+        height: 400px;
+        width: 400px;
+        h1 {
+            font-size: 3rem;
+        }
     }
+    // &__title{
+    //     font-size: 8vw;
+    //     text-align: center;
+    //     padding-top: 40vh;
+    //     font-family: $font-title;
+    //     font-weight: lighter;
+    //     color: white;
+    //     text-shadow: 5px 5px 5px black;
+    // }
 }
 
 .game{

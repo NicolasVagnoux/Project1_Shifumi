@@ -11,7 +11,7 @@
     <body>
         <header class="headerRules">
             <nav class="navbar"> <!-- Barre de navigation! -->
-                <a><img src="assets/logo.png" id="navlogo"></img></a>
+                <a href="home.html"><img src="assets/logo.png" id="navlogo"></img></a>
                 <label for="toggle">☰</label>
                 <input type="checkbox" id="toggle"></input>
                 <ul class="navbar__list">
@@ -22,10 +22,13 @@
                     <li><a href="contact.html" class="navbar__list__link">Contact</a></li>
                 </ul>
             </nav>
-            <h1 class="pageTitle">Règles du jeu</h1>
         </header>
         <main>
-            <section>
+            <section class="pageTitle" id="pageTitle">
+                <h1>REGLES DU JEU</h1>
+                <a href="#rules"><img src="assets/arrow.png" class="homeImg__arrow"></img></a>
+            </section>
+            <section id="rules">
                 <div1 class="rules">
                     <h2 class="rules__title">Règles traditionnelles</h2>
                     <p class="rules__paragraph1"><strong class="rules__paragraph1__strong">La pierre :</strong> est représentée par un poing fermé. <br><br>
@@ -93,6 +96,11 @@
                         </div>
                     </div>
                 </div2>            
+            </section>
+            <section class="backOnTop">
+                <div class="backOnTop__box">
+                    <a href="#pageTitle">▲ Retour en haut de page</a>
+                </div>
             </section>
         </main>
         <footer class="footer">
