@@ -18,6 +18,11 @@ h1 {
     h1 {
       font-size: 4rem; } }
 
+h2 {
+  font-family: "Ruluko";
+  font-size: 3rem;
+  color: #dc5304; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -86,24 +91,10 @@ h2 {
       color: #000;
       text-decoration: none; }
 
-<<<<<<< HEAD
-/* --AVIS DES JOUEURS-- */
-.opinion {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 10px 10px;
-  grid-template-areas: "opinion__img-1 opinion__art-1 opinion__art-2 opinion__img-2" "opinion__img-3 opinion__art-3 opinion__art-4 opinion__img-4";
-  align-content: stretch;
-  justify-items: stretch;
-  align-items: center;
-  margin-top: 4rem; }
-=======
 #opinionContainerId {
   display: flex;
   justify-content: center;
   margin-bottom: 4rem; }
->>>>>>> adf3c0390750daaf45a45dcbba8c7fd79e2697ef
 
 .opinionContainer {
   display: flex;
@@ -631,9 +622,6 @@ button.opinionContainer__indicators__active {
 #toggle:checked + .navbar__list {
   display: flex; }
 
-<<<<<<< HEAD
-.headTitle {
-=======
 .backOnTop {
   display: flex;
   justify-content: flex-end;
@@ -664,8 +652,7 @@ button.opinionContainer__indicators__active {
       .backOnTop a {
         font-size: 0.8rem; } }
 
-.titleHistory {
->>>>>>> adf3c0390750daaf45a45dcbba8c7fd79e2697ef
+.headTitle {
   height: 100vh;
   background-image: url("../assets/history_img_background.jpg");
   background-size: cover;
@@ -697,7 +684,7 @@ button.opinionContainer__indicators__active {
     font-family: "Ruluko";
     display: flex 1;
     font-size: 4vh;
-    color: #dc5304;
+    color: #dd5405;
     padding: 4vh; }
   .mainHistory__gridContainer {
     display: flex 2;
