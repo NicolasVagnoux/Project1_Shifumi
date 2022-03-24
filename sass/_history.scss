@@ -35,9 +35,12 @@
     &__h2{
         font-family: $font-text;
         display: flex 1;
-        font-size: 4vh;
-        color: hsl(22, 96%, 44%);
+        font-size: 3rem;
+        color: $orange-color;
         padding: 4vh;
+        @media screen and (max-width: 600px) {
+            font-size: 2.2rem;
+        }
     }
     &__gridContainer{
         display:flex 2;
