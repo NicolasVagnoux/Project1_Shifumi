@@ -81,7 +81,6 @@ let computerScore = 0;
 
 rockButton.addEventListener("click",function(){
     initalisation();
-    handAnimation();
     computerSign=displaySigns(rockLeftSource);
     switch(computerSign){
         case 0:
