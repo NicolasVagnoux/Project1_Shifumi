@@ -5,7 +5,8 @@ window.onload = () => {
   // On va chercher l'input
   const note = document.querySelector("#note");
 
-  // On boucle sur les étoiles pour le ajouter des écouteurs d'évènements
+  // On boucle sur les étoiles pour 
+  // ajouter des écouteurs d'évènements
   for (star of stars) {
     // On écoute le survol
     star.addEventListener("mouseover", function () {
@@ -17,7 +18,7 @@ window.onload = () => {
       let previousStar = this.previousElementSibling;
 
       while (previousStar) {
-        // On passe l'étoile qui précède en rouge
+        // On passe l'étoile qui précède en orange
         previousStar.style.color = "#dd5405";
         previousStar.classList.add("las");
         previousStar.classList.remove("lar");
@@ -43,7 +44,7 @@ window.onload = () => {
   function resetStars(note = 0) {
     for (star of stars) {
       if (star.dataset.value > note) {
-        star.style.color = "#dd5405";
+        star.style.color = "black";
         star.classList.add("lar");
         star.classList.remove("las");
       } else {

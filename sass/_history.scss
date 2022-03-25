@@ -22,7 +22,24 @@
         &:hover {
             transform: scale(1.1);
             }
+            
       
+    }
+}
+
+.historyP {
+    width: 90%;
+    text-align: center;
+    line-height: 1.3;
+    font-family: $font-text;
+    font-size: 1.8vw;
+    color: white;
+    text-shadow: 2px 2px 4px black, -2px -2px 4px black;
+    @media screen and (max-width: 800px) {
+        font-size: 1.2rem;
+    }
+    @media screen and (max-width: 400px) {
+        font-size: 1rem;
     }
 }
 
