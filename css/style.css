@@ -59,7 +59,7 @@ h2 {
     h2 {
       font-size: 2.2rem; } }
 
-p {
+.contactP {
   width: 90%;
   text-align: center;
   line-height: 1.3;
@@ -68,10 +68,10 @@ p {
   color: white;
   text-shadow: 2px 2px 4px black, -2px -2px 4px black; }
   @media screen and (max-width: 800px) {
-    p {
+    .contactP {
       font-size: 1.2rem; } }
   @media screen and (max-width: 400px) {
-    p {
+    .contactP {
       font-size: 1rem; } }
 
 .formOpinion__container {
@@ -422,6 +422,20 @@ button.opinionContainer__indicators__active {
       width: 400px; }
       .gameTitle h1 {
         font-size: 3rem; } }
+  .gameTitle__p {
+    width: 90%;
+    text-align: center;
+    line-height: 1.3;
+    font-family: "Ruluko";
+    font-size: 1.8vw;
+    color: white;
+    text-shadow: 2px 2px 4px black, -2px -2px 4px black; }
+    @media screen and (max-width: 800px) {
+      .gameTitle__p {
+        font-size: 1.2rem; } }
+    @media screen and (max-width: 400px) {
+      .gameTitle__p {
+        font-size: 1rem; } }
 
 .game {
   display: flex;
@@ -514,20 +528,6 @@ button.opinionContainer__indicators__active {
         cursor: pointer;
         font-weight: bold;
         font-size: 2vw; }
-  .game .gameP {
-    width: 90%;
-    text-align: center;
-    line-height: 1.3;
-    font-family: "Ruluko";
-    font-size: 1.8vw;
-    color: white;
-    text-shadow: 2px 2px 4px black, -2px -2px 4px black; }
-    @media screen and (max-width: 800px) {
-      .game .gameP {
-        font-size: 1.2rem; } }
-    @media screen and (max-width: 400px) {
-      .game .gameP {
-        font-size: 1rem; } }
 
 /* Barre de navigation */
 .navbar {
@@ -694,6 +694,20 @@ button.opinionContainer__indicators__active {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center; }
+  .headTitle__p {
+    width: 90%;
+    text-align: center;
+    line-height: 1.3;
+    font-family: "Ruluko";
+    font-size: 1.8vw;
+    color: white;
+    text-shadow: 2px 2px 4px black, -2px -2px 4px black; }
+    @media screen and (max-width: 800px) {
+      .headTitle__p {
+        font-size: 1.2rem; } }
+    @media screen and (max-width: 400px) {
+      .headTitle__p {
+        font-size: 1rem; } }
   .headTitle__h1 {
     color: whitesmoke;
     font-family: "Proza Libre";
@@ -705,21 +719,6 @@ button.opinionContainer__indicators__active {
     width: 50px; }
     .headTitle__arrow:hover {
       transform: scale(1.1); }
-
-.historyP {
-  width: 90%;
-  text-align: center;
-  line-height: 1.3;
-  font-family: "Ruluko";
-  font-size: 1.8vw;
-  color: white;
-  text-shadow: 2px 2px 4px black, -2px -2px 4px black; }
-  @media screen and (max-width: 800px) {
-    .historyP {
-      font-size: 1.2rem; } }
-  @media screen and (max-width: 400px) {
-    .historyP {
-      font-size: 1rem; } }
 
 .mainHistory {
   display: flex;
@@ -785,7 +784,7 @@ button.opinionContainer__indicators__active {
       width: 400px; }
       .homeImg h1 {
         font-size: 3rem; } }
-  .homeImg p {
+  .homeImg__text {
     width: 90%;
     text-align: center;
     line-height: 1.3;
@@ -794,10 +793,10 @@ button.opinionContainer__indicators__active {
     color: white;
     text-shadow: 2px 2px 4px black, -2px -2px 4px black; }
     @media screen and (max-width: 800px) {
-      .homeImg p {
+      .homeImg__text {
         font-size: 1.2rem; } }
     @media screen and (max-width: 400px) {
-      .homeImg p {
+      .homeImg__text {
         font-size: 1rem; } }
   .homeImg__arrow {
     width: 50px; }
@@ -995,7 +994,7 @@ button.opinionContainer__indicators__active {
       .pageTitle h1 {
         font-size: 3rem; } }
 
-.rulesP {
+#pageTitle__p {
   width: 90%;
   text-align: center;
   line-height: 1.3;
@@ -1004,41 +1003,48 @@ button.opinionContainer__indicators__active {
   color: white;
   text-shadow: 2px 2px 4px black, -2px -2px 4px black; }
   @media screen and (max-width: 800px) {
-    .rulesP {
+    #pageTitle__p {
       font-size: 1.2rem; } }
   @media screen and (max-width: 400px) {
-    .rulesP {
+    #pageTitle__p {
       font-size: 1rem; } }
 
 .rules {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   width: 100vw;
   text-align: center; }
   .rules__title {
     font-family: "Ruluko";
     font-size: 3rem;
-    display: flex 1;
+    padding: 5vh 0 3vh;
+    display: flex;
     color: #dd5405;
-    margin: 10vh 0 2vh 0; }
+    margin: 10vh 0 vh 0; }
     @media screen and (max-width: 600px) {
       .rules__title {
         font-size: 2.2rem; } }
   .rules__paragraph1 {
     font-family: "Ruluko";
-    display: flex 2;
-    font-size: 1.4rem;
-    margin: 10vh 20vw 5vh 20vw; }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vh 0 5vh;
+    font-size: 1.4rem; }
     .rules__paragraph1__strong {
       color: #dd5405;
       font-size: 1.6rem;
       text-decoration: underline; }
   .rules__paragraph2 {
     font-family: "Ruluko";
-    display: flex 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vh 0 5vh;
     font-size: 1.4rem;
-    line-height: 1.2rem;
-    margin: 5vh 20vw 5vh 20vw; }
+    line-height: 1.2rem; }
 
 .spinOff__title {
   font-family: "Ruluko";
@@ -1068,7 +1074,7 @@ button.opinionContainer__indicators__active {
     text-shadow: 2px 3px 2px black;
     line-height: 5vw;
     background: linear-gradient(145deg, #b3b2b2, #d5d4d4);
-    box-shadow: 12px 12px 24px #a9a8a8, -12px -12px 24px #e5e4e4;
+    box-shadow: 12px 12px 24px #a9a8a8, -12px -12px 24px #e5e4e4;
     font-size: 5vh; }
     @media screen and (max-width: 600px) {
       .spinOff__grid__1, .spinOff__grid__2, .spinOff__grid__3, .spinOff__grid__4, .spinOff__grid__5, .spinOff__grid__6 {
